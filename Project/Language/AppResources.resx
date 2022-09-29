@@ -1,0 +1,1006 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NoAnswer" xml:space="preserve">
+		<value>No answer</value>
+	</data>
+  <data name="ON" xml:space="preserve">
+		<value>ON</value>
+	</data>
+  <data name="OFF" xml:space="preserve">
+		<value>OFF</value>
+	</data>
+  <data name="TotalTimeOn" xml:space="preserve">
+		<value>Total time on</value>
+	</data>
+  <data name="Setup" xml:space="preserve">
+		<value>Setup</value>
+	</data>
+  <data name="PleaseLogin" xml:space="preserve">
+		<value>Please Login</value>
+	</data>
+  <data name="S3WANTitle" xml:space="preserve">
+		<value>S3WAN smart city solution</value>
+	</data>
+  <data name="Username" xml:space="preserve">
+		<value>User name</value>
+	</data>
+  <data name="Password" xml:space="preserve">
+		<value>Password</value>
+	</data>
+  <data name="LOGIN" xml:space="preserve">
+		<value>LOGIN</value>
+	</data>
+  <data name="Version" xml:space="preserve">
+		<value>Version</value>
+	</data>
+  <data name="RememberPassword" xml:space="preserve">
+		<value>Remember</value>
+	</data>
+  <data name="Help" xml:space="preserve">
+		<value>Help</value>
+	</data>
+  <data name="DoingLogin" xml:space="preserve">
+		<value>Doing login...</value>
+	</data>
+  <data name="LoginOK" xml:space="preserve">
+		<value>Login OK</value>
+	</data>
+  <data name="LoginFailPleaseRecheck" xml:space="preserve">
+		<value>Login fail. Please recheck...</value>
+	</data>
+  <data name="PleaseConfigImportantSetting" xml:space="preserve">
+		<value>Please config some important settings...</value>
+	</data>
+  <data name="NetworkErrorPleaseRecheck" xml:space="preserve">
+		<value>Network error. Please recheck...</value>
+	</data>
+  <data name="UsernameOrPasswordIsWrong" xml:space="preserve">
+		<value>User name or password is wrong. Please recheck...</value>
+	</data>
+  <data name="UserIsExpiredPleaseContactAdmin" xml:space="preserve">
+		<value>User is expired. Please contact admin for support...</value>
+	</data>
+  <data name="UserIsLockedPleaseContactAdmin" xml:space="preserve">
+		<value>User is locked. Please contact admin for support...</value>
+	</data>
+  <data name="Login_OKThenLoadAllData" xml:space="preserve">
+		<value>Login OK. Start load all data...</value>
+	</data>
+  <data name="Login_LoadDeviceInfoFail" xml:space="preserve">
+		<value>Can not load device info. Please recheck...</value>
+	</data>
+  <data name="Login_LoadUserInfoFail" xml:space="preserve">
+		<value>Can not load user info. Please recheck...</value>
+	</data>
+  <data name="Device" xml:space="preserve">
+		<value>Device</value>
+	</data>
+  <data name="Area" xml:space="preserve">
+		<value>Area</value>
+	</data>
+  <data name="Script" xml:space="preserve">
+		<value>Script</value>
+	</data>
+  <data name="Notification" xml:space="preserve">
+		<value>Notification</value>
+	</data>
+  <data name="Setting" xml:space="preserve">
+		<value>Setting</value>
+	</data>
+  <data name="FindGatewayLineDevice" xml:space="preserve">
+		<value>Find gateway, line, device,...</value>
+	</data>
+  <data name="TotalGateways" xml:space="preserve">
+		<value>Total gateways</value>
+	</data>
+  <data name="Code" xml:space="preserve">
+		<value>Code</value>
+	</data>
+  <data name="TotalLines" xml:space="preserve">
+		<value>Total lines</value>
+	</data>
+  <data name="DetailInformation" xml:space="preserve">
+		<value>Detail information</value>
+	</data>
+  <data name="Name" xml:space="preserve">
+		<value>Name</value>
+	</data>
+  <data name="Description" xml:space="preserve">
+		<value>Description</value>
+	</data>
+  <data name="ProductCode" xml:space="preserve">
+		<value>Product code</value>
+	</data>
+  <data name="Serial" xml:space="preserve">
+		<value>Serial</value>
+	</data>
+  <data name="Temperature" xml:space="preserve">
+		<value>Temperature</value>
+	</data>
+  <data name="WorkingTime" xml:space="preserve">
+		<value>Working time</value>
+	</data>
+  <data name="Status" xml:space="preserve">
+		<value>Status</value>
+	</data>
+  <data name="Hours" xml:space="preserve">
+		<value>hours</value>
+	</data>
+  <data name="Online" xml:space="preserve">
+		<value>Online</value>
+	</data>
+  <data name="Offline" xml:space="preserve">
+		<value>Offline</value>
+	</data>
+  <data name="LastUpdateTime" xml:space="preserve">
+		<value>Last update time</value>
+	</data>
+  <data name="OnlineFrom" xml:space="preserve">
+		<value>Online from</value>
+	</data>
+  <data name="OfflineAt" xml:space="preserve">
+		<value>Offline at</value>
+	</data>
+  <data name="Control" xml:space="preserve">
+		<value>Control</value>
+	</data>
+  <data name="NotifyAndError" xml:space="preserve">
+		<value>Notify and error</value>
+	</data>
+  <data name="PowerMeter" xml:space="preserve">
+		<value>Power meter</value>
+	</data>
+  <data name="OutputScheduler" xml:space="preserve">
+		<value>Output scheduler</value>
+	</data>
+  <data name="LightAndDeviceScheduler" xml:space="preserve">
+		<value>Light and device scheduler</value>
+	</data>
+  <data name="CheckingScheduler" xml:space="preserve">
+		<value>Checking scheduler</value>
+	</data>
+  <data name="TotalTimeOn_Duplicate[1]" xml:space="preserve">
+		<value>Total time on</value>
+	</data>
+  <data name="Back" xml:space="preserve">
+		<value>Back</value>
+	</data>
+  <data name="Close" xml:space="preserve">
+		<value>Close</value>
+	</data>
+  <data name="TotalLines_Duplicate[1]" xml:space="preserve">
+		<value>Total line</value>
+	</data>
+  <data name="TotalLights" xml:space="preserve">
+		<value>Total lights</value>
+	</data>
+  <data name="Index" xml:space="preserve">
+		<value>Index</value>
+	</data>
+  <data name="Type" xml:space="preserve">
+		<value>Type</value>
+	</data>
+  <data name="LineIndex" xml:space="preserve">
+		<value>Line index</value>
+	</data>
+  <data name="At" xml:space="preserve">
+		<value>At</value>
+	</data>
+  <data name="TemperatureIsOver" xml:space="preserve">
+		<value>Temperature is over</value>
+	</data>
+  <data name="TemperatureIsGoingNormal" xml:space="preserve">
+		<value>Temperature is going normal</value>
+	</data>
+  <data name="CurrentIsOver" xml:space="preserve">
+		<value>Current is over</value>
+	</data>
+  <data name="CurrentIsGoingNormal" xml:space="preserve">
+		<value>Current is going normal</value>
+	</data>
+  <data name="DeviceOnButNoCurrent" xml:space="preserve">
+		<value>Device is on but no current</value>
+	</data>
+  <data name="DeviceOnIsGoingNormal" xml:space="preserve">
+		<value>Device on is going normal</value>
+	</data>
+  <data name="DeviceUsingByUnStableInput" xml:space="preserve">
+		<value>Device is using unstable power supply</value>
+	</data>
+  <data name="DeviceUsingByLowInput" xml:space="preserve">
+		<value>Device is using low power supply</value>
+	</data>
+  <data name="DeviceUsingByHighInput" xml:space="preserve">
+		<value>Device is using high power supply</value>
+	</data>
+  <data name="DeviceReturnNormalInput" xml:space="preserve">
+		<value>Power supply return normal</value>
+	</data>
+  <data name="DeviceNotResponseWhenCheck" xml:space="preserve">
+		<value>Device is not responded when system checking</value>
+	</data>
+  <data name="OutputChannelOnButNoVoltage" xml:space="preserve">
+		<value>Output channel on but no voltage</value>
+	</data>
+  <data name="OutputChannelOffButHasVoltage" xml:space="preserve">
+		<value>Output channel off but still has voltage</value>
+	</data>
+  <data name="OutputChannelIsOK" xml:space="preserve">
+		<value>Output channel is going normal operating</value>
+	</data>
+  <data name="DeviceIsPowerOn" xml:space="preserve">
+		<value>Device is powered on</value>
+	</data>
+  <data name="DeviceIsReset" xml:space="preserve">
+		<value>Device is reset</value>
+	</data>
+  <data name="GatewayChannel" xml:space="preserve">
+		<value>Gateway channel</value>
+	</data>
+  <data name="DeviceHasNoAnyNotificationsOrErrors" xml:space="preserve">
+		<value>Device has no any notifications or errors</value>
+	</data>
+  <data name="VoltageP1" xml:space="preserve">
+		<value>Voltage phase 1</value>
+	</data>
+  <data name="VoltageP2" xml:space="preserve">
+		<value>Voltage phase 2</value>
+	</data>
+  <data name="VoltageP3" xml:space="preserve">
+		<value>Voltage phase 3</value>
+	</data>
+  <data name="CurrentP1" xml:space="preserve">
+		<value>Current phase 1</value>
+	</data>
+  <data name="CurrentP2" xml:space="preserve">
+		<value>Current phase 2</value>
+	</data>
+  <data name="CurrentP3" xml:space="preserve">
+		<value>Current phase 3</value>
+	</data>
+  <data name="PowerP1" xml:space="preserve">
+		<value>Power phase 1</value>
+	<data name="PowerP2" xml:space="preserve">
+	</data>
+		<value>Power phase 2</value>
+	</data>
+  <data name="PowerP3" xml:space="preserve">
+		<value>Power phase 3</value>
+	</data>
+  <data name="PowerTotal" xml:space="preserve">
+		<value>Power total</value>
+	</data>
+  <data name="Frequency" xml:space="preserve">
+		<value>Frequency</value>
+	</data>
+  <data name="TotalConsumption" xml:space="preserve">
+		<value>Total consumption</value>
+	</data>
+  <data name="Cancel" xml:space="preserve">
+		<value>Cancel</value>
+	</data>
+  <data name="Update" xml:space="preserve">
+		<value>Update</value>
+	</data>
+  <data name="Yes" xml:space="preserve">
+		<value>Yes</value>
+	</data>
+  <data name="No" xml:space="preserve">
+		<value>No</value>
+	</data>
+  <data name="DeviceSetup" xml:space="preserve">
+		<value>Device setup</value>
+	</data>
+  <data name="ChangeNameAndDes" xml:space="preserve">
+		<value>Change name/description</value>
+	</data>
+  <data name="ScanDevice" xml:space="preserve">
+		<value>Scan device</value>
+	</data>
+  <data name="ControlHistory" xml:space="preserve">
+		<value>Control history</value>
+	</data>
+  <data name="DeviceName" xml:space="preserve">
+		<value>Device's name</value>
+	</data>
+  <data name="DeviceDescription" xml:space="preserve">
+		<value>Device's description</value>
+	</data>
+  <data name="ChangeName" xml:space="preserve">
+		<value>Change name</value>
+	</data>
+  <data name="ChangeDescription" xml:space="preserve">
+		<value>Change description</value>
+	</data>
+  <data name="DoingUpdateNewName" xml:space="preserve">
+		<value>Doing update new name...</value>
+	</data>
+  <data name="DoingUpdateNewDescription" xml:space="preserve">
+		<value>Doing update new description...</value>
+	</data>
+  <data name="SorryYouHaveNoPermissionToDoThisAction" xml:space="preserve">
+		<value>Sorry! You have no permission to do this action</value>
+	</data>
+  <data name="SorryUnknownError" xml:space="preserve">
+		<value>Sorry! Unknown error. Please recheck...</value>
+	</data>
+  <data name="ScanAndSetup" xml:space="preserve">
+		<value>Scan and setup</value>
+	</data>
+  <data name="Line" xml:space="preserve">
+		<value>Line</value>
+	</data>
+  <data name="TotalDevices" xml:space="preserve">
+		<value>Total devices</value>
+	</data>
+  <data name="SetAnotherDevice" xml:space="preserve">
+		<value>Set another device</value>
+	</data>
+  <data name="ScanDeviceHint" xml:space="preserve">
+		<value>Scan and wait end device reponse information. Then select and try to control device to make sure this is correct device. After confirm, set new ID for it. If want to set another ID, check "Set another device and input new ID</value>
+	</data>
+  <data name="DevicePasswordHint" xml:space="preserve">
+		<value>For security, need to set password after set new ID to lock. Password is from 0 (not set) to 999999. After set password, at next scan and set ID, need to input old device password</value>
+	</data>
+  <data name="SetID" xml:space="preserve">
+		<value>Set ID</value>
+	</data>
+  <data name="AddNewLightLine" xml:space="preserve">
+		<value>Add new light line</value>
+	</data>
+  <data name="SyncLightLineToGateway" xml:space="preserve">
+		<value>Sync light line to gateway</value>
+	</data>
+  <data name="SetupGateway" xml:space="preserve">
+		<value>Setup gateway</value>
+	</data>
+  <data name="SetLocation" xml:space="preserve">
+		<value>Set location</value>
+	</data>
+  <data name="AddNewVirtualLine" xml:space="preserve">
+		<value>Add new virtual line</value>
+	</data>
+  <data name="Advance" xml:space="preserve">
+		<value>Advance</value>
+	</data>
+  <data name="DeleteGateway" xml:space="preserve">
+		<value>Delete gateway</value>
+	</data>
+  <data name="DeleteGwWarning" xml:space="preserve">
+		<value>Do you really want to delete this gateway?
+1. Delete all linker hardware line and street light which is managed by this gateway
+2. All gateway config will be deleted
+3. All permission of control users involve thi this gateway will not applied</value>
+	</data>
+  <data name="Warning" xml:space="preserve">
+		<value>Warning</value>
+	</data>
+  <data name="Delete" xml:space="preserve">
+		<value>Delete</value>
+	</data>
+  <data name="InputSerial" xml:space="preserve">
+		<value>Input serial</value>
+	</data>
+  <data name="ScanQRCode" xml:space="preserve">
+		<value>Scan QR code</value>
+	</data>
+  <data name="Check" xml:space="preserve">
+		<value>Check</value>
+	</data>
+  <data name="InputSerialDescription" xml:space="preserve">
+		<value>Serial number is in label, include device package. If can not found, please contact manufacturing for support</value>
+	</data>
+  <data name="GatewayIsNotExistPleaseRecheck" xml:space="preserve">
+		<value>Gateway is not exist or serial code is invalid. Please recheck...</value>
+	</data>
+  <data name="DoingCheckSerial" xml:space="preserve">
+		<value>Doing check serial number. Please wait...</value>
+	</data>
+  <data name="DeviceIsValid" xml:space="preserve">
+		<value>Device is valid</value>
+	</data>
+  <data name="AddNew" xml:space="preserve">
+		<value>Add new</value>
+	</data>
+  <data name="AddNewGatewayIsOK" xml:space="preserve">
+		<value>Add new gateway OK</value>
+	</data>
+  <data name="SetName" xml:space="preserve">
+		<value>Set name</value>
+	</data>
+  <data name="SetIndex" xml:space="preserve">
+		<value>Set index</value>
+	</data>
+  <data name="Next" xml:space="preserve">
+		<value>Next</value>
+	</data>
+  <data name="SetTotalDimerLight" xml:space="preserve">
+		<value>Set total dimer light</value>
+	</data>
+  <data name="SetTotalTimer" xml:space="preserve">
+		<value>Set total timer</value>
+	</data>
+  <data name="TotalTimers" xml:space="preserve">
+		<value>Total timers</value>
+	</data>
+  <data name="DoingAddNewLightLine" xml:space="preserve">
+		<value>Doing add new light line...</value>
+	</data>
+  <data name="CreateNewLightLineOK" xml:space="preserve">
+		<value>Create new light line is OK</value>
+	</data>
+  <data name="PleaseSelectAnotherLineIndex" xml:space="preserve">
+		<value>Please select another line index</value>
+	</data>
+  <data name="LineName" xml:space="preserve">
+		<value>Line name</value>
+	</data>
+  <data name="LineDescription" xml:space="preserve">
+		<value>Line description</value>
+	</data>
+  <data name="UpdateDeviceOnLine" xml:space="preserve">
+		<value>Update device on line</value>
+	</data>
+  <data name="DoingUpdateDeviceOnLine" xml:space="preserve">
+		<value>Doing update device on line...</value>
+	</data>
+  <data name="UpdateDeviceOnLineOK" xml:space="preserve">
+		<value>Update device on line is OK</value>
+	</data>
+  <data name="SetNewIDOK" xml:space="preserve">
+		<value>Set new ID OK</value>
+	</data>
+  <data name="SetNewIDFailPleaseRecheck" xml:space="preserve">
+		<value>Set new ID fail. Please recheck...</value>
+	</data>
+  <data name="Management" xml:space="preserve">
+		<value>Management</value>
+	</data>
+  <data name="DeleteAll" xml:space="preserve">
+		<value>Delete all</value>
+	</data>
+  <data name="DeleteDvNotifyWarning" xml:space="preserve">
+		<value>1. Delete all will be deleted forever all notifies and errors of this device and can not restore
+2. Only delete all notifications and errors until now, and continue record all new notifications and errors on system.</value>
+	</data>
+  <data name="DoingDeleteAllNotify" xml:space="preserve">
+		<value>Doing delete all notification...</value>
+	</data>
+  <data name="DeleteAllNotifyOK" xml:space="preserve">
+		<value>Delete all notification OK</value>
+	</data>
+  <data name="DeleteAllNotifyFail" xml:space="preserve">
+		<value>Delete all notification fail. Please recheck...</value>
+	</data>
+  <data name="TotalLineLightIsOver100" xml:space="preserve">
+		<value>Total line light is reach max (over 100). Please recheck...</value>
+	</data>
+  <data name="CanNotConnectToCloud" xml:space="preserve">
+		<value>Can not connect to cloud. Please recheck...</value>
+	</data>
+  <data name="CanNotSyncToGateway" xml:space="preserve">
+		<value>Can not sync to gateway. Please recheck...</value>
+	</data>
+  <data name="SyncLightLineToGatewayOK" xml:space="preserve">
+		<value>Sync light line to gateway OK</value>
+	</data>
+  <data name="DoingSyncLightLine" xml:space="preserve">
+		<value>Doing sync light line to gateway...</value>
+	</data>
+  <data name="BiggerThan0AndSmaller" xml:space="preserve">
+		<value>Bigger than 0 and smaller than</value>
+	</data>
+  <data name="InvalidValuePleaseRecheck" xml:space="preserve">
+		<value>Invalid value. Please recheck...</value>
+	</data>
+  <data name="DoingAddNewVirtualLine" xml:space="preserve">
+		<value>Doing add new virtual line...</value>
+	</data>
+  <data name="AddNewVirtualLineOK" xml:space="preserve">
+		<value>Add new virtual line is OK</value>
+	</data>
+  <data name="AddNewVirtualLineFail" xml:space="preserve">
+		<value>Add new virtual line is OK. Please recheck...</value>
+	</data>
+  <data name="VirtualLineIsExistSelectAnotherIndex" xml:space="preserve">
+		<value>Virtual line is existed. Select another index</value>
+	</data>
+  <data name="VirtualLine" xml:space="preserve">
+		<value>Virtual line</value>
+	</data>
+  <data name="From0To" xml:space="preserve">
+		<value>From 0 to</value>
+	</data>
+  <data name="From1To" xml:space="preserve">
+		<value>From 1 to</value>
+	</data>
+  <data name="DeleteLine" xml:space="preserve">
+		<value>Delete line</value>
+	</data>
+  <data name="DeleteLineOK" xml:space="preserve">
+		<value>Delete line is OK</value>
+	</data>
+  <data name="SetAnotherDeviceHint" xml:space="preserve">
+		<value>When scan new device, if found another device is valid with another ID, can set override</value>
+	</data>
+  <data name="UpdateNewNameOK" xml:space="preserve">
+		<value>Update new name is OK</value>
+	</data>
+  <data name="UpdateDescriptionOK" xml:space="preserve">
+		<value>Update description is OK</value>
+	</data>
+  <data name="TotalScripts" xml:space="preserve">
+		<value>Total scripts</value>
+	</data>
+  <data name="LoadingScriptsData" xml:space="preserve">
+		<value>Loading scripts data...</value>
+	</data>
+  <data name="IsActivate" xml:space="preserve">
+		<value>Activated</value>
+	</data>
+  <data name="Activate" xml:space="preserve">
+		<value>Activate</value>
+	</data>
+  <data name="Deactivate" xml:space="preserve">
+		<value>Deactivate</value>
+	</data>
+  <data name="NotActivate" xml:space="preserve">
+		<value>Not activate</value>
+	</data>
+  <data name="CreateNewScript" xml:space="preserve">
+		<value>Create new script</value>
+	</data>
+  <data name="CreateNewScriptOK" xml:space="preserve">
+		<value>Create new script is OK</value>
+	</data>
+  <data name="DeleteScript" xml:space="preserve">
+		<value>Delete script</value>
+	</data>
+  <data name="DeleteScriptWarning" xml:space="preserve">
+		<value>Do you really want to delete this script. All data will be deleted forever</value>
+	</data>
+  <data name="ScriptIsNotExisted" xml:space="preserve">
+		<value>Sorry! Script is not existed</value>
+	</data>
+  <data name="DoingDeleteScript" xml:space="preserve">
+		<value>Doing delete script...</value>
+	</data>
+  <data name="DeleteScriptOK" xml:space="preserve">
+		<value>Delete script is OK</value>
+	</data>
+  <data name="SetTimer" xml:space="preserve">
+		<value>Set timer</value>
+	</data>
+  <data name="SetContentPowerOn" xml:space="preserve">
+		<value>Set content power on</value>
+	</data>
+  <data name="SetContentDevice" xml:space="preserve">
+		<value>Set content device</value>
+	</data>
+  <data name="Dayweek" xml:space="preserve">
+		<value>Dayweek</value>
+	</data>
+  <data name="MaskAllDayweek" xml:space="preserve">
+		<value>Mask all dayweek</value>
+	</data>
+  <data name="ClearAllDayweek" xml:space="preserve">
+		<value>Clear all dayweek</value>
+	</data>
+  <data name="DeleteTimer" xml:space="preserve">
+		<value>Delete timer</value>
+	</data>
+  <data name="SorryYouCanNotAddMore" xml:space="preserve">
+		<value>Sorry! You can not add more</value>
+	</data>
+  <data name="SorryThisScriptIsDeactivateCanNotControl" xml:space="preserve">
+		<value>Sorry! This script is deactivated, can not control now. Please actiavte it again</value>
+	</data>
+  <data name="ControlHistory_Duplicate[1]" xml:space="preserve">
+		<value>Control history</value>
+	</data>
+  <data name="TotalEvent" xml:space="preserve">
+		<value>Total event</value>
+	</data>
+  <data name="SupportPhone" xml:space="preserve">
+		<value>Support phone</value>
+	</data>
+  <data name="PrimarySupportPhone" xml:space="preserve">
+		<value>Primary support phone</value>
+	</data>
+  <data name="SecondarySupportPhone" xml:space="preserve">
+		<value>secondary support phone</value>
+	</data>
+  <data name="SupportPhoneDescription" xml:space="preserve">
+		<value>Support phone is using emegency situration, operator can use support phones to control basic function via SMS or reset device via call.</value>
+	</data>
+  <data name="BuzzerSetup" xml:space="preserve">
+		<value>Buzzer setup</value>
+	</data>
+  <data name="BuzzerDescription" xml:space="preserve">
+		<value>Buzzer will bip when has new event or control. If you want device working in silent, turn off buzzer. You should turn on buzzer when setup device to check</value>
+	</data>
+  <data name="GMTSetup" xml:space="preserve">
+		<value>GMT setup</value>
+	</data>
+  <data name="GMTSetupDescription" xml:space="preserve">
+		<value>Setup GMT will help device can run automatic feature correctly, match with current real GMT of your reagion</value>
+	</data>
+  <data name="TemperatureThreadhold" xml:space="preserve">
+		<value>Temperature threadhold</value>
+	</data>
+  <data name="TemperatureThreadholdDescription" xml:space="preserve">
+		<value>When device is working at high temperature is config at "temperature threadhold", system will send notification to alert operator. And when device is running on normal, alert is off</value>
+	</data>
+  <data name="PleaseInputCorrectPhoneNumber" xml:space="preserve">
+		<value>Please input correct phone number</value>
+	</data>
+  <data name="TemperatureThreadHoldValueIsNotCorrect" xml:space="preserve">
+		<value>Temperature threadhold is not correct</value>
+	</data>
+  <data name="GMTValueIsNotCorrect" xml:space="preserve">
+		<value>GMT value is not correct</value>
+	</data>
+  <data name="DoingSyncToDevice" xml:space="preserve">
+		<value>Doing sync to device....</value>
+	</data>
+  <data name="CanNotSyncToDevice" xml:space="preserve">
+		<value>Can not sync to device. Please recheck....</value>
+	</data>
+  <data name="IsSynced" xml:space="preserve">
+		<value>Synced</value>
+	</data>
+  <data name="NotSynced" xml:space="preserve">
+		<value>Not synced</value>
+	</data>
+  <data name="SetupDeviceIsOK" xml:space="preserve">
+		<value>Setup device is OK</value>
+	</data>
+  <data name="BackupSetupToCloud" xml:space="preserve">
+		<value>Backup setup to cloud</value>
+	</data>
+  <data name="DisplayLayer" xml:space="preserve">
+		<value>Display layer</value>
+	</data>
+  <data name="Gateway" xml:space="preserve">
+		<value>Gateway</value>
+	</data>
+  <data name="Streetlight" xml:space="preserve">
+		<value>Street light</value>
+	</data>
+  <data name="Timer" xml:space="preserve">
+		<value>Timer</value>
+	</data>
+  <data name="OK" xml:space="preserve">
+		<value>OK</value>
+	</data>
+  <data name="MovePositionHelp" xml:space="preserve">
+		<value>1. Pick and hold icon until can drag
+2. Drag and drop icon to new position
+3. If finish, press again icon move position to exit mode</value>
+	</data>
+  <data name="MovePosition" xml:space="preserve">
+		<value>Move new potion</value>
+	</data>
+  <data name="UpdateNewDeviceLocation" xml:space="preserve">
+		<value>Update new device's location</value>
+	</data>
+  <data name="UpdateNewDeviceLocationFail" xml:space="preserve">
+		<value>Update new device's location fail. Please recheck...</value>
+	</data>
+  <data name="FinishMoveLocation" xml:space="preserve">
+		<value>Finish move/change location for devices</value>
+	</data>
+  <data name="About" xml:space="preserve">
+		<value>About</value>
+	</data>
+  <data name="ConfigServer" xml:space="preserve">
+		<value>Config server</value>
+	</data>
+  <data name="ConfigServerHint" xml:space="preserve">
+		<value>input "DF"for default server</value>
+	</data>
+  <data name="ConfigServerDescription" xml:space="preserve">
+		<value>By default, application connect to cloud server. If you has delicate server, please input config string which is released by admin</value>
+	</data>
+  <data name="DoingRestoreDefaultConfig" xml:space="preserve">
+		<value>Doing restore default config...</value>
+	</data>
+  <data name="RestoreConfigOK" xml:space="preserve">
+		<value>Restore config is OK</value>
+	</data>
+  <data name="RestoreConfigFail" xml:space="preserve">
+		<value>Restore config is fail. Please recheck...</value>
+	</data>
+  <data name="CopyRightS3" xml:space="preserve">
+		<value>Copyright 2021 s3wan.com</value>
+	</data>
+  <data name="Website" xml:space="preserve">
+		<value>Website</value>
+	</data>
+  <data name="Email" xml:space="preserve">
+		<value>Email</value>
+	</data>
+  <data name="Hotline" xml:space="preserve">
+		<value>Hotline</value>
+	</data>
+  <data name="Information" xml:space="preserve">
+		<value>Information</value>
+	</data>
+  <data name="SorryCantNotFoundInfo" xml:space="preserve">
+		<value>Sorry! Can not found info. Please recheck...</value>
+	</data>
+  <data name="ConfigServerOK" xml:space="preserve">
+		<value>Config delicate server is OK</value>
+	</data>
+  <data name="DoingConfigServer" xml:space="preserve">
+		<value>Doing config server info...</value>
+	</data>
+  <data name="TypeOfControlMask" xml:space="preserve">
+		<value>Type of control mask</value>
+	</data>
+  <data name="MotionSensor" xml:space="preserve">
+		<value>Motion sensor</value>
+	</data>
+  <data name="MotionSensorDescription" xml:space="preserve">
+		<value>Motion sensor is mode auto detect motion of human or vehical, it will increase light automatically if mode is activated</value>
+	</data>
+  <data name="ControlVirtualDescription" xml:space="preserve">
+		<value>1. System can support control virtual device but when control only one device on line, all device in this line will be received this control action
+2. Virtual line can not control dim</value>
+	</data>
+  <data name="User" xml:space="preserve">
+		<value>User</value>
+	</data>
+  <data name="ChangeUsernameAndPass" xml:space="preserve">
+		<value>Change username and password</value>
+	</data>
+  <data name="UpdateInfo" xml:space="preserve">
+		<value>Update information</value>
+	</data>
+  <data name="SetDefaultLocation" xml:space="preserve">
+		<value>Set default location</value>
+	</data>
+  <data name="HelpAndGuideline" xml:space="preserve">
+		<value>Help and guideline</value>
+	</data>
+  <data name="ApplicationGuideline" xml:space="preserve">
+		<value>Application guideline</value>
+	</data>
+  <data name="GatewayGuideline" xml:space="preserve">
+		<value>Gateway guideline</value>
+	</data>
+  <data name="Signout" xml:space="preserve">
+		<value>Sign out</value>
+	</data>
+  <data name="CurrentPassword" xml:space="preserve">
+		<value>Current password</value>
+	</data>
+  <data name="NewPassword" xml:space="preserve">
+		<value>New password</value>
+	</data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+		<value>Confirm new password</value>
+	</data>
+  <data name="NewPasswordAndConfirmNewPasswordIsNotMatch" xml:space="preserve">
+		<value>New password and confirm new password is not match</value>
+	</data>
+  <data name="CurrentPasswordIsWrong" xml:space="preserve">
+		<value>Current password is wrong</value>
+	</data>
+  <data name="UsernameIsExistedPleaseSelectAnother" xml:space="preserve">
+		<value>User name is existed. Please select another...</value>
+	</data>
+  <data name="ChangeUsernameAndPassWarning" xml:space="preserve">
+		<value>1. After change user name and password successfully, application will be sign out automatically
+2. If change to new username and password, other machine is using this account will be forced sign out</value>
+	</data>
+  <data name="PleaseInputUserName" xml:space="preserve">
+		<value>Please input username</value>
+	</data>
+  <data name="DoNotInputUsernameHasSpecialCharacter" xml:space="preserve">
+		<value>Do not input username has special character</value>
+	</data>
+  <data name="PleaseInputOldPassword" xml:space="preserve">
+		<value>Please input old password</value>
+	</data>
+  <data name="DoNotInputOldPasswordHasSpecialCharacter" xml:space="preserve">
+		<value>Do not input old password has special character</value>
+	</data>
+  <data name="PleaseInputNewPassword" xml:space="preserve">
+		<value>Please input new password</value>
+	</data>
+  <data name="DoNotInputNewPasswordHasSpecialCharacter" xml:space="preserve">
+		<value>Do not input new password has special character</value>
+	</data>
+  <data name="PleaseInputConfirmNewPassword" xml:space="preserve">
+		<value>Please input confirm new password</value>
+	</data>
+  <data name="DoNotInputConfirmNewPasswordHasSpecialCharacter" xml:space="preserve">
+		<value>Do not input confirm new password has special character</value>
+	</data>
+  <data name="DoingChangeUserNameAndPassword" xml:space="preserve">
+		<value>Doing change username and password...</value>
+	</data>
+  <data name="UpdateUserNameAndPasswordIsDoneSignout" xml:space="preserve">
+		<value>Update username and password is done. Sign out...</value>
+	</data>
+  <data name="PhoneNumber" xml:space="preserve">
+		<value>Phone number</value>
+	</data>
+  <data name="UpdateUserInfoIsOK" xml:space="preserve">
+		<value>Update user info is OK</value>
+	</data>
+  <data name="PleaseInputDisplayName" xml:space="preserve">
+		<value>Please input display name</value>
+	</data>
+  <data name="DoNotInputDisplayNameHasSpecialCharacter" xml:space="preserve">
+		<value>Do not input display name has special character</value>
+	</data>
+  <data name="SavingScriptTimer" xml:space="preserve">
+		<value>Saving script timer...</value>
+	</data>
+  <data name="DisplayName" xml:space="preserve">
+		<value>Display name</value>
+	</data>
+  <data name="UpdateUserInfoWarning" xml:space="preserve">
+		<value>1. Please input correct email and phone number
+2. Incase you need support, we will contact to you</value>
+	</data>
+  <data name="UpdateUserLocationOK" xml:space="preserve">
+		<value>Update user location is OK</value>
+	</data>
+  <data name="CameraQRNotSupport" xml:space="preserve">
+		<value>Camera is not support</value>
+	</data>
+  <data name="Flash" xml:space="preserve">
+		<value>Flash</value>
+	</data>
+  <data name="CameraQRNotSupportPleaseSetPermission" xml:space="preserve">
+    <value>Camera for QR scaner is not support
+Please set permission for camera...</value>
+  </data>
+  <data name="WaterRefinneTitle" xml:space="preserve">
+    <value>Water refine solution</value>
+  </data>
+  <data name="Orders" xml:space="preserve">
+    <value>Orders</value>
+  </data>
+  <data name="Sold" xml:space="preserve">
+    <value>Sold</value>
+  </data>
+  <data name="PriceUnit" xml:space="preserve">
+    <value>Price Unit</value>
+  </data>
+  <data name="Litre" xml:space="preserve">
+    <value>Litre</value>
+  </data>
+  <data name="NoDevicePleaseAddNew" xml:space="preserve">
+    <value>Your system has no any devices. Please add new...</value>
+  </data>
+  <data name="NoDevicePleaseAddNewDescription" xml:space="preserve">
+    <value>Hint how to add new device:
+1. Make sure your center device is online.
+2. Scan QR code in device. If has valid QR code, a new device will be add.
+3. Sign out then sign in application again to refresh</value>
+  </data>
+  <data name="Money" xml:space="preserve">
+    <value>Money</value>
+  </data>
+  <data name="SetValueAndControl" xml:space="preserve">
+    <value>Set value and control</value>
+  </data>
+  <data name="SoldInfoSession" xml:space="preserve">
+    <value>Sold info session</value>
+  </data>
+  <data name="HotKey" xml:space="preserve">
+    <value>Hot key</value>
+  </data>
+  <data name="SoldEvent" xml:space="preserve">
+    <value>Sold event</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>is finish</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>is start</value>
+  </data>
+  <data name="Pause" xml:space="preserve">
+    <value>is pause</value>
+  </data>
+  <data name="PleaseSelectLitreOrMoneyToSold" xml:space="preserve">
+    <value>Please select litre/money to sold</value>
+  </data>
+  <data name="YouSelect" xml:space="preserve">
+    <value>You selected</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="CurrentDay" xml:space="preserve">
+    <value>Current Day</value>
+  </data>
+  <data name="TotalOrders" xml:space="preserve">
+    <value>Total orders</value>
+  </data>
+  <data name="PleaseCheckConnection" xml:space="preserve">
+    <value>Please check connection</value>
+  </data>
+  <data name="WarrantyDescriptionFail" xml:space="preserve">
+    <value>Your device version can not support QR code warranty or invalid code</value>
+  </data>
+  <data name="SomethingWrong" xml:space="preserve">
+    <value>Something wrong. Please recheck...</value>
+  </data>
+  <data name="NotFoundDvInfo" xml:space="preserve">
+    <value>Not found the device info</value>
+  </data>
+  <data name="IsWarranty" xml:space="preserve">
+    <value>WARRANTED</value>
+  </data>
+  <data name="NotWarranty" xml:space="preserve">
+    <value>NOT WARRANTED</value>
+  </data>
+  <data name="ProductisNotWarranty" xml:space="preserve">
+    <value>Product is not warranty</value>
+  </data>
+  <data name="ProductInfo" xml:space="preserve">
+    <value>Product info</value>
+  </data>
+  <data name="PowerP2" xml:space="preserve">
+    <value>Power phase 2</value>
+  </data>
+  <data name="Months" xml:space="preserve">
+    <value>months</value>
+  </data>
+  <data name="TotalNos" xml:space="preserve">
+    <value>Total notifications</value>
+  </data>
+  <data name="TDSOver" xml:space="preserve">
+    <value>TDS values is over</value>
+  </data>
+  <data name="TDSOK" xml:space="preserve">
+    <value>TDS value is going normal</value>
+  </data>
+  <data name="AddToCart" xml:space="preserve">
+    <value>Add to cart</value>
+  </data>
+  <data name="Small" xml:space="preserve">
+    <value>Small</value>
+  </data>
+  <data name="Medium" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="Large" xml:space="preserve">
+    <value>Large</value>
+  </data>
+  <data name="ProvisionalPrice" xml:space="preserve">
+    <value>Provisional price</value>
+  </data>
+  <data name="TotalPrice" xml:space="preserve">
+    <value>Total price</value>
+  </data>
+  <data name="Cart" xml:space="preserve">
+    <value>Cart</value>
+  </data>
+  <data name="Buy" xml:space="preserve">
+    <value>Buy</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="PromosHearder" xml:space="preserve">
+    <value>Promos you can't resist</value>
+  </data>
+</root>

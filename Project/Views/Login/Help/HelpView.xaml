@@ -1,0 +1,171 @@
+﻿<ContentPage
+    x:Class="S3WAN.Views.Login.Help.HelpView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ani="clr-namespace:Xamanimation;assembly=Xamanimation"
+    xmlns:lang="clr-namespace:Language"
+    ControlTemplate="{StaticResource PageWithGradient}">
+    <ContentPage.Resources />
+    <Grid>
+        <Image
+            Aspect="Fill"
+            IsOpaque="True"
+            Source="LoginBg.jpg" />
+        <StackLayout Spacing="0">
+            <StackLayout
+                Margin="0"
+                Padding="0"
+                BackgroundColor="{x:StaticResource FrameBackgroundColor}">
+                <StackLayout HeightRequest="{StaticResource HeaderBackHeight}" Orientation="Horizontal">
+                    <Button
+                        Grid.Column="0"
+                        Margin="0,0,5,0"
+                        BackgroundColor="Transparent"
+                        Command="{Binding BackCmd}"
+                        FontAttributes="Bold"
+                        FontSize="Header"
+                        HeightRequest="{StaticResource ButtonHeightS}"
+                        HorizontalOptions="Start"
+                        ImageSource="Back.png"
+                        Text="{lang:Translate Help}"
+                        TextColor="WhiteSmoke"
+                        VerticalOptions="CenterAndExpand" />
+                    <ImageButton
+                        x:Name="btnMenu"
+                        Margin="0,0,5,0"
+                        BackgroundColor="Transparent"
+                        Clicked="btnMenu_Clicked"
+                        HeightRequest="36"
+                        HorizontalOptions="EndAndExpand"
+                        IsEnabled="{Binding IsControlBusy, Converter={StaticResource ToggleBoolConverter}}"
+                        Source="Settings_32px.png"
+                        VerticalOptions="Center"
+                        WidthRequest="60">
+                        <ImageButton.Triggers>
+                            <EventTrigger Event="Clicked">
+                                <ani:BeginAnimation>
+                                    <ani:RelRotateToAnimation
+                                        RepeatForever="False"
+                                        Rotation="90"
+                                        Target="{x:Reference btnMenu}"
+                                        Duration="300" />
+                                </ani:BeginAnimation>
+                            </EventTrigger>
+                        </ImageButton.Triggers>
+                    </ImageButton>
+                </StackLayout>
+            </StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <Frame
+                        Margin="0"
+                        Padding="0"
+                        BackgroundColor="{x:StaticResource FrameBackgroundColor}"
+                        CornerRadius="0"
+                        HasShadow="True"
+                        IsVisible="True">
+                        <Image Margin="10" Source="S3Logo.png" />
+                    </Frame>
+                    <StackLayout Orientation="Horizontal">
+                        <Label FontFamily="RalewayRegular"
+                            Margin="10"
+                            FontAttributes="Bold"
+                            FontSize="Large"
+                            Text="{lang:Translate Information}"
+                            TextColor="{StaticResource LabelTextColor}"
+                            VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
+                    <Frame
+                        Margin="10,0,10,5"
+                        Padding="10"
+                        BackgroundColor="{x:StaticResource FrameBackgroundColor}"
+                        CornerRadius="20"
+                        HasShadow="True"
+                        IsVisible="True">
+                        <StackLayout>
+                            <StackLayout Margin="10,5,0,5">
+                                <Label FontFamily="RalewayRegular"
+                                    FontAttributes="Bold"
+                                    FontSize="Default"
+                                    HorizontalOptions="Fill"
+                                    HorizontalTextAlignment="Start"
+                                    Opacity="0.8"
+                                    Text="{lang:Translate S3WANTitle}"
+                                    TextColor="{StaticResource LabelTextColor}" />
+                                <!--<Label FontFamily="RalewayRegular"
+									FontAttributes="Italic"
+									FontSize="Small"
+									HorizontalOptions="FillAndExpand"
+									HorizontalTextAlignment="Start"
+									Opacity="{StaticResource LabelOpacity}"
+									TextColor="{StaticResource LabelTextColorGray}"
+									>
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{lang:Translate Version}" />
+                                            <Span Text="{Binding VersionStr, StringFormat=': {0:c}'}" />
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>-->
+                                <Label FontFamily="RalewayRegular"
+                                    FontAttributes="Italic"
+                                    FontSize="Small"
+                                    HorizontalOptions="FillAndExpand"
+                                    HorizontalTextAlignment="Start"
+                                    Opacity="{StaticResource LabelOpacity}"
+                                    Text="{lang:Translate CopyRightS3}"
+                                    TextColor="{StaticResource LabelTextColorGray}" />
+                                <BoxView
+                                    HeightRequest="{StaticResource SeparatorHeight}"
+                                    Opacity="{StaticResource SeparatorOpacity}"
+                                    Color="{StaticResource SeparatorColor}" />
+                                <Label FontFamily="RalewayRegular"
+                                    FontAttributes="None"
+                                    FontSize="Small"
+                                    HorizontalOptions="FillAndExpand"
+                                    HorizontalTextAlignment="Start"
+                                    Opacity="{StaticResource LabelOpacity}"
+                                    TextColor="{StaticResource LabelTextColor}">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{lang:Translate Website}" />
+                                            <Span Text="{Binding Website, StringFormat=': {0:c}'}" />
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Label FontFamily="RalewayRegular"
+                                    FontAttributes="None"
+                                    FontSize="Small"
+                                    HorizontalOptions="FillAndExpand"
+                                    HorizontalTextAlignment="Start"
+                                    Opacity="{StaticResource LabelOpacity}"
+                                    TextColor="{StaticResource LabelTextColor}">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{lang:Translate Email}" />
+                                            <Span Text="{Binding Email, StringFormat=': {0:c}'}" />
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Label FontFamily="RalewayRegular"
+                                    FontAttributes="None"
+                                    FontSize="Small"
+                                    HorizontalOptions="FillAndExpand"
+                                    HorizontalTextAlignment="Start"
+                                    Opacity="{StaticResource LabelOpacity}"
+                                    TextColor="{StaticResource LabelTextColor}">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{lang:Translate Hotline}" />
+                                            <Span Text="{Binding Hotline, StringFormat=': {0:c}'}" />
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </Grid>
+</ContentPage>

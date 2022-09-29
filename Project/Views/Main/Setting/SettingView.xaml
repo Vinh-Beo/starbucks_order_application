@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="Project.Views.Main.Setting.SettingView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:imgcolor="clr-namespace:CustomControl"
+    xmlns:lang="clr-namespace:Language">
+    <ContentView.Resources>
+        <Style x:Key="btnEnDis" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="{StaticResource ButtonLoginColor}" />
+            <Style.Triggers>
+                <Trigger TargetType="Button" Property="IsEnabled" Value="False">
+                    <Setter Property="BackgroundColor" Value="{StaticResource ButtonColor}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <Grid>
+            <Image
+                HorizontalOptions="Center"
+                Opacity="0.4"
+                Source="WaterBg.png"
+                VerticalOptions="Center" />
+            <StackLayout Spacing="0">
+                <ScrollView>
+                    <StackLayout Margin="0,0,0,10">
+                        <StackLayout Margin="10,5" Orientation="Horizontal">
+                            <Label FontFamily="RalewayRegular"
+                                FontAttributes="Bold"
+                                FontSize="Body"
+                                Text="{lang:Translate User}"
+                                TextColor="{StaticResource LabelTextColor}"
+                                VerticalOptions="CenterAndExpand" />
+                        </StackLayout>
+                        <Frame
+                            Margin="10,2"
+                            Padding="10"
+                            BackgroundColor="{x:StaticResource PrimaryColor}"
+                            CornerRadius="20"
+                            HasShadow="True"
+                            IsVisible="True">
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image
+                                        Margin="15,2"
+                                        HeightRequest="24"
+                                        Source="User_32px.png"
+                                        WidthRequest="24" />
+                                    <Button
+                                        Margin="0,2"
+                                        BackgroundColor="Transparent"
+                                        Command="{Binding ChangeUserPassCmd}"
+                                        FontAttributes="Bold"
+                                        FontSize="Default"
+                                        HeightRequest="{StaticResource ButtonHeightS}"
+                                        HorizontalOptions="Start"
+                                        IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                                        Text="{lang:Translate ChangeUsernameAndPass}"
+                                        TextColor="WhiteSmoke" />
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image
+                                        Margin="15,2"
+                                        HeightRequest="24"
+                                        Source="InfoFill_32px.png"
+                                        WidthRequest="24" />
+                                    <Button
+                                        Margin="0,2"
+                                        BackgroundColor="Transparent"
+                                        Command="{Binding ChangeUserInfoCmd}"
+                                        FontAttributes="Bold"
+                                        FontSize="Default"
+                                        HeightRequest="{StaticResource ButtonHeightS}"
+                                        HorizontalOptions="Start"
+                                        IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                                        Text="{lang:Translate UpdateInfo}"
+                                        TextColor="WhiteSmoke" />
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                        <StackLayout Margin="10,5" Orientation="Horizontal">
+                            <Label FontFamily="RalewayRegular"
+                                FontAttributes="Bold"
+                                FontSize="Body"
+                                Text="{lang:Translate HelpAndGuideline}"
+                                TextColor="{StaticResource LabelTextColor}"
+                                VerticalOptions="CenterAndExpand" />
+                        </StackLayout>
+                        <Frame
+                            Margin="10,2"
+                            Padding="10"
+                            BackgroundColor="{x:StaticResource PrimaryColor}"
+                            CornerRadius="20"
+                            HasShadow="True"
+                            IsVisible="True">
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image
+                                        Margin="15,2"
+                                        HeightRequest="24"
+                                        Source="App_32px.png"
+                                        WidthRequest="24" />
+                                    <Button
+                                        Margin="0,2"
+                                        BackgroundColor="Transparent"
+                                        Command="{Binding AppGuideCmd}"
+                                        FontAttributes="Bold"
+                                        FontSize="Default"
+                                        HeightRequest="{StaticResource ButtonHeightS}"
+                                        HorizontalOptions="Start"
+                                        IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                                        Text="{lang:Translate ApplicationGuideline}"
+                                        TextColor="WhiteSmoke" />
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <imgcolor:ImageColor
+                                        Margin="15,2"
+                                        Foreground="WhiteSmoke"
+                                        HeightRequest="24"
+                                        Source="HW.png"
+                                        WidthRequest="24" />
+                                    <Button
+                                        Margin="0,2"
+                                        BackgroundColor="Transparent"
+                                        Command="{Binding GwGuideCmd}"
+                                        FontAttributes="Bold"
+                                        FontSize="Default"
+                                        HeightRequest="{StaticResource ButtonHeightS}"
+                                        HorizontalOptions="Start"
+                                        IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                                        Text="{lang:Translate GatewayGuideline}"
+                                        TextColor="WhiteSmoke" />
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                        <Frame
+                            Margin="10,2"
+                            Padding="0"
+                            BackgroundColor="{x:StaticResource FrameBackgroundColor}"
+                            CornerRadius="22"
+                            HasShadow="True"
+                            IsClippedToBounds="True"
+                            IsVisible="True">
+                            <Button
+                                Margin="0"
+                                BackgroundColor="{StaticResource PrimaryColor}"
+                                BorderColor="Transparent"
+                                BorderWidth="{StaticResource ButtonBorderWidth}"
+                                Command="{Binding SignOutCmd}"
+                                CornerRadius="{StaticResource ButtonCorner}"
+                                FontAttributes="None"
+                                FontSize="Large"
+                                HeightRequest="{StaticResource ButtonHeight}"
+                                HorizontalOptions="FillAndExpand"
+                                IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                                Opacity="0.9"
+                                Style="{StaticResource btnEnDis}"
+                                Text="{lang:Translate Signout}"
+                                TextColor="WhiteSmoke" />
+                        </Frame>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+            <ImageButton
+                Margin="10"
+                BackgroundColor="Transparent"
+                BorderColor="Transparent"
+                BorderWidth="{StaticResource ButtonBorderWidth}"
+                Command="{Binding AboutCmd}"
+                CornerRadius="{StaticResource ButtonCorner}"
+                HeightRequest="{StaticResource ButtonHeight}"
+                HorizontalOptions="Center"
+                IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                Opacity="0.9"
+                Source="logo.png"
+                VerticalOptions="End" />
+        </Grid>
+    </ContentView.Content>
+</ContentView>

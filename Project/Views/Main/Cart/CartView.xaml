@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="Project.Views.Main.Cart.CartView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:cus="clr-namespace:CustomControl"
+    xmlns:imgcolor="clr-namespace:CustomControl"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:lang="clr-namespace:Language"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    ios:Page.UseSafeArea="true">
+    <ContentView.Content>
+        <Grid
+            Margin="15,0"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid
+                Grid.Row="0"
+                Margin="0,10"
+                ColumnDefinitions="*,*,*">
+                <Frame
+                    Grid.Column="0"
+                    Padding="2"
+                    BackgroundColor="{StaticResource Gray100Brush}"
+                    CornerRadius="64"
+                    HeightRequest="{StaticResource ImageSize24}"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    WidthRequest="{StaticResource ImageSize24}">
+                    <cus:IconSvg
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Center"
+                        ResourceId="Back.svg"
+                        TintColor="Black"
+                        VerticalOptions="Center" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BackCommand}" NumberOfTapsRequired="1" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+                <Image
+                    Grid.Column="1"
+                    Aspect="AspectFit"
+                    HeightRequest="32"
+                    HorizontalOptions="Center"
+                    Source="logo.png"
+                    VerticalOptions="Center"
+                    WidthRequest="32" />
+                <Frame
+                    Grid.Column="2"
+                    Padding="0"
+                    BackgroundColor="{StaticResource Gray100Brush}"
+                    CornerRadius="64"
+                    HeightRequest="32"
+                    HorizontalOptions="End"
+                    WidthRequest="32">
+                    <Image
+                        HorizontalOptions="Center"
+                        Source="Stop_32px.png"
+                        VerticalOptions="Center" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding DeleteAllCommand}" NumberOfTapsRequired="1" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </Grid>
+            <ScrollView
+                Grid.Row="1"
+                HeightRequest="1000"
+                VerticalOptions="FillAndExpand">
+                <ListView
+                    HasUnevenRows="True"
+                    HeightRequest="{OnIdiom Phone={StaticResource PhonePopupSuperSize},
+                                            Tablet={StaticResource TabletPopupSuperSize},
+                                            Default={StaticResource DefaultPopupSuperSize}}"
+                    ItemsSource="{Binding Items}"
+                    SelectionMode="None"
+                    SeparatorColor="{StaticResource ListSeparatorColor}"
+                    SeparatorVisibility="Default"
+                    VerticalOptions="StartAndExpand"
+                    VerticalScrollBarVisibility="Never">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout
+                                    HeightRequest="80"
+                                    Orientation="Horizontal"
+                                    Spacing="0"
+                                    VerticalOptions="FillAndExpand">
+                                    <Label
+                                        Margin="0,0,10,0"
+                                        FontFamily="RalewayRegular"
+                                        FontSize="Small"
+                                        HorizontalOptions="Start"
+                                        HorizontalTextAlignment="Start"
+                                        LineBreakMode="TailTruncation"
+                                        Text="{Binding Cnt, StringFormat='{0}.'}"
+                                        TextColor="{StaticResource LabelTextColor}"
+                                        VerticalTextAlignment="Center" />
+                                    <ActivityIndicator
+                                        Margin="0,0,10,0"
+                                        FlowDirection="MatchParent"
+                                        HeightRequest="{StaticResource ActivitySize}"
+                                        HorizontalOptions="Center"
+                                        IsRunning="{Binding IsLoadImage, Converter={StaticResource ToggleBoolConverter}}"
+                                        IsVisible="{Binding IsLoadImage, Converter={StaticResource ToggleBoolConverter}}"
+                                        VerticalOptions="Center"
+                                        WidthRequest="{StaticResource ActivitySize}"
+                                        Color="{StaticResource ActivityColor}" />
+                                    <Image
+                                        Margin="0,0,10,0"
+                                        HeightRequest="{StaticResource ImageSize40}"
+                                        HorizontalOptions="Start"
+                                        IsVisible="{Binding IsLoadImage}"
+                                        Source="{Binding Info.Image}"
+                                        VerticalOptions="Center"
+                                        WidthRequest="{StaticResource ImageSize40}" />
+                                    <StackLayout
+                                        Margin="0"
+                                        Padding="0"
+                                        HorizontalOptions="FillAndExpand"
+                                        Orientation="Vertical"
+                                        Spacing="0"
+                                        VerticalOptions="FillAndExpand">
+                                        <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                                            <Label
+                                                FontFamily="RalewayRegular"
+                                                FontSize="Small"
+                                                HorizontalTextAlignment="Start"
+                                                LineBreakMode="TailTruncation"
+                                                Text="{Binding Info.Name}"
+                                                TextColor="{StaticResource Black}"
+                                                VerticalTextAlignment="Center" />
+                                            <Label
+                                                FontFamily="RalewayRegular"
+                                                FontSize="Small"
+                                                HorizontalTextAlignment="Start"
+                                                LineBreakMode="TailTruncation"
+                                                Text="{Binding Size, Converter={StaticResource SizeEnumDisplayStringConverter}}"
+                                                TextColor="Red"
+                                                VerticalTextAlignment="Center" />
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label
+                                                FontAttributes="Italic"
+                                                FontFamily="RalewayRegular"
+                                                FontSize="Micro"
+                                                HorizontalOptions="Center"
+                                                HorizontalTextAlignment="Start"
+                                                LineBreakMode="TailTruncation"
+                                                Opacity="{StaticResource LabelOpacity}"
+                                                Text="{Binding Info.Price, StringFormat='$ {0}.00'}"
+                                                TextColor="Red"
+                                                VerticalTextAlignment="Center" />
+                                            <Label
+                                                FontAttributes="Italic"
+                                                FontFamily="RalewayRegular"
+                                                FontSize="Micro"
+                                                HorizontalOptions="FillAndExpand"
+                                                HorizontalTextAlignment="Start"
+                                                LineBreakMode="TailTruncation"
+                                                Opacity="{StaticResource LabelOpacity}"
+                                                Text="{Binding OrderNumber, StringFormat=' x {0}'}"
+                                                TextColor="{StaticResource Black}"
+                                                VerticalTextAlignment="Center" />
+                                        </StackLayout>
+                                        <Frame
+                                            Margin="0,5"
+                                            Padding="0"
+                                            BackgroundColor="{StaticResource Tertiary}"
+                                            CornerRadius="15"
+                                            HeightRequest="{StaticResource ImageSize24}"
+                                            HorizontalOptions="StartAndExpand">
+                                            <Grid ColumnDefinitions="*,*,*" HeightRequest="32">
+                                                <ImageButton
+                                                    Grid.Column="0"
+                                                    Aspect="AspectFit"
+                                                    BackgroundColor="#00623B"
+                                                    Command="{Binding SubTractCommand}"
+                                                    CornerRadius="48"
+                                                    HeightRequest="{StaticResource ImageSize24}"
+                                                    HorizontalOptions="Start"
+                                                    Source="substract.png"
+                                                    WidthRequest="{StaticResource ImageSize24}" />
+                                                <Label
+                                                    x:Name="CountLabel"
+                                                    Grid.Column="1"
+                                                    FontFamily="ProximaNovaRegular"
+                                                    FontSize="Small"
+                                                    HorizontalOptions="CenterAndExpand"
+                                                    Text="{Binding OrderNumber}"
+                                                    TextColor="{StaticResource Black}"
+                                                    VerticalOptions="Center" />
+                                                <ImageButton
+                                                    Grid.Column="2"
+                                                    Aspect="AspectFit"
+                                                    BackgroundColor="#00623B"
+                                                    Command="{Binding AddCommand}"
+                                                    CornerRadius="48"
+                                                    HeightRequest="{StaticResource ImageSize24}"
+                                                    HorizontalOptions="End"
+                                                    Source="add.png"
+                                                    WidthRequest="{StaticResource ImageSize24}" />
+                                            </Grid>
+                                        </Frame>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+            <Frame
+                Grid.Row="2"
+                Padding="0"
+                BackgroundColor="{StaticResource CoffeeBg2}"
+                CornerRadius="15"
+                HeightRequest="120"
+                VerticalOptions="End">
+                <StackLayout>
+                    <Grid Margin="10,5" VerticalOptions="FillAndExpand">
+                        <Label
+                            Grid.Column="0"
+                            FontAttributes="Bold"
+                            FontFamily="RalewayRegular"
+                            FontSize="Small"
+                            HorizontalOptions="StartAndExpand"
+                            HorizontalTextAlignment="Center"
+                            LineBreakMode="TailTruncation"
+                            Opacity="{StaticResource LabelOpacity}"
+                            Text="{lang:Translate TotalPrice}"
+                            TextColor="Black"
+                            VerticalTextAlignment="Center" />
+                        <Label
+                            Grid.Column="1"
+                            FontFamily="RalewayRegular"
+                            FontSize="Small"
+                            HorizontalOptions="EndAndExpand"
+                            HorizontalTextAlignment="Center"
+                            LineBreakMode="TailTruncation"
+                            Opacity="{StaticResource LabelOpacity}"
+                            Text="{Binding TotalPrice, StringFormat='$ {0}.00'}"
+                            TextColor="Red"
+                            VerticalTextAlignment="Center" />
+                    </Grid>
+                    <Frame
+                        Margin="10,5,10,15"
+                        Padding="0"
+                        BackgroundColor="{x:StaticResource FrameBackgroundColor}"
+                        CornerRadius="22"
+                        HasShadow="True"
+                        IsClippedToBounds="True"
+                        IsVisible="True"
+                        VerticalOptions="End">
+                        <Button
+                            Margin="0"
+                            BackgroundColor="{StaticResource PrimaryColor}"
+                            BorderColor="Transparent"
+                            BorderWidth="{StaticResource ButtonBorderWidth}"
+                            Command="{Binding AddToCartCmd}"
+                            CornerRadius="{StaticResource ButtonCorner}"
+                            FontAttributes="None"
+                            FontSize="Large"
+                            HeightRequest="{StaticResource ButtonHeight}"
+                            HorizontalOptions="FillAndExpand"
+                            IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                            Opacity="0.9"
+                            Text="{lang:Translate Buy}"
+                            TextColor="WhiteSmoke" />
+                    </Frame>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

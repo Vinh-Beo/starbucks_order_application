@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="Project.Views.Main.Detail.DetailView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:cus="clr-namespace:CustomControl"
+    xmlns:imgcolor="clr-namespace:CustomControl"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:lang="clr-namespace:Language"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    ios:Page.UseSafeArea="true">
+    <ContentView.Content>
+        <Grid
+            Margin="15,0"
+            HorizontalOptions="FillAndExpand"
+            IsVisible="{Binding IsDetail}"
+            VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid
+                Grid.Row="0"
+                Margin="0,10"
+                ColumnDefinitions="*,*,*">
+                <Frame
+                    Grid.Column="0"
+                    Padding="2"
+                    BackgroundColor="{StaticResource Gray100Brush}"
+                    CornerRadius="64"
+                    HeightRequest="{StaticResource ImageSize24}"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    WidthRequest="{StaticResource ImageSize24}">
+                    <cus:IconSvg
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Center"
+                        ResourceId="Back.svg"
+                        TintColor="Black"
+                        VerticalOptions="Center" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BackCommand}" NumberOfTapsRequired="1" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+                <Image
+                    Grid.Column="1"
+                    Aspect="AspectFit"
+                    HeightRequest="32"
+                    HorizontalOptions="Center"
+                    Source="logo.png"
+                    VerticalOptions="Center"
+                    WidthRequest="32" />
+                <Frame
+                    Grid.Column="2"
+                    Padding="0"
+                    BackgroundColor="{StaticResource Gray100Brush}"
+                    CornerRadius="64"
+                    HeightRequest="32"
+                    HorizontalOptions="End"
+                    WidthRequest="32">
+                    <cus:IconSvg
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Center"
+                        ResourceId="Love_Filled.svg"
+                        TintColor="{Binding Info.IsFavorite, Converter={StaticResource BoolToFavoriteColorConverter}}"
+                        VerticalOptions="Center" />
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding AddToFavoriteCommand}" NumberOfTapsRequired="1" />
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </Grid>
+            <ScrollView
+                Grid.Row="1"
+                Margin="0,10,0,0"
+                VerticalScrollBarVisibility="Never">
+                <StackLayout>
+                    <Frame
+                        Padding="0"
+                        BackgroundColor="#F5F9E0"
+                        CornerRadius="15"
+                        HeightRequest="200">
+                        <Grid RowDefinitions="8*,2*" VerticalOptions="End">
+                            <Image Source="{Binding Info.Image}" VerticalOptions="FillAndExpand" />
+                            <Frame
+                                Grid.Row="1"
+                                Margin="5"
+                                Padding="0"
+                                BackgroundColor="{StaticResource LabelTextColor}"
+                                CornerRadius="15"
+                                HorizontalOptions="Center">
+                                <Grid ColumnDefinitions="*,*,*" HeightRequest="{StaticResource ImageSize}">
+                                    <ImageButton
+                                        Grid.Column="0"
+                                        Aspect="AspectFit"
+                                        BackgroundColor="#00623B"
+                                        Clicked="Substract_Tapped"
+                                        CornerRadius="64"
+                                        HeightRequest="{StaticResource ImageSize}"
+                                        HorizontalOptions="Start"
+                                        Source="substract.png"
+                                        WidthRequest="{StaticResource ImageSize}" />
+                                    <Label
+                                        x:Name="CountLabel"
+                                        Grid.Column="1"
+                                        FontFamily="ProximaNovaRegular"
+                                        FontSize="22"
+                                        HorizontalOptions="Center"
+                                        Text="{Binding OrderNumber}"
+                                        TextColor="{StaticResource Primary}"
+                                        VerticalOptions="Center" />
+                                    <ImageButton
+                                        Grid.Column="2"
+                                        Aspect="AspectFit"
+                                        BackgroundColor="#00623B"
+                                        Clicked="Add_Tapped"
+                                        CornerRadius="64"
+                                        HeightRequest="{StaticResource ImageSize}"
+                                        HorizontalOptions="End"
+                                        Source="add.png"
+                                        WidthRequest="{StaticResource ImageSize}" />
+                                </Grid>
+                            </Frame>
+                        </Grid>
+                    </Frame>
+                    <StackLayout Grid.Row="2" Margin="0,5">
+                        <Label
+                            FontFamily="RalewayRegular"
+                            FontSize="18"
+                            Text="{Binding Info.Type, Converter={StaticResource TypeEnumStringConverter}}"
+                            TextColor="Black" />
+                        <Grid
+                            ColumnDefinitions="Auto,*"
+                            HeightRequest="32"
+                            HorizontalOptions="FillAndExpand">
+                            <Label
+                                Grid.Column="0"
+                                FontFamily="RalewayMedium"
+                                FontSize="Medium"
+                                HorizontalOptions="StartAndExpand"
+                                Text="{Binding Info.Name}"
+                                TextColor="Black" />
+                            <StackLayout Grid.Column="1" Orientation="Horizontal">
+                                <Image
+                                    Margin="0,0,5,0"
+                                    Aspect="AspectFit"
+                                    HeightRequest="32"
+                                    HorizontalOptions="EndAndExpand"
+                                    Source="star.png" />
+                                <Label
+                                    FontFamily="RalewayRegular"
+                                    FontSize="Medium"
+                                    HorizontalOptions="End"
+                                    Text="{Binding Info.Rating}"
+                                    TextColor="#BFBFBF" />
+                            </StackLayout>
+                        </Grid>
+                        <Label
+                            Grid.Column="0"
+                            Margin="0,5"
+                            FontAttributes="Italic"
+                            FontFamily="ProximaNovaRegular"
+                            FontSize="Small"
+                            LineBreakMode="WordWrap"
+                            Text="{Binding Info.Description}"
+                            TextColor="#6D6D6D" />
+                    </StackLayout>
+                    <Grid ColumnDefinitions="*,Auto,Auto">
+                        <StackLayout
+                            x:Name="SizeRadioGroup"
+                            Grid.Column="0"
+                            BindableLayout.ItemsSource="{Binding Sizes}"
+                            Orientation="Horizontal"
+                            RadioButtonGroup.GroupName="Size"
+                            RadioButtonGroup.SelectedValue="{Binding SelectedProduct.ProductSizeType}"
+                            Spacing="10">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate>
+                                    <StackLayout>
+                                        <Frame
+                                            BackgroundColor="{StaticResource Primary}"
+                                            CornerRadius="5"
+                                            HeightRequest="32"
+                                            WidthRequest="32">
+                                            <Image Source="{Binding Image}" />
+                                        </Frame>
+                                        <Label
+                                            Grid.Column="2"
+                                            FontFamily="RalewayRegular"
+                                            FontSize="Small"
+                                            HeightRequest="{StaticResource LabelSize32}"
+                                            HorizontalOptions="Center"
+                                            LineBreakMode="WordWrap"
+                                            Opacity="{StaticResource LabelOpacity}"
+                                            Text="{Binding Size, Converter={StaticResource SizeEnumStringConverter}}"
+                                            TextColor="#6D6D6D"
+                                            VerticalOptions="Center" />
+                                    </StackLayout>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </StackLayout>
+                        <StackLayout
+                            Grid.Column="1"
+                            BackgroundColor="Gray"
+                            Opacity="0.2"
+                            Orientation="Vertical"
+                            WidthRequest="1" />
+                        <Label
+                            Grid.Column="2"
+                            FontFamily="RalewayRegular"
+                            FontSize="Title"
+                            HeightRequest="{StaticResource LabelSize32}"
+                            HorizontalOptions="StartAndExpand"
+                            LineBreakMode="WordWrap"
+                            Opacity="{StaticResource LabelOpacity}"
+                            Text="{Binding Info.Price, StringFormat='${0}.00'}"
+                            TextColor="{StaticResource Primary}"
+                            VerticalOptions="Center" />
+                        <Frame />
+                    </Grid>
+                    <Frame
+                        Margin="0,15"
+                        Padding="0"
+                        BackgroundColor="{x:StaticResource FrameBackgroundColor}"
+                        CornerRadius="22"
+                        HasShadow="True"
+                        IsClippedToBounds="True"
+                        IsVisible="True">
+                        <Button
+                            Margin="0"
+                            BackgroundColor="{StaticResource PrimaryColor}"
+                            BorderColor="Transparent"
+                            BorderWidth="{StaticResource ButtonBorderWidth}"
+                            Command="{Binding AddToCartCommand}"
+                            CornerRadius="{StaticResource ButtonCorner}"
+                            FontAttributes="None"
+                            FontSize="Large"
+                            HeightRequest="{StaticResource ButtonHeight}"
+                            HorizontalOptions="FillAndExpand"
+                            IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                            Opacity="0.9"
+                            Text="{lang:Translate AddToCart}"
+                            TextColor="WhiteSmoke" />
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

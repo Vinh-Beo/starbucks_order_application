@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Project.Views.Main.Setting.User.ChangeUserAndPassView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:cus="clr-namespace:CustomControl"
+    xmlns:lang="clr-namespace:Language"
+    ControlTemplate="{StaticResource PageWithGradient}">
+    <Grid>
+        <Image
+            HorizontalOptions="Center"
+            Opacity="0.3"
+            Source="WaterBg.png"
+            VerticalOptions="Center" />
+        <StackLayout>
+            <StackLayout
+                Margin="0"
+                Padding="0"
+                BackgroundColor="{x:StaticResource FrameBackgroundColor}">
+                <StackLayout HeightRequest="{StaticResource HeaderBackHeight}" Orientation="Horizontal">
+                    <ImageButton
+                        Grid.Column="0"
+                        Margin="5"
+                        BackgroundColor="Transparent"
+                        Command="{Binding BackCmd}"
+                        HeightRequest="{StaticResource ButtonHeightS}"
+                        HorizontalOptions="Start"
+                        Source="Back.png"
+                        VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+            </StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout Margin="10,5" Orientation="Horizontal">
+                        <Label FontFamily="RalewayRegular"
+                            FontAttributes="Bold"
+                            FontSize="Medium"
+                            Text="{lang:Translate ChangeUsernameAndPass}"
+                            TextColor="{StaticResource LabelTextColor}"
+                            VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
+                    <Frame
+                        Margin="10,5"
+                        Padding="10"
+                        BackgroundColor="{x:StaticResource FrameBackgroundColor}"
+                        CornerRadius="20"
+                        HasShadow="True"
+                        IsVisible="True">
+                        <StackLayout>
+                            <StackLayout Margin="10,0">
+                                <cus:CustomImageEntry
+                                    x:Name="txbUserName"
+                                    Margin="0,5"
+                                    BackgroundColor="Transparent"
+                                    Corner="22"
+                                    HeightRequest="44"
+                                    HorizontalOptions="FillAndExpand"
+                                    Image="User_32px.png"
+                                    ImageAlignment="Left"
+                                    ImageHeight="32"
+                                    ImageWidth="32"
+                                    IsEnabled="False"
+                                    IsSpellCheckEnabled="False"
+                                    LineColor="{StaticResource SeparatorColor}"
+                                    Opacity="0.9"
+                                    Placeholder="{lang:Translate Username}"
+                                    PlaceholderColor="{StaticResource LabelTextColorGray}"
+                                    Text="{Binding UserName, Mode=TwoWay}"
+                                    TextColor="WhiteSmoke">
+                                    <Entry.Keyboard>
+                                        <Keyboard x:FactoryMethod="Create">
+                                            <x:Arguments>
+                                                <KeyboardFlags>None</KeyboardFlags>
+                                            </x:Arguments>
+                                        </Keyboard>
+                                    </Entry.Keyboard>
+                                </cus:CustomImageEntry>
+                                <cus:CustomImageEntry
+                                    x:Name="txbPassword"
+                                    Margin="0,5"
+                                    BackgroundColor="Transparent"
+                                    Corner="22"
+                                    HeightRequest="44"
+                                    Image="Password_32px.png"
+                                    ImageAlignment="Left"
+                                    ImageHeight="32"
+                                    ImageWidth="32"
+                                    IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                                    IsSpellCheckEnabled="False"
+                                    LineColor="{StaticResource SeparatorColor}"
+                                    Opacity="0.9"
+                                    Placeholder="{lang:Translate Password}"
+                                    PlaceholderColor="{StaticResource LabelTextColorGray}"
+                                    Text="{Binding OldPassword, Mode=TwoWay}"
+                                    TextColor="WhiteSmoke" />
+                                <cus:CustomImageEntry
+                                    x:Name="txbNewPassword"
+                                    Margin="0,5"
+                                    BackgroundColor="Transparent"
+                                    Corner="22"
+                                    HeightRequest="44"
+                                    Image="ResetPassword_32px.png"
+                                    ImageAlignment="Left"
+                                    ImageHeight="32"
+                                    ImageWidth="32"
+                                    IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                                    IsSpellCheckEnabled="False"
+                                    LineColor="{StaticResource SeparatorColor}"
+                                    Opacity="0.9"
+                                    Placeholder="{lang:Translate NewPassword}"
+                                    PlaceholderColor="{StaticResource LabelTextColorGray}"
+                                    Text="{Binding NewPassword, Mode=TwoWay}"
+                                    TextColor="WhiteSmoke" />
+                                <cus:CustomImageEntry
+                                    x:Name="txbConfPassword"
+                                    Margin="0,5"
+                                    BackgroundColor="Transparent"
+                                    Corner="22"
+                                    HeightRequest="44"
+                                    Image="ResetPassword_32px.png"
+                                    ImageAlignment="Left"
+                                    ImageHeight="32"
+                                    ImageWidth="32"
+                                    IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                                    IsSpellCheckEnabled="False"
+                                    LineColor="{StaticResource SeparatorColor}"
+                                    Opacity="0.9"
+                                    Placeholder="{lang:Translate ConfirmNewPassword}"
+                                    PlaceholderColor="{StaticResource LabelTextColorGray}"
+                                    Text="{Binding ConfirmNewPassword, Mode=TwoWay}"
+                                    TextColor="WhiteSmoke" />
+                            </StackLayout>
+                            <Label FontFamily="RalewayRegular"
+                                Margin="10,5"
+                                FontAttributes="Italic"
+                                FontSize="Micro"
+                                Text="{lang:Translate ChangeUsernameAndPassWarning}"
+                                TextColor="{StaticResource LabelTextColorGray}" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame
+                        Margin="10,2"
+                        Padding="0"
+                        BackgroundColor="{x:StaticResource FrameBackgroundColor}"
+                        CornerRadius="22"
+                        HasShadow="True"
+                        IsClippedToBounds="True"
+                        IsVisible="True">
+                        <Button
+                            Margin="0"
+                            BackgroundColor="WhiteSmoke"
+                            BorderColor="Transparent"
+                            BorderWidth="{StaticResource ButtonBorderWidth}"
+                            Command="{Binding OKCmd}"
+                            CornerRadius="{StaticResource ButtonCorner}"
+                            FontAttributes="None"
+                            FontSize="Large"
+                            HeightRequest="{StaticResource ButtonHeight}"
+                            HorizontalOptions="FillAndExpand"
+                            IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                            Opacity="0.9"
+                            Text="{lang:Translate Update}"
+                            TextColor="#3ba1c5" />
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </Grid>
+</ContentPage>

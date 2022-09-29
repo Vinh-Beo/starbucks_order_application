@@ -1,0 +1,230 @@
+﻿<ContentPage
+    x:Class="S3WAN.Views.Login.LoginView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:cus="clr-namespace:CustomControl"
+    xmlns:lang="clr-namespace:Language">
+    <Grid BackgroundColor="WhiteSmoke" RowDefinitions="Auto,*">
+        <Image
+            Grid.Row="0"
+            Margin="5"
+            Aspect="AspectFit"
+            HeightRequest="200"
+            IsOpaque="True"
+            Source="Login_Image.png"
+            VerticalOptions="End" />
+        <Frame
+            Grid.Row="1"
+            Margin="10,0"
+            Padding="0"
+            CornerRadius="20"
+            HasShadow="True"
+            HorizontalOptions="Center"
+            IsVisible="True"
+            VerticalOptions="CenterAndExpand"
+            WidthRequest="{OnIdiom Tablet={StaticResource TabletPopupDefaultSize},
+                                   Default={StaticResource DefaultPopupLargeSize}}">
+            <StackLayout Margin="{StaticResource FrameMargin}" VerticalOptions="CenterAndExpand">
+                <Label
+                    FontAttributes="Bold"
+                    FontFamily="RalewayRegular"
+                    FontSize="Title"
+                    HorizontalTextAlignment="Center"
+                    Text="Hello Again!"
+                    VerticalTextAlignment="Center" />
+                <Label
+                    FontFamily="RalewayRegular"
+                    FontSize="Title"
+                    HorizontalTextAlignment="Center"
+                    Text="We are Starbucks"
+                    VerticalTextAlignment="Center" />
+                <Frame
+                    Margin="0,10,0,0"
+                    Padding="20,0,0,0"
+                    BackgroundColor="{StaticResource Gray100Brush}"
+                    BorderColor="Gray"
+                    CornerRadius="25"
+                    HorizontalOptions="FillAndExpand">
+                    <cus:CustomImageEntry
+                        x:Name="txbUserName"
+                        Margin="0,5"
+                        BackgroundColor="Transparent"
+                        Corner="22"
+                        HeightRequest="44"
+                        HorizontalOptions="FillAndExpand"
+                        Image="User_32px.png"
+                        ImageAlignment="Left"
+                        ImageHeight="32"
+                        ImageWidth="32"
+                        IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                        IsSpellCheckEnabled="False"
+                        LineColor="{StaticResource Gray100Brush}"
+                        Opacity="0.9"
+                        Placeholder="{lang:Translate Username}"
+                        PlaceholderColor="{StaticResource PrimaryColor}"
+                        Text="{Binding UserName, Mode=TwoWay}"
+                        TextColor="{StaticResource PrimaryColor}">
+                        <Entry.Keyboard>
+                            <Keyboard x:FactoryMethod="Create">
+                                <x:Arguments>
+                                    <KeyboardFlags>None</KeyboardFlags>
+                                </x:Arguments>
+                            </Keyboard>
+                        </Entry.Keyboard>
+                    </cus:CustomImageEntry>
+                </Frame>
+                <Frame
+                    Margin="0,10,0,0"
+                    Padding="20,0,0,0"
+                    BackgroundColor="{StaticResource Gray100Brush}"
+                    BorderColor="Gray"
+                    CornerRadius="25"
+                    HorizontalOptions="FillAndExpand">
+                    <cus:CustomImageEntry
+                        x:Name="txbPassword"
+                        Margin="0,5"
+                        BackgroundColor="Transparent"
+                        HeightRequest="44"
+                        Image="Password_32px.png"
+                        ImageAlignment="Left"
+                        ImageHeight="32"
+                        ImageWidth="32"
+                        IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                        IsPassword="True"
+                        IsSpellCheckEnabled="False"
+                        LineColor="{StaticResource Gray100Brush}"
+                        Opacity="0.9"
+                        Placeholder="{lang:Translate Password}"
+                        PlaceholderColor="{StaticResource PrimaryColor}"
+                        Text="{Binding Password, Mode=TwoWay}"
+                        TextColor="{StaticResource PrimaryColor}" />
+                </Frame>
+                <Label
+                    Margin="0,0"
+                    FontFamily="RalewayRegular"
+                    FontSize="Micro"
+                    HeightRequest="14"
+                    HorizontalOptions="EndAndExpand"
+                    HorizontalTextAlignment="Center"
+                    Opacity="0.8"
+                    Text="{Binding ResponseMessage}"
+                    TextColor="{Binding ResponseOK, Converter={StaticResource BoolToColorWhiteRedConverter}}"
+                    VerticalOptions="Center"
+                    VerticalTextAlignment="Center" />
+                <StackLayout
+                    HorizontalOptions="FillAndExpand"
+                    IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                    Orientation="Horizontal">
+                    <CheckBox
+                        Margin="0,0,0,0"
+                        HeightRequest="{StaticResource ImageSize}"
+                        HorizontalOptions="Start"
+                        IsChecked="{Binding Remember, Mode=TwoWay}"
+                        IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                        VerticalOptions="Center"
+                        WidthRequest="{StaticResource ImageSize}"
+                        Color="{StaticResource PrimaryColor}" />
+                    <Label
+                        FontAttributes="Bold"
+                        FontFamily="RalewayRegular"
+                        FontSize="Small"
+                        HorizontalTextAlignment="Start"
+                        IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                        LineBreakMode="TailTruncation"
+                        Opacity="0.9"
+                        Text="{lang:Translate RememberPassword}"
+                        VerticalOptions="Center"
+                        VerticalTextAlignment="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding RememberCmd}" NumberOfTapsRequired="1" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Label
+                            x:Name="lbHelp"
+                            FontAttributes="Italic"
+                            FontFamily="RalewayRegular"
+                            FontSize="Micro"
+                            HorizontalOptions="FillAndExpand"
+                            HorizontalTextAlignment="End"
+                            IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                            LineBreakMode="TailTruncation"
+                            Opacity="0.9"
+                            VerticalOptions="CenterAndExpand"
+                            VerticalTextAlignment="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{lang:Translate Version}" />
+                                    <Span Text="{Binding VersionStr, StringFormat=': {0:c}'}" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </StackLayout>
+                </StackLayout>
+                <Frame
+                    Margin="0,0"
+                    Padding="0"
+                    BackgroundColor="#B4DCCC"
+                    CornerRadius="22"
+                    HasShadow="True"
+                    IsClippedToBounds="True"
+                    IsVisible="True">
+                    <Button
+                        x:Name="btnLogin"
+                        Margin="0,0"
+                        BackgroundColor="{StaticResource PrimaryColor}"
+                        BorderColor="{StaticResource ButtonBorderColor}"
+                        BorderWidth="{StaticResource ButtonBorderWidth}"
+                        Command="{Binding LoginCmd}"
+                        CornerRadius="{StaticResource ButtonCorner}"
+                        FontAttributes="None"
+                        FontSize="Large"
+                        HeightRequest="{StaticResource ButtonHeight}"
+                        HorizontalOptions="FillAndExpand"
+                        ImageSource="{OnPlatform iOS=Login_32px.png}"
+                        IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                        Opacity="0.9"
+                        Text="{lang:Translate LOGIN}"
+                        TextColor="{StaticResource ButtonTextColor}" />
+                </Frame>
+                <Label
+                    Margin="10"
+                    FontAttributes="None"
+                    FontFamily="RalewayRegular"
+                    FontSize="Micro"
+                    HeightRequest="20"
+                    HorizontalOptions="CenterAndExpand"
+                    HorizontalTextAlignment="Center"
+                    Opacity="0.8"
+                    Text="Copyright 2021 VinhBeo"
+                    TextColor="{StaticResource PrimaryColor}"
+                    VerticalOptions="Center"
+                    VerticalTextAlignment="Center" />
+                <Grid HorizontalOptions="FillAndExpand">
+                    <Image
+                        Grid.Column="0"
+                        Aspect="AspectFit"
+                        HeightRequest="32"
+                        IsOpaque="True"
+                        Source="facebook.png"
+                        VerticalOptions="Center" />
+                    <Image
+                        Grid.Column="1"
+                        Aspect="AspectFit"
+                        HeightRequest="32"
+                        IsOpaque="True"
+                        Source="gmail.png"
+                        VerticalOptions="Center" />
+                    <Image
+                        Grid.Column="2"
+                        Aspect="AspectFit"
+                        HeightRequest="32"
+                        IsOpaque="True"
+                        Source="phone.png"
+                        VerticalOptions="Center" />
+                </Grid>
+            </StackLayout>
+        </Frame>
+    </Grid>
+
+</ContentPage>

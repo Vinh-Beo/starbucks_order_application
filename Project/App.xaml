@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+    x:Class="S3WAN.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ani="clr-namespace:Xamanimation;assembly=Xamanimation"
+    xmlns:cv="clr-namespace:Converter"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:magicGradients="clr-namespace:MagicGradients;assembly=MagicGradients"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    ios:Application.EnableAccessibilityScalingForNamedFontSizes="False"
+    mc:Ignorable="d">
+    <Application.Resources>
+        <!--  Converter  -->
+        <cv:NotNullToBoolConverter x:Key="NotNullToBoolConverter" />
+        <cv:NullToBoolConverter x:Key="NullToBoolConverter" />
+        <cv:BoolToIsOnlineOfflineStrConverter x:Key="BoolToIsOnlineOfflineStrConverter" />
+        <cv:BoolToOnlineOfflineFromStrConverter x:Key="BoolToOnlineOfflineFromStrConverter" />
+        <cv:ToggleBoolConverter x:Key="ToggleBoolConverter" />
+        <cv:BoolToColorWhiteRedConverter x:Key="BoolToColorWhiteRedConverter" />
+        <cv:BoolToGatewayOnlineIconConverter x:Key="BoolToGatewayOnlineIconConverter" />
+        <cv:BoolToIsVirtualLineColorConverter x:Key="BoolToIsVirtualLineColorConverter" />
+        <cv:BoolToLockUnLockImageConverter x:Key="BoolToLockUnLockImageConverter" />
+        <cv:GatewayStatusToColorDisplayConverter x:Key="GatewayStatusToColorDisplayConverter" />
+        <cv:BoolToStatusIconREConverter x:Key="BoolToStatusIconREConverter" />
+        <cv:ByteSizeToKBSizeConverter x:Key="ByteSizeToKBSizeConverter" />
+        <cv:IntToOnOffForegroundColorConverter x:Key="IntToOnOffForegroundColorConverter" />
+        <cv:IntToBoolConverter x:Key="IntToBoolConverter" />
+        <cv:IntToBoolToggleConverter x:Key="IntToBoolToggleConverter" />
+        <cv:IntToListHeight200And400Converter x:Key="IntToListHeight200And400Converter" />
+        <cv:IntToColorBiggerZeroConverter x:Key="IntToColorBiggerZeroConverter" />
+        <cv:BoolToActivateOrNotColorConverter x:Key="BoolToActivateOrNotColorConverter" />
+        <cv:BoolToIsActivateOrNotStrConverter x:Key="BoolToIsActivateOrNotStrConverter" />
+        <cv:BoolToOpacityConverter x:Key="BoolToOpacityConverter" />
+        <cv:IntToColorBiggerThanValueConverter x:Key="IntToColorBiggerThanValueConverter" />
+        <cv:BoolToWhiteGrayColorConverter x:Key="BoolToWhiteGrayColorConverter" />
+        <cv:GroupEventEnumToIconConverter x:Key="GroupEventEnumToIconConverter" />
+        <cv:IntToInfoFailSuccessImageConverter x:Key="IntToInfoFailSuccessImageConverter" />
+        <cv:IntToInfoFailSuccessColorConverter x:Key="IntToInfoFailSuccessColorConverter" />
+        <cv:IntToLightStatusImgConverter x:Key="IntToLightStatusImgConverter" />
+        <cv:IntToStringNumberSignConverter x:Key="IntToStringNumberSignConverter" />
+        <cv:BoolToSyncedStrConverter x:Key="BoolToSyncedStrConverter" />
+        <cv:IntToStringHasMoreConverter x:Key="IntToStringHasMoreConverter" />
+        <cv:IntToStringHasMore9Converter x:Key="IntToStringHasMore9Converter" />
+        <cv:IntToBoolBiggerThanValueConverter x:Key="IntToBoolBiggerThanValueConverter" />
+        <cv:MultiIsSaleAndSaleStateToStartPauseImage x:Key="MultiIsSaleAndSaleStateToStartPauseImage" />
+        <cv:BoolToFinishOrNotImageConverter x:Key="BoolToFinishOrNotImageConverter" />
+        <cv:DoubleToConvertFormatConverter x:Key="DoubleToConvertFormatConverter" />
+        <cv:IntToNotColorBiggerZeroConverter x:Key="IntToNotColorBiggerZeroConverter" />
+        <cv:TypeEnumStringConverter x:Key="TypeEnumStringConverter" />
+        <cv:SizeEnumStringConverter x:Key="SizeEnumStringConverter" />
+        <cv:SizeEnumDisplayStringConverter x:Key="SizeEnumDisplayStringConverter" />
+        <cv:BoolToFavoriteColorConverter x:Key="BoolToFavoriteColorConverter" />
+        <cv:BoolToChangeTextColorConverter x:Key="BoolToChangeTextColorConverter" />
+        <cv:BoolToChangeBackgroundConverter x:Key="BoolToChangeBackgroundConverter" />
+        <!--  Animation  -->
+        <!--<ani:FadeToAnimation
+            x:Key="FadeToAnimation"
+            Opacity="0"
+            Target="{x:RelativeSource Self}"
+            Duration="2000" />-->
+
+        <Color x:Key="BarBackgroundColor">
+            WhiteSmoke
+        </Color>
+        <Color x:Key="PopupBackgroundColor">
+            #DF000000
+        </Color>
+        <Thickness x:Key="PopupMagrin">
+            44,10
+        </Thickness>
+        <Thickness x:Key="PopupMagrinLarge">
+            0,10
+        </Thickness>
+        <Color x:Key="PanelCtrlBackgroundColor">
+            #4F000000
+        </Color>
+        <!--  StackLayout  -->
+        <Color x:Key="StackLayoutBackground">
+            #3F000000
+        </Color>
+        <Color x:Key="StackLayoutBackgroundWhite">
+            White
+        </Color>
+        <x:Double x:Key="StackLayoutHeight">
+            40
+        </x:Double>
+        <!--  Activity  -->
+        <Color x:Key="ActivityColor">
+            WhiteSmoke
+        </Color>
+        <x:Double x:Key="ActivitySize">
+            16
+        </x:Double>
+        <Color x:Key="DeviceBackgroundColor">
+            #7F000000
+        </Color>
+        <Color x:Key="SceneBackgroundColor">
+            #7F000000
+        </Color>
+        <!--  Button  -->
+        <Color x:Key="ButtonBackgroundTransparent">
+            Transparent
+        </Color>
+        <Color x:Key="ButtonBackgroundColor">
+            #4F000000
+        </Color>
+        <Color x:Key="ButtonLoginColor">
+            Teal
+        </Color>
+        <Color x:Key="ButtonColor">
+            #CF274E67
+        </Color>
+        <Color x:Key="ButtonTextColor">
+            WhiteSmoke
+        </Color>
+        <Color x:Key="PrimaryColor">
+            #00623B
+        </Color>
+        <Color x:Key="ButtonBorderColor">
+            Transparent
+        </Color>
+        <x:Double x:Key="ButtonBorderWidth">
+            1
+        </x:Double>
+        <x:Double x:Key="ButtonHeight">
+            44
+        </x:Double>
+        <x:Double x:Key="ButtonHeightS">
+            32
+        </x:Double>
+        <x:Double x:Key="ButtonHeight96">
+            96
+        </x:Double>
+        <x:Int32 x:Key="ButtonCorner">
+            5
+        </x:Int32>
+        <x:Double x:Key="ButtonOpacity">
+            0.9
+        </x:Double>
+        <!--  Entry  -->
+        <Color x:Key="EntryBackgroundColor">
+            #8F000000
+        </Color>
+        <x:Double x:Key="EntryHeight">
+            44
+        </x:Double>
+        <Color x:Key="EntryTextColor">
+            WhiteSmoke
+        </Color>
+        <x:Double x:Key="EntryOpacity">
+            0.9
+        </x:Double>
+        <!--  Title  -->
+        <Color x:Key="TitleTextColor">
+            LightGray
+        </Color>
+        <Color x:Key="SeparatorColor">
+            #4FFFFFFF
+        </Color>
+        <Color x:Key="ListSeparatorColor">
+            #2F000000
+        </Color>
+        <x:Double x:Key="SeparatorOpacity">
+            0.4
+        </x:Double>
+        <Color x:Key="GradientBackgroundColorStart">
+            #AF000000
+        </Color>
+        <Color x:Key="GradientBackgroundColorEnd">
+            #DF000000
+        </Color>
+        <Color x:Key="Primary">#00623B</Color>
+        <Color x:Key="Tertiary">#FCFFFE</Color>
+        <Color x:Key="ProductImgBackground">#F3F1ED</Color>
+        <Color x:Key="Secondary">#B4DCCC</Color>
+        <Color x:Key="White">#FFFFFF</Color>
+        <Color x:Key="Black">Black</Color>
+        <Color x:Key="Gray100">#F2F2F2</Color>
+        <Color x:Key="Gray400">#4D4D4D</Color>
+        <Color x:Key="Gray500">#4C4C4C</Color>
+
+        <Color x:Key="CoffeeBg1">#F3F1ED</Color>
+        <Color x:Key="CoffeeBg2">#F5F9E0</Color>
+        <x:Array x:Key="Sizes" Type="{x:Type x:String}">
+            <x:String>Small</x:String>
+            <x:String>Medium</x:String>
+            <x:String>Large</x:String>
+        </x:Array>
+        <x:Double x:Key="SeparatorHeight">
+            1
+        </x:Double>
+        <!--  Label  -->
+        <Color x:Key="LabelTextColor">
+            WhiteSmoke
+        </Color>
+        <Color x:Key="LabelTextColorLightGray">
+            LightGray
+        </Color>
+        <Color x:Key="LabelTextColorGray">
+            #C6CDD7
+        </Color>
+        <Color x:Key="Gray100Brush">
+            #F2F2F2
+        </Color>
+        <x:Double x:Key="LabelOpacity">
+            1
+        </x:Double>
+        <x:Double x:Key="LabelSize24">
+            24
+        </x:Double>
+        <x:Double x:Key="LabelSize32">
+            32
+        </x:Double>
+        <!--  Frame  -->
+        <x:Double x:Key="FrameOpacity">
+            0.9
+        </x:Double>
+        <Thickness x:Key="FramePadding">
+            20
+        </Thickness>
+        <Thickness x:Key="FrameMargin">
+            20,10
+        </Thickness>
+        <x:Double x:Key="PhonePopupSmallSize">
+            250
+        </x:Double>
+        <x:Double x:Key="PhonePopupDefaultSize">
+            325
+        </x:Double>
+        <x:Double x:Key="PhonePopupLargeSize">
+            400
+        </x:Double>
+        <x:Double x:Key="PhonePopupVeryLargeSize">
+            500
+        </x:Double>
+        <x:Double x:Key="PhonePopupSuperSize">
+            600
+        </x:Double>
+        <x:Double x:Key="TabletPopupSmallSize">
+            200
+        </x:Double>
+        <x:Double x:Key="TabletPopupDefaultSize">
+            350
+        </x:Double>
+        <x:Double x:Key="TabletPopupLargeSize">
+            450
+        </x:Double>
+        <x:Double x:Key="TabletPopupVeryLargeSize">
+            600
+        </x:Double>
+        <x:Double x:Key="TabletPopupSuperSize">
+            800
+        </x:Double>
+        <x:Double x:Key="DefaultPopupSmallSize">
+            200
+        </x:Double>
+        <x:Double x:Key="DefaultPopupDefaultSize">
+            350
+        </x:Double>
+        <x:Double x:Key="DefaultPopupLargeSize">
+            450
+        </x:Double>
+        <x:Double x:Key="DefaultPopupVeryLargeSize">
+            550
+        </x:Double>
+        <x:Double x:Key="DefaultPopupSuperSize">
+            650
+        </x:Double>
+        <x:Single x:Key="FrameCornerRadius">
+            20
+        </x:Single>
+        <x:Single x:Key="FrameCornerSharp">
+            10
+        </x:Single>
+        <Color x:Key="FrameBackgroundColor">
+            #AF3E9CBD
+        </Color>
+        <Color x:Key="FrameOutlineColor">
+            Teal
+        </Color>
+        <Color x:Key="HeaderBackgroundColor">
+            #AF252526
+        </Color>
+        <x:Double x:Key="HeaderBackHeight">
+            44
+        </x:Double>
+        <!--  Image  -->
+        <x:Double x:Key="ImageScale">
+            0.8
+        </x:Double>
+        <x:Double x:Key="ImageSize24">
+            24
+        </x:Double>
+        <x:Double x:Key="ImageSize">
+            32
+        </x:Double>
+        <x:Double x:Key="ImageSize40">
+            40
+        </x:Double>
+        <x:Double x:Key="ImageSize96">
+            96
+        </x:Double>
+        <x:Double x:Key="ImageOpacity">
+            0.8
+        </x:Double>
+        <x:Double x:Key="PhoneListMinHeightSize">
+            150
+        </x:Double>
+        <x:Double x:Key="TabletListMinHeightSize">
+            250
+        </x:Double>
+        <x:Double x:Key="DefaultListMinHeightSize">
+            250
+        </x:Double>
+        <x:Double x:Key="PhonePopupMinHeightSize">
+            150
+        </x:Double>
+        <x:Double x:Key="TabletPopupMinHeightSize">
+            250
+        </x:Double>
+        <x:Double x:Key="DefaultPopupMinHeightSize">
+            250
+        </x:Double>
+        <x:Double x:Key="PhoneScrolllMinHeightLargeSize">
+            250
+        </x:Double>
+        <x:Double x:Key="TabletScrolllMinHeightLargeSize">
+            400
+        </x:Double>
+        <x:Double x:Key="DefaultScrolllMinHeightLargeSize">
+            300
+        </x:Double>
+        <x:Double x:Key="PhoneScrolllMinHeightNormalSize">
+            200
+        </x:Double>
+        <x:Double x:Key="TabletScrolllMinHeightNormalSize">
+            400
+        </x:Double>
+        <x:Double x:Key="DefaultScrolllMinHeightNormalSize">
+            225
+        </x:Double>
+        <x:Double x:Key="TabletPopupDefaultHeightSize">
+            600
+        </x:Double>
+        <x:Double x:Key="PhonePopupDefaultHeightSize">
+            400
+        </x:Double>
+        <x:Double x:Key="DefaultPopupDefaultHeightSize">
+            600
+        </x:Double>
+        <x:Double x:Key="PhonePopupBSPHeightSize">
+            400
+        </x:Double>
+        <x:Double x:Key="TabletPopupBSPHeightSize">
+            450
+        </x:Double>
+        <x:Double x:Key="DefaultPopupBSPHeightSize">
+            450
+        </x:Double>
+        <x:Double x:Key="PhonePopupBSPWidthSize">
+            700
+        </x:Double>
+        <x:Double x:Key="TabletPopupBSPWidthSize">
+            800
+        </x:Double>
+        <x:Double x:Key="DefaultPopupBSPWidthSize">
+            800
+        </x:Double>
+        <!--<ControlTemplate x:Key="PageWithGradient">
+            <Grid>
+                <magicGradients:GradientView VerticalOptions="FillAndExpand">
+                    <magicGradients:GradientView.GradientSource>
+                        <magicGradients:CssGradientSource>
+                            <x:String>
+                                <![CDATA[
+                                            linear-gradient(326deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 6%,rgba(157, 157, 157,0.04) 6%, rgba(157, 157, 157,0.04) 29%,rgba(81,83,83, 0.04) 29%, rgba(81,83,83, 0.04) 100%),linear-gradient(164deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 36%,rgba(157, 157, 157,0.04) 36%, rgba(157, 157, 157,0.04) 61%,rgba(81,83,83, 0.04) 61%, rgba(81,83,83, 0.04) 100%),linear-gradient(336deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 64%,rgba(157, 157, 157,0.04) 64%, rgba(157, 157, 157,0.04) 69%,rgba(81,83,83, 0.04) 69%, rgba(81,83,83, 0.04) 100%),linear-gradient(90deg, rgb(1,13,17),rgb(1,13,17))
+                                        ]]>
+                            </x:String>
+                        </magicGradients:CssGradientSource>
+                    </magicGradients:GradientView.GradientSource>
+                </magicGradients:GradientView>
+                <ContentPresenter />
+            </Grid>
+        </ControlTemplate>-->
+        <ControlTemplate x:Key="PageWithGradient">
+            <Grid>
+                <magicGradients:GradientView VerticalOptions="FillAndExpand">
+                    <magicGradients:GradientView.GradientSource>
+                        <magicGradients:CssGradientSource>
+                            <x:String>
+                                <![CDATA[
+                                            linear-gradient(306deg, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 33.333%,rgba(85, 85, 85, 0.05) 33.333%, rgba(85, 85, 85, 0.05) 66.666%,rgba(255, 255, 255, 0.05) 66.666%, rgba(255, 255, 255, 0.05) 99.999%),linear-gradient(353deg, rgba(81, 81, 81, 0.05) 0%, rgba(81, 81, 81, 0.05) 33.333%,rgba(238, 238, 238, 0.05) 33.333%, rgba(238, 238, 238, 0.05) 66.666%,rgba(32, 32, 32, 0.05) 66.666%, rgba(32, 32, 32, 0.05) 99.999%),linear-gradient(140deg, rgba(192, 192, 192, 0.05) 0%, rgba(192, 192, 192, 0.05) 33.333%,rgba(109, 109, 109, 0.05) 33.333%, rgba(109, 109, 109, 0.05) 66.666%,rgba(30, 30, 30, 0.05) 66.666%, rgba(30, 30, 30, 0.05) 99.999%),linear-gradient(189deg, rgba(77, 77, 77, 0.05) 0%, rgba(77, 77, 77, 0.05) 33.333%,rgba(55, 55, 55, 0.05) 33.333%, rgba(55, 55, 55, 0.05) 66.666%,rgba(145, 145, 145, 0.05) 66.666%, rgba(145, 145, 145, 0.05) 99.999%),linear-gradient(90deg, rgb(9, 201, 186),rgb(18, 131, 221))
+                                        ]]>
+                            </x:String>
+                        </magicGradients:CssGradientSource>
+                    </magicGradients:GradientView.GradientSource>
+                </magicGradients:GradientView>
+                <ContentPresenter />
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="TabPageWithGradient">
+            <Grid>
+                <magicGradients:GradientView VerticalOptions="FillAndExpand">
+                    <magicGradients:GradientView.GradientSource>
+                        <magicGradients:CssGradientSource>
+                            <x:String>
+                                <![CDATA[2%, rgba(148, 148, 148,0.05) 35%,rgba(202, 202, 202,0.05) 35%, rgba(202, 202, 202,0.05) 51%,rgba(181, 181, 181,0.05) 51%, rgba(181, 181, 181,0.05) 100%),linear-gradient(182deg, rgb(0,0,0),rgb(0,0,
+                                linear-gradient(306deg, rgba(77, 77, 77,0.05) 0%, rgba(77, 77, 77,0.05) 25%,rgba(42, 42, 42,0.05) 25%, rgba(42, 42, 42,0.05) 38%,rgba(223, 223, 223,0.05) 38%, rgba(223, 223, 223,0.05) 75%,rgba(36, 36, 36,0.05) 75%, rgba(36, 36, 36,0.05) 100%),linear-gradient(134deg, rgba(128, 128, 128,0.05) 0%, rgba(128, 128, 128,0.05) 34%,rgba(212, 212, 212,0.05) 34%, rgba(212, 212, 212,0.05) 57%,rgba(25, 25, 25,0.05) 57%, rgba(25, 25, 25,0.05) 89%,rgba(135, 135, 135,0.05) 89%, rgba(135, 135, 135,0.05) 100%),linear-gradient(331deg, rgba(55, 55, 55,0.05) 0%, rgba(55, 55, 55,0.05) 14%,rgba(209, 209, 209,0.05) 14%, rgba(209, 209, 209,0.05) 60%,rgba(245, 245, 245,0.05) 60%, rgba(245, 245, 245,0.05) 69%,rgba(164, 164, 164,0.05) 69%, rgba(164, 164, 164,0.05) 100%),linear-gradient(339deg, rgba(248, 248, 248,0.05) 0%, rgba(248, 248, 248,0.05) 32%,rgba(148, 148, 148,0.05) 30))
+                                        ]]>
+                            </x:String>
+                        </magicGradients:CssGradientSource>
+                    </magicGradients:GradientView.GradientSource>
+                </magicGradients:GradientView>
+                <ContentPresenter />
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="TabPageWithGradientLight">
+            <Grid>
+                <magicGradients:GradientView VerticalOptions="FillAndExpand">
+                    <magicGradients:GradientView.GradientSource>
+                        <magicGradients:CssGradientSource>
+                            <x:String>
+                                <![CDATA[
+                                    radial-gradient(circle at center center, transparent 0%,rgb(33,33,33) 99%), rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33))
+                                ]]>
+                            </x:String>
+                        </magicGradients:CssGradientSource>
+                    </magicGradients:GradientView.GradientSource>
+                </magicGradients:GradientView>
+                <ContentPresenter />
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="TabPageWithGradient1">
+            <Grid>
+                <magicGradients:GradientView VerticalOptions="FillAndExpand">
+                    <magicGradients:GradientView.GradientSource>
+                        <magicGradients:CssGradientSource>
+                            <x:String>
+                                <![CDATA[
+                                    repeating-linear-gradient(225deg, hsla(264,0%,88%,0.03) 0px, hsla(264,0%,88%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(135deg, hsla(264,0%,88%,0.03) 0px, hsla(264,0%,88%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(67.5deg, hsla(264,0%,88%,0.03) 0px, hsla(264,0%,88%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(225deg, hsla(264,0%,88%,0.03) 0px, hsla(264,0%,88%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(135deg, hsla(264,0%,88%,0.03) 0px, hsla(264,0%,88%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(264,0%,88%,0.03) 0px, hsla(264,0%,88%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(112.5deg, hsla(264,0%,88%,0.03) 0px, hsla(264,0%,88%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(135deg, hsla(264,0%,88%,0.03) 0px, hsla(264,0%,88%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(264,0%,88%,0.03) 0px, hsla(264,0%,88%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(135deg, hsla(264,0%,88%,0.03) 0px, hsla(264,0%,88%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(22.5deg, hsla(264,0%,88%,0.03) 0px, hsla(264,0%,88%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(225deg, hsla(264,0%,88%,0.03) 0px, hsla(264,0%,88%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(157.5deg, hsla(264,0%,88%,0.03) 0px, hsla(264,0%,88%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(67.5deg, hsla(264,0%,88%,0.03) 0px, hsla(264,0%,88%,0.03) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(67.5deg, hsla(264,0%,88%,0.03) 0px, hsla(264,0%,88%,0.03) 1px,transparent 1px, transparent 12px),linear-gradient(180deg, rgb(39,3,62),rgb(2,43,48))
+                                ]]>
+                            </x:String>
+                        </magicGradients:CssGradientSource>
+                    </magicGradients:GradientView.GradientSource>
+                </magicGradients:GradientView>
+                <ContentPresenter />
+            </Grid>
+        </ControlTemplate>
+        <Style x:Key="EllipseBorderStyle" TargetType="Frame">
+            <Setter Property="Background" Value="{StaticResource Gray100Brush}" />
+            <Setter Property="HeightRequest" Value="45" />
+            <Setter Property="WidthRequest" Value="45" />
+            <Setter Property="OutlineColor" Value="Red" />
+            <Setter Property="CornerRadius" Value="15" />
+            <Setter Property="VerticalOptions" Value="Center" />
+            <Setter Property="Padding" Value="13" />
+        </Style>
+
+    </Application.Resources>
+</Application>

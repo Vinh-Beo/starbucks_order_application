@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="S3WAN.Views.Common.WebDetailView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <StackLayout Padding="0" Spacing="0">
+        <StackLayout
+            Margin="0"
+            Padding="0"
+            BackgroundColor="{x:StaticResource FrameBackgroundColor}">
+            <StackLayout HeightRequest="{StaticResource HeaderBackHeight}" Orientation="Horizontal">
+                <ImageButton
+                    Grid.Column="0"
+                    Margin="5"
+                    BackgroundColor="Transparent"
+                    Command="{Binding BackCmd}"
+                    HeightRequest="{StaticResource ButtonHeightS}"
+                    HorizontalOptions="Start"
+                    Source="Back.png"
+                    VerticalOptions="CenterAndExpand" />
+                <Label FontFamily="RalewayRegular"
+                    HorizontalOptions="Start"
+                    HorizontalTextAlignment="Start"
+                    Text="{Binding Title}"
+                    TextColor="{StaticResource LabelTextColor}"
+                    VerticalOptions="Center"
+                    VerticalTextAlignment="Center">
+                    <!--<Label.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="BackLabel_Clicked" />
+                    </Label.GestureRecognizers>-->
+                </Label>
+                <ActivityIndicator
+                    FlowDirection="MatchParent"
+                    HeightRequest="{StaticResource ActivitySize}"
+                    HorizontalOptions="End"
+                    IsRunning="{Binding IsBusy}"
+                    IsVisible="{Binding IsBusy}"
+                    VerticalOptions="Center"
+                    WidthRequest="{StaticResource ActivitySize}"
+                    Color="{StaticResource ActivityColor}" />
+            </StackLayout>
+        </StackLayout>
+        <!--<StackLayout
+            Margin="0"
+            Padding="20,10,20,10"
+            BackgroundColor="#BF000000"
+            HorizontalOptions="FillAndExpand"
+            Orientation="Horizontal"
+            Spacing="0">
+            <Image
+                Margin="0,0,10,0"
+                HeightRequest="{StaticResource ImageSize24}"
+                HorizontalOptions="Start"
+                Source="Back_32px.png">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Back_Clicked" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Label FontFamily="RalewayRegular"
+                Margin="5,0"
+                HorizontalOptions="Start"
+                HorizontalTextAlignment="Start"
+                Text="{Binding Title}"
+                TextColor="{StaticResource LabelTextColor}"
+                VerticalOptions="Center"
+                VerticalTextAlignment="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="BackLabel_Clicked" />
+                </Label.GestureRecognizers>
+            </Label>
+            <ActivityIndicator
+                FlowDirection="MatchParent"
+                HeightRequest="{StaticResource ActivitySize}"
+                HorizontalOptions="Center"
+                IsRunning="{Binding IsBusy}"
+                IsVisible="{Binding IsBusy}"
+                VerticalOptions="Center"
+                WidthRequest="{StaticResource ActivitySize}"
+                Color="{StaticResource ActivityColor}" />
+        </StackLayout>-->
+        <ScrollView
+            Margin="0"
+            Padding="0"
+            BackgroundColor="#2F000000"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <WebView
+                Margin="0"
+                Navigated="Handle_Navigated"
+                Source="{Binding Url}" />
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

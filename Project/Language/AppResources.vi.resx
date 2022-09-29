@@ -1,0 +1,1004 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NoAnswer" xml:space="preserve">
+		<value>Không xác định</value>
+	</data>
+  <data name="ON" xml:space="preserve">
+		<value>BẬT</value>
+	</data>
+  <data name="OFF" xml:space="preserve">
+		<value>TẮT</value>
+	</data>
+  <data name="TotalTimeOn" xml:space="preserve">
+		<value>Tổng thời gian bật</value>
+	</data>
+  <data name="Setup" xml:space="preserve">
+		<value>Thiết lập</value>
+	</data>
+  <data name="PleaseLogin" xml:space="preserve">
+		<value>Đăng nhập</value>
+	</data>
+  <data name="S3WANTitle" xml:space="preserve">
+		<value>S3WAN giải pháp thành phố thông minh</value>
+	</data>
+  <data name="Username" xml:space="preserve">
+		<value>Tên đăng nhập</value>
+	</data>
+  <data name="Password" xml:space="preserve">
+		<value>Mật khẩu</value>
+	</data>
+  <data name="LOGIN" xml:space="preserve">
+		<value>ĐĂNG NHẬP</value>
+	</data>
+  <data name="Version" xml:space="preserve">
+		<value>Phiên bản</value>
+	</data>
+  <data name="RememberPassword" xml:space="preserve">
+		<value>Nhớ mật khẩu</value>
+	</data>
+  <data name="Help" xml:space="preserve">
+		<value>Trợ giúp</value>
+	</data>
+  <data name="DoingLogin" xml:space="preserve">
+		<value>Đang đăng nhập...</value>
+	</data>
+  <data name="LoginOK" xml:space="preserve">
+		<value>Đăng nhập thành công</value>
+	</data>
+  <data name="LoginFailPleaseRecheck" xml:space="preserve">
+		<value>Đăng nhập thất bại. Vui lòng kiểm tra...</value>
+	</data>
+  <data name="PleaseConfigImportantSetting" xml:space="preserve">
+		<value>Vui lòng thiết lập các thông tin quan trọng...</value>
+	</data>
+  <data name="NetworkErrorPleaseRecheck" xml:space="preserve">
+		<value>Lỗi kết nối mạng. Vui lòng kiểm tra...</value>
+	</data>
+  <data name="UsernameOrPasswordIsWrong" xml:space="preserve">
+		<value>Tên đăng nhập hoặc mật khẩu không đúng. Vui lòng kiểm tra...</value>
+	</data>
+  <data name="UserIsExpiredPleaseContactAdmin" xml:space="preserve">
+		<value>Tài khoản hết hạn. Vui lòng liên hệ admin để được hỗ trợ...</value>
+	</data>
+  <data name="UserIsLockedPleaseContactAdmin" xml:space="preserve">
+		<value>Tài khoản bị khóa. Vui lòng liên hệ admin để được hỗ trợ...</value>
+	</data>
+  <data name="Login_OKThenLoadAllData" xml:space="preserve">
+		<value>Đăng nhập thành công. Bắt đầu tải dữ liệu...</value>
+	</data>
+  <data name="Login_LoadDeviceInfoFail" xml:space="preserve">
+		<value>Không thể tải dữ liệu thiết bị. Vui lòng kiểm tra...</value>
+	</data>
+  <data name="Login_LoadUserInfoFail" xml:space="preserve">
+		<value>Không thể tải dữ liệu tài khoản. Vui lòng kiểm tra...</value>
+	</data>
+  <data name="Device" xml:space="preserve">
+		<value>Thiết bị</value>
+	</data>
+  <data name="Area" xml:space="preserve">
+		<value>Khu vực</value>
+	</data>
+  <data name="Script" xml:space="preserve">
+		<value>Kịch bản</value>
+	</data>
+  <data name="Notification" xml:space="preserve">
+		<value>Thông báo</value>
+	</data>
+  <data name="Setting" xml:space="preserve">
+		<value>Thiết lập</value>
+	</data>
+  <data name="FindGatewayLineDevice" xml:space="preserve">
+		<value>Tìm kiếm gateway, tuyến, đèn,...</value>
+	</data>
+  <data name="TotalGateways" xml:space="preserve">
+		<value>Tổng số gateway</value>
+	</data>
+  <data name="Code" xml:space="preserve">
+		<value>Mã số</value>
+	</data>
+  <data name="TotalLines" xml:space="preserve">
+		<value>Tổng số tuyến</value>
+	</data>
+  <data name="DetailInformation" xml:space="preserve">
+		<value>Thông tin chi tiết</value>
+	</data>
+  <data name="Name" xml:space="preserve">
+		<value>Tên</value>
+	</data>
+  <data name="Description" xml:space="preserve">
+		<value>Mô tả</value>
+	</data>
+  <data name="ProductCode" xml:space="preserve">
+		<value>Mã số</value>
+	</data>
+  <data name="Serial" xml:space="preserve">
+		<value>Serial</value>
+	</data>
+  <data name="Temperature" xml:space="preserve">
+		<value>Nhiệt độ</value>
+	</data>
+  <data name="WorkingTime" xml:space="preserve">
+		<value>Thời gian hoạt động</value>
+	</data>
+  <data name="Status" xml:space="preserve">
+		<value>Trạng thái</value>
+	</data>
+  <data name="Hours" xml:space="preserve">
+		<value>giờ</value>
+	</data>
+  <data name="Online" xml:space="preserve">
+		<value>Đang kết nối</value>
+	</data>
+  <data name="Offline" xml:space="preserve">
+		<value>Mất kết nối</value>
+	</data>
+  <data name="LastUpdateTime" xml:space="preserve">
+		<value>Cập nhật lần cuối</value>
+	</data>
+  <data name="OnlineFrom" xml:space="preserve">
+		<value>Kết nối từ lúc</value>
+	</data>
+  <data name="OfflineAt" xml:space="preserve">
+		<value>Mất kết nối lúc</value>
+	</data>
+  <data name="Control" xml:space="preserve">
+		<value>Điều khiển</value>
+	</data>
+  <data name="NotifyAndError" xml:space="preserve">
+		<value>Thông báo và lỗi</value>
+	</data>
+  <data name="PowerMeter" xml:space="preserve">
+		<value>Đồng hồ đo điện</value>
+	</data>
+  <data name="OutputScheduler" xml:space="preserve">
+		<value>Lịch trình ngõ ra</value>
+	</data>
+  <data name="LightAndDeviceScheduler" xml:space="preserve">
+		<value>Lịch trình đèn và thiết bị</value>
+	</data>
+  <data name="CheckingScheduler" xml:space="preserve">
+		<value>Lịch trình kiểm tra</value>
+	</data>
+  <data name="TotalTimeOn_Duplicate[1]" xml:space="preserve">
+		<value>Tổng thời gian bật</value>
+	</data>
+  <data name="Back" xml:space="preserve">
+		<value>Quay lại</value>
+	</data>
+  <data name="Close" xml:space="preserve">
+		<value>Đóng</value>
+	</data>
+  <data name="TotalLines_Duplicate[1]" xml:space="preserve">
+		<value>Tổng số tuyến</value>
+	</data>
+  <data name="TotalLights" xml:space="preserve">
+		<value>Tổng số đèn</value>
+	</data>
+  <data name="Index" xml:space="preserve">
+		<value>Số thứ tự</value>
+	</data>
+  <data name="Type" xml:space="preserve">
+		<value>Loại</value>
+	</data>
+  <data name="LineIndex" xml:space="preserve">
+		<value>Tuyến đèn thứ</value>
+	</data>
+  <data name="At" xml:space="preserve">
+		<value>Lúc</value>
+	</data>
+  <data name="TemperatureIsOver" xml:space="preserve">
+		<value>Nhiệt độ thiết bị vượt ngưỡng</value>
+	</data>
+  <data name="TemperatureIsGoingNormal" xml:space="preserve">
+		<value>Nhiệt độ thiết bị bình thường</value>
+	</data>
+  <data name="CurrentIsOver" xml:space="preserve">
+		<value>Dòng điện thiết bị vượt ngưỡng</value>
+	</data>
+  <data name="CurrentIsGoingNormal" xml:space="preserve">
+		<value>Dòng điện thiết bị bình thường</value>
+	</data>
+  <data name="DeviceOnButNoCurrent" xml:space="preserve">
+		<value>Thiết bị bật nhưng không có dòng tải</value>
+	</data>
+  <data name="DeviceOnIsGoingNormal" xml:space="preserve">
+		<value>Thiết bị đã bật bình thường</value>
+	</data>
+  <data name="DeviceUsingByUnStableInput" xml:space="preserve">
+		<value>Thiết bị đang được cấp nguồn không ổn định</value>
+	</data>
+  <data name="DeviceUsingByLowInput" xml:space="preserve">
+		<value>Thiết bị đang được cấp nguồn điện áp thấp</value>
+	</data>
+  <data name="DeviceUsingByHighInput" xml:space="preserve">
+		<value>Thiết bị đang được cấp nguồn điện áp cao</value>
+	</data>
+  <data name="DeviceReturnNormalInput" xml:space="preserve">
+		<value>Nguồn cung cấp thiết bị trở lại bình thường</value>
+	</data>
+  <data name="DeviceNotResponseWhenCheck" xml:space="preserve">
+		<value>Thiết bị không phản hồi khi hệ thống kiểm tra</value>
+	</data>
+  <data name="OutputChannelOnButNoVoltage" xml:space="preserve">
+		<value>Ngõ ra bật nhưng không có điện</value>
+	</data>
+  <data name="OutputChannelOffButHasVoltage" xml:space="preserve">
+		<value>Ngõ ra tắt nhưng vẫn còn điện</value>
+	</data>
+  <data name="OutputChannelIsOK" xml:space="preserve">
+		<value>Ngõ ra vận hành bình thường trở lại</value>
+	</data>
+  <data name="DeviceIsPowerOn" xml:space="preserve">
+		<value>Thiết bị được bật nguồn</value>
+	</data>
+  <data name="DeviceIsReset" xml:space="preserve">
+		<value>Thiết bị được khởi động lại</value>
+	</data>
+  <data name="GatewayChannel" xml:space="preserve">
+		<value>Kênh gateway</value>
+	</data>
+  <data name="DeviceHasNoAnyNotificationsOrErrors" xml:space="preserve">
+		<value>Thiết bị không có bất cứ thông báo hay lỗi nào</value>
+	</data>
+  <data name="VoltageP1" xml:space="preserve">
+		<value>Điện áp pha 1</value>
+	</data>
+  <data name="VoltageP2" xml:space="preserve">
+		<value>Điện áp pha 2</value>
+	</data>
+  <data name="VoltageP3" xml:space="preserve">
+		<value>Điện áp pha 3</value>
+	</data>
+  <data name="CurrentP1" xml:space="preserve">
+		<value>Dòng điện pha 1</value>
+	</data>
+  <data name="CurrentP2" xml:space="preserve">
+		<value>Dòng điện pha 2</value>
+	</data>
+  <data name="CurrentP3" xml:space="preserve">
+		<value>Dòng điện pha 3</value>
+	</data>
+  <data name="PowerP1" xml:space="preserve">
+		<value>Công suất pha 1</value>
+	</data>
+  <data name="PowerP2" xml:space="preserve">
+		<value>Công suất pha 2</value>
+	</data>
+  <data name="PowerP3" xml:space="preserve">
+		<value>Công suất pha 3</value>
+	</data>
+  <data name="PowerTotal" xml:space="preserve">
+		<value>Công suất tổng</value>
+	</data>
+  <data name="Frequency" xml:space="preserve">
+		<value>Tần số</value>
+	</data>
+  <data name="TotalConsumption" xml:space="preserve">
+		<value>Điện năng tiêu thụ</value>
+	</data>
+  <data name="Cancel" xml:space="preserve">
+		<value>Hủy</value>
+	</data>
+  <data name="Update" xml:space="preserve">
+		<value>Cập nhật</value>
+	</data>
+  <data name="Yes" xml:space="preserve">
+		<value>Có</value>
+	</data>
+  <data name="No" xml:space="preserve">
+		<value>Không</value>
+	</data>
+  <data name="DeviceSetup" xml:space="preserve">
+		<value>Thiết lập thiết bị</value>
+	</data>
+  <data name="ChangeNameAndDes" xml:space="preserve">
+		<value>Đổi tên và mô tả</value>
+	</data>
+  <data name="ScanDevice" xml:space="preserve">
+		<value>Quét để học thiết bị</value>
+	</data>
+  <data name="ControlHistory" xml:space="preserve">
+		<value>Lịch sử điều khiển</value>
+	</data>
+  <data name="DeviceName" xml:space="preserve">
+		<value>Tên thiết bị</value>
+	</data>
+  <data name="DeviceDescription" xml:space="preserve">
+		<value>Mô tả thiết bị</value>
+	</data>
+  <data name="ChangeName" xml:space="preserve">
+		<value>Đổi tên</value>
+	</data>
+  <data name="ChangeDescription" xml:space="preserve">
+		<value>Cập nhật mô tả</value>
+	</data>
+  <data name="DoingUpdateNewName" xml:space="preserve">
+		<value>Đang cập nhật tên mới...</value>
+	</data>
+  <data name="DoingUpdateNewDescription" xml:space="preserve">
+		<value>Đang cập nhật mô tả mới...</value>
+	</data>
+  <data name="SorryYouHaveNoPermissionToDoThisAction" xml:space="preserve">
+		<value>Xin lỗi! Bạn không đủ quyền để thực hiện hành động này</value>
+	</data>
+  <data name="SorryUnknownError" xml:space="preserve">
+		<value>Xin lỗi! Có lỗi không xác đinh. Vui lòng kiểm tra...</value>
+	</data>
+  <data name="ScanAndSetup" xml:space="preserve">
+		<value>Quét và thiết lập</value>
+	</data>
+  <data name="Line" xml:space="preserve">
+		<value>Tuyến</value>
+	</data>
+  <data name="TotalDevices" xml:space="preserve">
+		<value>Tổng số thiết bị</value>
+	</data>
+  <data name="SetAnotherDevice" xml:space="preserve">
+		<value>Thiết lập thiết bị khác</value>
+	</data>
+  <data name="ScanDeviceHint" xml:space="preserve">
+		<value>Quét và chờ thiết bị phản hồi thông tin. Sau đó chọn thiết bị cần thiết lập và điều khiển thử để xác nhận đúng thiết bị. Sau khi xác nhận, nhấn thiết lập ID mới. Nếu muốn thiết lập ID khác, Chọn "Thiết lập thiết bị khác" và nhập ID cần thiết lập</value>
+	</data>
+  <data name="DevicePasswordHint" xml:space="preserve">
+		<value>Vì lý do bảo mật, vui lòng thiết lập mật khẩu thiết bị sau khi thiết lập ID thành công để khóa thiết lập. Mật khẩu là số từ 0 (không mật khẩu) đến 999999. Sau khi thiết lập mật khẩu, lần quét và thiết lập ID sau phải nhập lại mật khẩu cũ</value>
+	</data>
+  <data name="SetID" xml:space="preserve">
+		<value>Thiết lập</value>
+	</data>
+  <data name="AddNewLightLine" xml:space="preserve">
+		<value>Thêm tuyến đèn mới</value>
+	</data>
+  <data name="SyncLightLineToGateway" xml:space="preserve">
+		<value>Đồng bộ tuyến đèn</value>
+	</data>
+  <data name="SetupGateway" xml:space="preserve">
+		<value>Thiết lập gateway</value>
+	</data>
+  <data name="SetLocation" xml:space="preserve">
+		<value>Thiết lập vị trí</value>
+	</data>
+  <data name="AddNewVirtualLine" xml:space="preserve">
+		<value>Thêm tuyến đèn "ảo" mới</value>
+	</data>
+  <data name="Advance" xml:space="preserve">
+		<value>Nâng cao</value>
+	</data>
+  <data name="DeleteGateway" xml:space="preserve">
+		<value>Xóa gateway</value>
+	</data>
+  <data name="DeleteGwWarning" xml:space="preserve">
+		<value>Bạn thật sự muốn xóa gateway này?
+1. Xóa gateway thì sẽ xóa tất cả các tuyến đèn và đèn có liên quan
+2. Tất cả cấu hình của gateway sẽ bị xóa vĩnh viễn
+3. Các phân quyền tài khoản đến gateway sẽ bị vô hiệu</value>
+	</data>
+  <data name="Warning" xml:space="preserve">
+		<value>Cảnh báo</value>
+	</data>
+  <data name="Delete" xml:space="preserve">
+		<value>Xóa</value>
+	</data>
+  <data name="InputSerial" xml:space="preserve">
+		<value>Nhập mã số</value>
+	</data>
+  <data name="ScanQRCode" xml:space="preserve">
+		<value>Quét mã QR</value>
+	</data>
+  <data name="Check" xml:space="preserve">
+		<value>Kiểm tra</value>
+	</data>
+  <data name="InputSerialDescription" xml:space="preserve">
+		<value>Mã số được in trên tem đính kèm thiết bị. Nếu không thể tìm thấy, vui lòng liên hệ nhà sản xuất để đc hỗ trợ</value>
+	</data>
+  <data name="GatewayIsNotExistPleaseRecheck" xml:space="preserve">
+		<value>Gateway không tồn tại hoặc mã số không hợp lệ. Vui lòng kiểm tra...</value>
+	</data>
+  <data name="DoingCheckSerial" xml:space="preserve">
+		<value>Đang kiểm tra mã số. Vui lòng đợi...</value>
+	</data>
+  <data name="DeviceIsValid" xml:space="preserve">
+		<value>Thiết bị hợp lệ</value>
+	</data>
+  <data name="AddNew" xml:space="preserve">
+		<value>Thêm mới</value>
+	</data>
+  <data name="AddNewGatewayIsOK" xml:space="preserve">
+		<value>Thêm mới gateway thành công</value>
+	</data>
+  <data name="SetName" xml:space="preserve">
+		<value>Đặt tên</value>
+	</data>
+  <data name="SetIndex" xml:space="preserve">
+		<value>Đặt số thứ tự</value>
+	</data>
+  <data name="Next" xml:space="preserve">
+		<value>Tiếp</value>
+	</data>
+  <data name="SetTotalDimerLight" xml:space="preserve">
+		<value>Thiết lập số lượng đèn dimer</value>
+	</data>
+  <data name="SetTotalTimer" xml:space="preserve">
+		<value>Thiết lập số lượng bộ hẹn giờ</value>
+	</data>
+  <data name="TotalTimers" xml:space="preserve">
+		<value>Tổng số bộ hẹn giờ</value>
+	</data>
+  <data name="DoingAddNewLightLine" xml:space="preserve">
+		<value>Đang thêm mới tuyến đèn...</value>
+	</data>
+  <data name="CreateNewLightLineOK" xml:space="preserve">
+		<value>Tạo mới tuyến đèn thành công</value>
+	</data>
+  <data name="PleaseSelectAnotherLineIndex" xml:space="preserve">
+		<value>Vui lòng chọn số thứ tự tuyến đèn khác</value>
+	</data>
+  <data name="LineName" xml:space="preserve">
+		<value>Tên tuyến</value>
+	</data>
+  <data name="LineDescription" xml:space="preserve">
+		<value>Mô tả tuyến</value>
+	</data>
+  <data name="UpdateDeviceOnLine" xml:space="preserve">
+		<value>Cập nhật thiết bị trên tuyến</value>
+	</data>
+  <data name="DoingUpdateDeviceOnLine" xml:space="preserve">
+		<value>Đang cập nhật tổng số thiết bị trên tuyến...</value>
+	</data>
+  <data name="UpdateDeviceOnLineOK" xml:space="preserve">
+		<value>Cập nhật thiết bị trên tuyến thành công</value>
+	</data>
+  <data name="SetNewIDOK" xml:space="preserve">
+		<value>Thiết lập ID mới thành công</value>
+	</data>
+  <data name="SetNewIDFailPleaseRecheck" xml:space="preserve">
+		<value>Thiết lập ID mới thất bại. Vui lòng kiểm tra...</value>
+	</data>
+  <data name="Management" xml:space="preserve">
+		<value>Quản lý</value>
+	</data>
+  <data name="DeleteAll" xml:space="preserve">
+		<value>Xóa tất cả</value>
+	</data>
+  <data name="DeleteDvNotifyWarning" xml:space="preserve">
+		<value>1. Xóa tất cả xóa vĩnh viễn và không thể khôi phục lại nội dung thông báo và lỗi
+2. Chỉ xóa các thông báo và lỗi đến thời điểm hiện tại, các thông báo và lỗi phát sinh sau thời điểm này vẫn được ghi nhận lại trên hệ thống.</value>
+	</data>
+  <data name="DoingDeleteAllNotify" xml:space="preserve">
+		<value>Đang xóa tất cả các thông báo và lỗi</value>
+	</data>
+  <data name="DeleteAllNotifyOK" xml:space="preserve">
+		<value>Xóa thông báo và lỗi thành công</value>
+	</data>
+  <data name="DeleteAllNotifyFail" xml:space="preserve">
+		<value>Xóa thông báo và lỗi thất bại. Vui lòng kiểm tra...</value>
+	</data>
+  <data name="TotalLineLightIsOver100" xml:space="preserve">
+		<value>Tổng số tuyến quá nhiều (&gt; 100). Vui lòng kiểm tra...</value>
+	</data>
+  <data name="CanNotConnectToCloud" xml:space="preserve">
+		<value>Không thể kết nối đến dịch vụ đám mây. Vui lòng kiểm tra...</value>
+	</data>
+  <data name="CanNotSyncToGateway" xml:space="preserve">
+		<value>Không thể đồng bộ xuống thiết bị. Vui lòng kiểm tra...</value>
+	</data>
+  <data name="SyncLightLineToGatewayOK" xml:space="preserve">
+		<value>Đồng bộ danh sách tuyến đèn xuống thiết bị thành công</value>
+	</data>
+  <data name="DoingSyncLightLine" xml:space="preserve">
+		<value>Đang đồng bộ danh sách tuyến đèn...</value>
+	</data>
+  <data name="BiggerThan0AndSmaller" xml:space="preserve">
+		<value>Lớn hơn 0 và nhỏ hơn</value>
+	</data>
+  <data name="InvalidValuePleaseRecheck" xml:space="preserve">
+		<value>Giá trị không hợp lệ. Vui lòng kiểm tra...</value>
+	</data>
+  <data name="DoingAddNewVirtualLine" xml:space="preserve">
+		<value>Đang thêm tuyến đèn ảo mới...</value>
+	</data>
+  <data name="AddNewVirtualLineOK" xml:space="preserve">
+		<value>Thêm tuyến đèn ảo mới thành công</value>
+	</data>
+  <data name="AddNewVirtualLineFail" xml:space="preserve">
+		<value>Thêm tuyến đèn ảo mới thất bại. Vui lòng kiểm tra...</value>
+	</data>
+  <data name="VirtualLineIsExistSelectAnotherIndex" xml:space="preserve">
+		<value>Tuyến đèn ảo đã tồn tại. Chọn số thứ tự khác</value>
+	</data>
+  <data name="VirtualLine" xml:space="preserve">
+		<value>Tuyến ảo</value>
+	</data>
+  <data name="From0To" xml:space="preserve">
+		<value>Từ 0 đến</value>
+	</data>
+  <data name="From1To" xml:space="preserve">
+		<value>Từ 1 đến</value>
+	</data>
+  <data name="DeleteLine" xml:space="preserve">
+		<value>Xóa tuyến đèn</value>
+	</data>
+  <data name="DeleteLineOK" xml:space="preserve">
+		<value>Xóa tuyến đèn thành công</value>
+	</data>
+  <data name="SetAnotherDeviceHint" xml:space="preserve">
+		<value>Trong quá trình quét và học thiết bị mới, nếu thấy thiết bị phù hợp với số ID khác, có thể chọn và thiết lập đè</value>
+	</data>
+  <data name="UpdateNewNameOK" xml:space="preserve">
+		<value>Cập nhật tên mới thành công</value>
+	</data>
+  <data name="UpdateDescriptionOK" xml:space="preserve">
+		<value>Cập nhật mô tả thành công</value>
+	</data>
+  <data name="TotalScripts" xml:space="preserve">
+		<value>Tổng số kịch bản</value>
+	</data>
+  <data name="LoadingScriptsData" xml:space="preserve">
+		<value>Đang tải dữ liệu kịch bản...</value>
+	</data>
+  <data name="IsActivate" xml:space="preserve">
+		<value>Đang hoạt động</value>
+	</data>
+  <data name="Activate" xml:space="preserve">
+		<value>Kích hoạt</value>
+	</data>
+  <data name="Deactivate" xml:space="preserve">
+		<value>Tạm ngưng</value>
+	</data>
+  <data name="NotActivate" xml:space="preserve">
+		<value>Đang tạm khóa</value>
+	</data>
+  <data name="CreateNewScript" xml:space="preserve">
+		<value>Tạo kịch bản mới</value>
+	</data>
+  <data name="CreateNewScriptOK" xml:space="preserve">
+		<value>Tạo mới kịch bản thành công</value>
+	</data>
+  <data name="DeleteScript" xml:space="preserve">
+		<value>Xóa kịch bản</value>
+	</data>
+  <data name="DeleteScriptWarning" xml:space="preserve">
+		<value>Bạn thật sự muốn xóa kịch bản này? Tất cả dữ liệu sẽ được xóa vĩnh viễn</value>
+	</data>
+  <data name="ScriptIsNotExisted" xml:space="preserve">
+		<value>Xin lỗi! Kịch bản không tồn tại</value>
+	</data>
+  <data name="DoingDeleteScript" xml:space="preserve">
+		<value>Đang xóa kịch bản...</value>
+	</data>
+  <data name="DeleteScriptOK" xml:space="preserve">
+		<value>Xóa kịch bản thành công</value>
+	</data>
+  <data name="SetTimer" xml:space="preserve">
+		<value>Thiết lập hẹn giờ</value>
+	</data>
+  <data name="SetContentPowerOn" xml:space="preserve">
+		<value>Thiết lập nội dung bật nguồn</value>
+	</data>
+  <data name="SetContentDevice" xml:space="preserve">
+		<value>Thiết lập nội dung thiết bị</value>
+	</data>
+  <data name="Dayweek" xml:space="preserve">
+		<value>Ngày trong tuần</value>
+	</data>
+  <data name="MaskAllDayweek" xml:space="preserve">
+		<value>Chọn tất cả ngày trong tuần</value>
+	</data>
+  <data name="ClearAllDayweek" xml:space="preserve">
+		<value>Xóa tất cả ngày trong tuần</value>
+	</data>
+  <data name="DeleteTimer" xml:space="preserve">
+		<value>Xóa hẹn giờ</value>
+	</data>
+  <data name="SorryYouCanNotAddMore" xml:space="preserve">
+		<value>Xin lỗi! Bạn không thể tạo thêm</value>
+	</data>
+  <data name="SorryThisScriptIsDeactivateCanNotControl" xml:space="preserve">
+		<value>Xin lỗi! Kịch bản đang tạm khóa. Không thể điều khiển. Vui lòng kích hoạt lại</value>
+	</data>
+  <data name="ControlHistory_Duplicate[1]" xml:space="preserve">
+		<value>Lịch sử điều khiển</value>
+	</data>
+  <data name="TotalEvent" xml:space="preserve">
+		<value>Tổng số sự kiện</value>
+	</data>
+  <data name="SupportPhone" xml:space="preserve">
+		<value>Số điện thoại hỗ trợ</value>
+	</data>
+  <data name="PrimarySupportPhone" xml:space="preserve">
+		<value>Số điện thoại hỗ trợ chính</value>
+	</data>
+  <data name="SecondarySupportPhone" xml:space="preserve">
+		<value>Số điện thoại hỗ trợ phụ</value>
+	</data>
+  <data name="SupportPhoneDescription" xml:space="preserve">
+		<value>Số điện thoại hỗ trợ trong tình huống khẩn cấp. Người vận hành có thể sử dụng những số này để điều khiển các tính năng cơ bản qua SMS hoặc khởi động lại thiết bị bằng cuộc gọi đặc biệt đến thiết bị.</value>
+	</data>
+  <data name="BuzzerSetup" xml:space="preserve">
+		<value>Thiết lập loa</value>
+	</data>
+  <data name="BuzzerDescription" xml:space="preserve">
+		<value>Loa sẽ kêu khi có sự kiện hoặc điều khiển. Nếu bạn muốn thiết bị hoạt động trong chế độ yên lặng, hãy tắt loa. Nên bật loa trong quá trình thiết lập để dễ dàng kiểm tra</value>
+	</data>
+  <data name="GMTSetup" xml:space="preserve">
+		<value>Thiết lập GMT</value>
+	</data>
+  <data name="GMTSetupDescription" xml:space="preserve">
+		<value>Thiết lập GMT giúp thiết bị chạy các tác vụ tự động hẹn giờ chính xác với khu vực GMT hiện tại của bạn</value>
+	</data>
+  <data name="TemperatureThreadhold" xml:space="preserve">
+		<value>Ngưỡng nhiệt độ</value>
+	</data>
+  <data name="TemperatureThreadholdDescription" xml:space="preserve">
+		<value>Khi thiết bị hoạt động ở nhiệt độ cao đc cấu hình bởi "ngưỡng nhiệt độ (*C)", hệ thống sẽ gởi cảnh báo đến người vận hành, và cảnh báo sẽ tắt khi thiết bị vận hành bình thường trở lại</value>
+	</data>
+  <data name="PleaseInputCorrectPhoneNumber" xml:space="preserve">
+		<value>Vui lòng nhập số điện thoại chính xác</value>
+	</data>
+  <data name="TemperatureThreadHoldValueIsNotCorrect" xml:space="preserve">
+		<value>Ngưỡng nhiệt độ không chính xác</value>
+	</data>
+  <data name="GMTValueIsNotCorrect" xml:space="preserve">
+		<value>Giá trị GMT không chính hợp lệ</value>
+	</data>
+  <data name="DoingSyncToDevice" xml:space="preserve">
+		<value>Đang đồng bộ xuống thiết bị....</value>
+	</data>
+  <data name="CanNotSyncToDevice" xml:space="preserve">
+		<value>Không thể đồng bộ xuống thiết bị. Vui lòng kiểm tra....</value>
+	</data>
+  <data name="IsSynced" xml:space="preserve">
+		<value>Đã đồng bộ</value>
+	</data>
+  <data name="NotSynced" xml:space="preserve">
+		<value>Chưa được đồng bộ</value>
+	</data>
+  <data name="SetupDeviceIsOK" xml:space="preserve">
+		<value>Thiết lập thiết bị thành công</value>
+	</data>
+  <data name="BackupSetupToCloud" xml:space="preserve">
+		<value>Lưu dự phòng thiết lập lên cloud</value>
+	</data>
+  <data name="DisplayLayer" xml:space="preserve">
+		<value>Lớp hiển thị</value>
+	</data>
+  <data name="Gateway" xml:space="preserve">
+		<value>Gateway</value>
+	</data>
+  <data name="Streetlight" xml:space="preserve">
+		<value>Đèn đường</value>
+	</data>
+  <data name="Timer" xml:space="preserve">
+		<value>Bộ hẹn giờ</value>
+	</data>
+  <data name="OK" xml:space="preserve">
+		<value>Đồng ý</value>
+	</data>
+  <data name="MovePositionHelp" xml:space="preserve">
+		<value>1. Nhấn chọn và giữ icon cho đến khi có thể kéo thả
+2. Di chuyển và thả đến vị trí mong muốn
+3. Sau khi hoàn thành, nhấn lần nữa nút di chuyển để thoát chế độ</value>
+	</data>
+  <data name="MovePosition" xml:space="preserve">
+		<value>Di chuyển vị trí</value>
+	</data>
+  <data name="UpdateNewDeviceLocation" xml:space="preserve">
+		<value>Cập nhật vị trí thiết bị</value>
+	</data>
+  <data name="UpdateNewDeviceLocationFail" xml:space="preserve">
+		<value>Cập nhật vị trí thiêt bị thất bại. Vui lòng kiểm tra...</value>
+	</data>
+  <data name="FinishMoveLocation" xml:space="preserve">
+		<value>Hoàn tất di chuyển thay đổi bị trí thiết bị</value>
+	</data>
+  <data name="About" xml:space="preserve">
+		<value>Thông tin</value>
+	</data>
+  <data name="ConfigServer" xml:space="preserve">
+		<value>Cấu hình server</value>
+	</data>
+  <data name="ConfigServerHint" xml:space="preserve">
+		<value>nhập "DF"cho server mặc định</value>
+	</data>
+  <data name="ConfigServerDescription" xml:space="preserve">
+		<value>Mặc định ứng dụng sẽ kết nối với hệ thống máy chủ đám mây. Nếu bạn có cấu hình máy chủ riêng, vui lòng nhập thông tin cấu hình đã được người quản lý phát hành</value>
+	</data>
+  <data name="DoingRestoreDefaultConfig" xml:space="preserve">
+		<value>Đang khôi phục thiết lập mặc định...</value>
+	</data>
+  <data name="RestoreConfigOK" xml:space="preserve">
+		<value>Khôi phục thiết lập mặc định thành công</value>
+	</data>
+  <data name="RestoreConfigFail" xml:space="preserve">
+		<value>Khôi phục thiết lập mặc định thất bại. Vui lòng kiểm tra...</value>
+	</data>
+  <data name="CopyRightS3" xml:space="preserve">
+		<value>Bản quyền 2021 s3wan.com</value>
+	</data>
+  <data name="Website" xml:space="preserve">
+		<value>Website</value>
+	</data>
+  <data name="Email" xml:space="preserve">
+		<value>Email</value>
+	</data>
+  <data name="Hotline" xml:space="preserve">
+		<value>Đường dây nóng</value>
+	</data>
+  <data name="Information" xml:space="preserve">
+		<value>Thông tin</value>
+	</data>
+  <data name="SorryCantNotFoundInfo" xml:space="preserve">
+		<value>Xin lỗi! không tìm thấy thông tin. Vui lòng kiểm tra..</value>
+	</data>
+  <data name="ConfigServerOK" xml:space="preserve">
+		<value>Cấu hình server riêng thành công</value>
+	</data>
+  <data name="DoingConfigServer" xml:space="preserve">
+		<value>Đang cấu hình thông tin server...</value>
+	</data>
+  <data name="TypeOfControlMask" xml:space="preserve">
+		<value>Kiểu nhóm điều khiển</value>
+	</data>
+  <data name="MotionSensor" xml:space="preserve">
+		<value>Cảm biến chuyển động</value>
+	</data>
+  <data name="MotionSensorDescription" xml:space="preserve">
+		<value>Chế độ cảm biến chuyển động là chế độ tự nhận dạng khi có người hoặc phương tiện di chuyển, đèn sẽ tự động tăng dộ sáng cho phù hợp</value>
+	</data>
+  <data name="ControlVirtualDescription" xml:space="preserve">
+		<value>1. Hệ thống hỗ trợ việc điều khiển thiết bị ảo, nhưng khi điều khiển 1 thiết bị trên tuyến, tất cả các đèn trên tuyến đều nhận hành động điều khiển này
+2. Đèn ảo không thể điều khiển theo mức độ</value>
+	</data>
+  <data name="User" xml:space="preserve">
+		<value>Tài khoản</value>
+	</data>
+  <data name="ChangeUsernameAndPass" xml:space="preserve">
+		<value>Đổi tên đăng nhập và mật khẩu</value>
+	</data>
+  <data name="UpdateInfo" xml:space="preserve">
+		<value>Cập nhật thông tin</value>
+	</data>
+  <data name="SetDefaultLocation" xml:space="preserve">
+		<value>Thiết lập vị trí mặc định</value>
+	</data>
+  <data name="HelpAndGuideline" xml:space="preserve">
+		<value>Trợ giúp hướng dẫn</value>
+	</data>
+  <data name="ApplicationGuideline" xml:space="preserve">
+		<value>Hướng dẫn sử dụng ứng dụng</value>
+	</data>
+  <data name="GatewayGuideline" xml:space="preserve">
+		<value>Hướng dẫn sử dụng gateway</value>
+	</data>
+  <data name="Signout" xml:space="preserve">
+		<value>Đăng xuất</value>
+	</data>
+  <data name="CurrentPassword" xml:space="preserve">
+		<value>Mật khẩu hiện tại</value>
+	</data>
+  <data name="NewPassword" xml:space="preserve">
+		<value>Mật khẩu mới</value>
+	</data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+		<value>Xác nhận mật khẩu mới</value>
+	</data>
+  <data name="NewPasswordAndConfirmNewPasswordIsNotMatch" xml:space="preserve">
+		<value>Mật khẩu mới và xác nhận mật khẩu mới không trùng khớp</value>
+	</data>
+  <data name="CurrentPasswordIsWrong" xml:space="preserve">
+		<value>Sai mật khẩu hiện tại</value>
+	</data>
+  <data name="UsernameIsExistedPleaseSelectAnother" xml:space="preserve">
+		<value>Tên đăng nhập bị trùng. Vui lòng chọn tên khác...</value>
+	</data>
+  <data name="ChangeUsernameAndPassWarning" xml:space="preserve">
+		<value>1. Sau khi thay đổi tên đăng nhập và mật khẩu thành công ứng dụng sẽ tự động thoát
+2. Nếu thay đổi thông tin đăng nhập mới, tất cả các thiết bị khac đang dùng thông tin cũ sẽ tự động thoát</value>
+	</data>
+  <data name="PleaseInputUserName" xml:space="preserve">
+		<value>Vui lòng nhập tên đăng nhập</value>
+	</data>
+  <data name="DoNotInputUsernameHasSpecialCharacter" xml:space="preserve">
+		<value>Tên đăng nhập phải không có ký tự đặc biệt</value>
+	</data>
+  <data name="PleaseInputOldPassword" xml:space="preserve">
+		<value>Vui lòng nhập mật khẩu cũ</value>
+	</data>
+  <data name="DoNotInputOldPasswordHasSpecialCharacter" xml:space="preserve">
+		<value>Mật khẩu cũ phải không có ký tự đặc biệt</value>
+	</data>
+  <data name="PleaseInputNewPassword" xml:space="preserve">
+		<value>Vui lòng nhập mật khẩu mới</value>
+	</data>
+  <data name="DoNotInputNewPasswordHasSpecialCharacter" xml:space="preserve">
+		<value>Mật khẩu mới phải không có ký tự đặc biệt</value>
+	</data>
+  <data name="PleaseInputConfirmNewPassword" xml:space="preserve">
+		<value>Vui lòng nhập xác nhận mật khẩu mới</value>
+	</data>
+  <data name="DoNotInputConfirmNewPasswordHasSpecialCharacter" xml:space="preserve">
+		<value>Xác nhận mật khẩu mới phải không có ký tự đặc biệt</value>
+	</data>
+  <data name="DoingChangeUserNameAndPassword" xml:space="preserve">
+		<value>Đang thay đổi tên đăng nhập và mật khẩu...</value>
+	</data>
+  <data name="UpdateUserNameAndPasswordIsDoneSignout" xml:space="preserve">
+		<value>Cập nhật tên đăng nhập và mật khẩu thành công. Đang đăng xuất...</value>
+	</data>
+  <data name="PhoneNumber" xml:space="preserve">
+		<value>Số điện thoại</value>
+	</data>
+  <data name="UpdateUserInfoIsOK" xml:space="preserve">
+		<value>Cập nhật thông tin tài khoản thành công</value>
+	</data>
+  <data name="PleaseInputDisplayName" xml:space="preserve">
+		<value>Vui lòng nhập tên hiển thị</value>
+	</data>
+  <data name="DoNotInputDisplayNameHasSpecialCharacter" xml:space="preserve">
+		<value>Vui lòng không nhập tên hiển thị có ký tự đặc biệt</value>
+	</data>
+  <data name="SavingScriptTimer" xml:space="preserve">
+		<value>Đang lưu hẹn giờ kịch bản...</value>
+	</data>
+  <data name="DisplayName" xml:space="preserve">
+		<value>Tên hiển thị</value>
+	</data>
+  <data name="UpdateUserInfoWarning" xml:space="preserve">
+		<value>1. Vui lòng cung cấp thông tin email và số điện thoại chính xác
+2. Trong trường hợp bạn cần hỗ trợ, chúng tôi sẽ liên lạc qua thông tin này</value>
+	</data>
+  <data name="UpdateUserLocationOK" xml:space="preserve">
+		<value>Cập nhật vị trí mặc định thành công</value>
+	</data>
+  <data name="CameraQRNotSupport" xml:space="preserve">
+		<value>Máy ảnh không có hoặc không hỗ trợ</value>
+	</data>
+  <data name="Flash" xml:space="preserve">
+		<value>Flash</value>
+	</data>
+  <data name="CameraQRNotSupportPleaseSetPermission" xml:space="preserve">
+    <value>Camera hiện tại không được cấp quyền
+để quét mã QR
+Vui lòng cấp quyền truy cập camera...</value>
+  </data>
+  <data name="WaterRefinneTitle" xml:space="preserve">
+    <value>Giải pháp lọc nước tự động</value>
+  </data>
+  <data name="Orders" xml:space="preserve">
+    <value>Đơn hàng</value>
+  </data>
+  <data name="Sold" xml:space="preserve">
+    <value>Bán hàng</value>
+  </data>
+  <data name="PriceUnit" xml:space="preserve">
+    <value>Đơn giá</value>
+  </data>
+  <data name="Litre" xml:space="preserve">
+    <value>Lít</value>
+  </data>
+  <data name="NoDevicePleaseAddNew" xml:space="preserve">
+    <value>Hệ thống của bạn chưa có bất kỳ thiết bị nào. Vui lòng thêm mới...</value>
+  </data>
+  <data name="NoDevicePleaseAddNewDescription" xml:space="preserve">
+    <value>Hướng dẫn học mới thiết bị:
+1. Hãy đảm bảo thiết bị trung tâm đang kết nối mạng.
+2. Sử dụng máy ảnh, quét mã số QR in trên thiết bị. Nếu mã hợp lệ thiết bị sẽ được thêm vô
+3. Thoát và đăng nhập lại ứng đụng để làm mới</value>
+  </data>
+  <data name="Money" xml:space="preserve">
+    <value>Số tiền</value>
+  </data>
+  <data name="SetValueAndControl" xml:space="preserve">
+    <value>Nhập và điều khiển bán hàng</value>
+  </data>
+  <data name="SoldInfoSession" xml:space="preserve">
+    <value>Thông tin phiên bán hàng</value>
+  </data>
+  <data name="HotKey" xml:space="preserve">
+    <value>Phím tắt</value>
+  </data>
+  <data name="SoldEvent" xml:space="preserve">
+    <value>Sự kiện bán hàng</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>hoàn thành</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>bắt đầu</value>
+  </data>
+  <data name="Pause" xml:space="preserve">
+    <value>tạm dừng</value>
+  </data>
+  <data name="PleaseSelectLitreOrMoneyToSold" xml:space="preserve">
+    <value>Vui lòng nhập số lít hoặc số tiền cần bán</value>
+  </data>
+  <data name="YouSelect" xml:space="preserve">
+    <value>Bạn đã chọn</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Thời gian</value>
+  </data>
+  <data name="CurrentDay" xml:space="preserve">
+    <value>Ngày hiện tại</value>
+  </data>
+  <data name="TotalOrders" xml:space="preserve">
+    <value>Tổng số đơn hàng</value>
+  </data>
+  <data name="PleaseCheckConnection" xml:space="preserve">
+    <value>Vui lòng kiểm tra kết nối</value>
+  </data>
+  <data name="WarrantyDescriptionFail" xml:space="preserve">
+    <value>Có thể thiết bị của bạn không hỗ trợ bảo hành điện tử hoặc mã không hợp lệ</value>
+  </data>
+  <data name="SomethingWrong" xml:space="preserve">
+    <value>Có sai sót. Vui lòng kiểm tra...</value>
+  </data>
+  <data name="NotFoundDvInfo" xml:space="preserve">
+    <value>Không tìm thấy thông tin thiết bị</value>
+  </data>
+  <data name="IsWarranty" xml:space="preserve">
+    <value>CÒN BẢO HÀNH</value>
+  </data>
+  <data name="NotWarranty" xml:space="preserve">
+    <value>HẾT BẢO HÀNH</value>
+  </data>
+  <data name="ProductisNotWarranty" xml:space="preserve">
+    <value>Sản phẩm không nằm trong chế độ bảo hành</value>
+  </data>
+  <data name="ProductInfo" xml:space="preserve">
+    <value>Thông tin sản phẩm</value>
+  </data>
+  <data name="Months" xml:space="preserve">
+    <value>tháng</value>
+  </data>
+  <data name="TotalNos" xml:space="preserve">
+    <value>Tổng thông báo</value>
+  </data>
+  <data name="TDSOver" xml:space="preserve">
+    <value>Chỉ số TDS vượt ngưỡng</value>
+  </data>
+  <data name="TDSOK" xml:space="preserve">
+    <value>Chỉ số TDS trở lại bình thường</value>
+  </data>
+  <data name="AddToCart" xml:space="preserve">
+    <value>Thêm vào giỏ</value>
+  </data>
+  <data name="Medium" xml:space="preserve">
+    <value>Vừa</value>
+  </data>
+  <data name="Large" xml:space="preserve">
+    <value>Lớn</value>
+  </data>
+  <data name="Small" xml:space="preserve">
+    <value>Nhỏ</value>
+  </data>
+  <data name="ProvisionalPrice" xml:space="preserve">
+    <value>Tạm tính</value>
+  </data>
+  <data name="TotalPrice" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="Cart" xml:space="preserve">
+    <value>Giỏ hàng</value>
+  </data>
+  <data name="Buy" xml:space="preserve">
+    <value>Thanh toán</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="PromosHearder" xml:space="preserve">
+    <value>Những quảng cáo bạn không thể cưỡng lại</value>
+  </data>
+</root>

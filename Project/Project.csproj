@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <DebugType>portable</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Acr.UserDialogs" Version="7.1.0.475" />
+        <PackageReference Include="Plugin.Badge" Version="2.3.1" />
+        <PackageReference Include="Rg.Plugins.Popup" Version="2.1.0" />
+        <PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
+        <PackageReference Include="Xamarin.FFImageLoading.Svg" Version="2.4.11.982" />
+        <PackageReference Include="Xamarin.Forms" Version="5.0.0.2083" />
+        <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+        <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+        <PackageReference Include="MagicGradients" Version="1.3.0" />
+        <PackageReference Include="Plugin.Multilingual" Version="1.0.2" />
+        <PackageReference Include="Xamarin.CommunityToolkit" Version="1.2.0" />
+        <PackageReference Include="Xamanimation" Version="1.3.0" />
+        <PackageReference Include="Plugin.Permissions" Version="6.0.1" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="Helper\" />
+        <Folder Include="Views\Login\" />
+        <Folder Include="ViewModels\Login\" />
+        <Folder Include="Views\Main\Home\" />
+        <Folder Include="ViewModels\Markers\" />
+        <Folder Include="Language\" />
+        <Folder Include="Views\Main\Notification\" />
+        <Folder Include="Views\TriggerAction\" />
+        <Folder Include="Views\Login\Help\" />
+        <Folder Include="ViewModels\Login\Help\" />
+        <Folder Include="ViewModels\Main\Setting\User\" />
+    </ItemGroup>
+    <ItemGroup>
+        <Reference Include="System.Web.Services">
+            <HintPath>DLL\System.Web.Services.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Remove="Views\Markers\**" />
+      <EmbeddedResource Remove="Views\Markers\**" />
+      <None Remove="Views\Markers\**" />
+    </ItemGroup>
+    <ItemGroup>
+        <WebReferences Include="Web References" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Remove="Plugin.Multilingual" />
+        <None Remove="Language\" />
+        <None Remove="Resources\barcode.svg" />
+        <None Remove="Resources\SVG\Back.svg" />
+        <None Remove="Resources\SVG\Love_Default.svg" />
+        <None Remove="Resources\SVG\Love_Filled.svg" />
+        <None Remove="Resources\SVG\Menu.svg" />
+        <None Remove="Resources\SVG\Shop_Bag.svg" />
+        <None Remove="Views\Main\Notification\" />
+        <None Remove="CoolBottomSheet" />
+        <None Remove="Xamarin.CommunityToolkit" />
+        <None Remove="Microcharts.Forms" />
+        <None Remove="BuildIt.Forms" />
+        <None Remove="Xamanimation" />
+        <None Remove="Acr.UserDialogs" />
+        <None Remove="Views\TriggerAction\" />
+        <None Remove="Sharpnado.MaterialFrame" />
+        <None Remove="Sharpnado.Shadows" />
+        <None Remove="Sharpnado.Tabs" />
+        <None Remove="Sharpnado.TaskMonitor" />
+        <None Remove="Grpc.Tools" />
+        <None Remove="Google.Protobuf" />
+        <None Remove="Views\Login\Help\" />
+        <None Remove="ViewModels\Login\Help\" />
+        <None Remove="ViewModels\Main\Setting\User\" />
+        <None Remove="Views\Common\" />
+        <None Remove="Plugin.Permissions" />
+        <None Remove="Resources\" />
+        <None Remove="Resources\Fonts\" />
+        <None Remove="Resources\Fonts\Poppins-Italic.ttf" />
+        <None Remove="Resources\Fonts\Poppins-Regular.ttf" />
+        <None Remove="Resources\Fonts\Poppins-SemiBold.ttf" />
+        <None Remove="ZXing.Net.Mobile" />
+        <None Remove="ZXing.Net.Mobile.Forms" />
+        <None Remove="Views\Main\Devices\" />
+        <None Remove="Views\Main\Orders\" />
+        <None Remove="ViewModels\Main\Home\" />
+        <None Remove="ViewModels\Main\Devices\" />
+        <None Remove="ViewModels\Main\Orders\" />
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Remove="Views\Converter\SLDScanView.xaml.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Update="Language\AppResources.vi.Designer.cs">
+          <DependentUpon>AppResources.vi.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Language\AppResources.Designer.cs">
+          <DependentUpon>AppResources.resx</DependentUpon>
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+        </Compile>
+        <Compile Update="Views\Main\Detail\DetailView.xaml.cs">
+          <DependentUpon>DetailView.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Main\Cart\CartView.xaml.cs">
+          <DependentUpon>CartView.xaml</DependentUpon>
+        </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Include="Resources\SVG\Back.svg" />
+      <EmbeddedResource Include="Resources\Fonts\Poppins-Italic.ttf" />
+      <EmbeddedResource Include="Resources\Fonts\Poppins-Regular.ttf" />
+      <EmbeddedResource Include="Resources\Fonts\Poppins-SemiBold.ttf" />
+      <EmbeddedResource Include="Resources\SVG\Love_Default.svg" />
+      <EmbeddedResource Include="Resources\SVG\Love_Filled.svg" />
+      <EmbeddedResource Include="Resources\SVG\Menu.svg" />
+      <EmbeddedResource Include="Resources\SVG\Shop_Bag.svg" />
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Update="Views\Main\Map\MapView.xaml">
+        <LogicalName>S3WAN.Views.Main.Map.MapView.xaml</LogicalName>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Language\AppResources.vi.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>AppResources.vi.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Language\AppResources.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Views\Main\Setting\About\AboutView.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Views\Main\Setting\SettingView.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Views\Main\Setting\User\ChangeUserAndPassView.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Views\Main\Setting\User\ChangeUserInfoView.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
+    </ItemGroup>
+    <ProjectExtensions>
+      <MonoDevelop>
+        <Properties>
+          <Policies>
+            <XmlFormattingPolicy scope="application/xaml">
+              <DefaultFormat AttributesInNewLine="True" WrapAttributes="True" AlignAttributes="True" AlignAttributeValues="True" />
+            </XmlFormattingPolicy>
+          </Policies>
+        </Properties>
+      </MonoDevelop>
+    </ProjectExtensions>
+</Project>

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Project.Views.Main.Setting.About.AboutView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:cus="clr-namespace:CustomControl"
+    xmlns:lang="clr-namespace:Language"
+    ControlTemplate="{StaticResource PageWithGradient}">
+    <Grid>
+        <Image
+            HorizontalOptions="Center"
+            Opacity="0.3"
+            Source="WaterBg.png"
+            VerticalOptions="Center" />
+        <StackLayout>
+            <StackLayout
+                Margin="0"
+                Padding="0"
+                BackgroundColor="{x:StaticResource FrameBackgroundColor}">
+                <StackLayout HeightRequest="{StaticResource HeaderBackHeight}" Orientation="Horizontal">
+                    <ImageButton
+                        Grid.Column="0"
+                        Margin="5"
+                        BackgroundColor="Transparent"
+                        Command="{Binding BackCmd}"
+                        HeightRequest="{StaticResource ButtonHeightS}"
+                        HorizontalOptions="Start"
+                        Source="Back.png"
+                        VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Margin="10,5">
+                <Label
+                    FontAttributes="Bold"
+                    FontFamily="RalewayRegular"
+                    FontSize="Body"
+                    Text="{lang:Translate About}"
+                    TextColor="{StaticResource LabelTextColor}"
+                    VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+            <Frame
+                Margin="10,5"
+                Padding="10"
+                BackgroundColor="{x:StaticResource FrameBackgroundColor}"
+                CornerRadius="20"
+                HasShadow="True"
+                HorizontalOptions="FillAndExpand"
+                IsVisible="True">
+                <StackLayout>
+                    <Label
+                        FontAttributes="Bold"
+                        FontFamily="RalewayRegular"
+                        FontSize="Default"
+                        HorizontalOptions="Fill"
+                        HorizontalTextAlignment="Start"
+                        Opacity="0.8"
+                        Text="{lang:Translate S3WANTitle}"
+                        TextColor="{StaticResource LabelTextColor}" />
+                    <BoxView
+                        HeightRequest="{StaticResource SeparatorHeight}"
+                        Opacity="{StaticResource SeparatorOpacity}"
+                        Color="{StaticResource SeparatorColor}" />
+                    <StackLayout Margin="0,5" Orientation="Horizontal">
+                        <Image
+                            HeightRequest="24"
+                            Source="Website_32px.png"
+                            WidthRequest="32" />
+                        <Button
+                            Background="Transparent"
+                            Command="{Binding OpenWebCmd}"
+                            FontSize="Small"
+                            HeightRequest="24"
+                            HorizontalOptions="Start"
+                            IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
+                            Text="{Binding WebStr}"
+                            TextColor="{StaticResource EntryTextColor}"
+                            VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Margin="0,5" Orientation="Horizontal">
+                        <Image
+                            HeightRequest="24"
+                            Source="Email_32px.png"
+                            WidthRequest="32" />
+                        <Label
+                            Margin="5,0"
+                            FontFamily="RalewayRegular"
+                            FontSize="Small"
+                            HorizontalTextAlignment="Center"
+                            Text="{Binding EmailStr}"
+                            TextColor="{StaticResource EntryTextColor}"
+                            VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Margin="0,5" Orientation="Horizontal">
+                        <Image
+                            HeightRequest="24"
+                            Source="Phone_32px.png"
+                            WidthRequest="32" />
+                        <Label
+                            Margin="5,0"
+                            FontFamily="RalewayRegular"
+                            FontSize="Small"
+                            HorizontalTextAlignment="Center"
+                            Text="{Binding HotLineStr}"
+                            TextColor="{StaticResource EntryTextColor}"
+                            VerticalOptions="Center" />
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </Grid>
+</ContentPage>

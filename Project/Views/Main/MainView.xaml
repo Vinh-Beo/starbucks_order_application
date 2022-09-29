@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+    x:Class="S3WAN.Views.Main.MainView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:cart="clr-namespace:Project.Views.Main.Cart"
+    xmlns:detail="clr-namespace:Project.Views.Main.Detail"
+    xmlns:home="clr-namespace:Project.Views.Main.Home"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:lang="clr-namespace:Language"
+    xmlns:noti="clr-namespace:Project.Views.Main.Notification"
+    xmlns:plugin="clr-namespace:Plugin.Badge.Abstractions;assembly=Plugin.Badge.Abstractions"
+    xmlns:st="clr-namespace:Project.Views.Main.Setting"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    android:TabbedPage.ToolbarPlacement="Bottom"
+    ios:Page.UseSafeArea="true"
+    BarBackgroundColor="#00623B"
+    CurrentPageChanged="TabbedPage_CurrentPageChanged"
+    SelectedTabColor="WhiteSmoke"
+    UnselectedTabColor="LightGray">
+    <!--  Pages can be added as references or inline  -->
+    <ContentPage x:Name="tpDetail" IconImageSource="Love.png">
+        <detail:DetailView BindingContext="{Binding Detail}" />
+    </ContentPage>
+    <ContentPage x:Name="tpCart" IconImageSource="Wallet.png">
+        <cart:CartView BindingContext="{Binding Cart}" />
+    </ContentPage>
+    <ContentPage x:Name="tpHome" IconImageSource="home.png">
+        <home:HomeView BindingContext="{Binding Home}" />
+    </ContentPage>
+    <ContentPage
+        x:Name="tpNos"
+        plugin:TabBadge.BadgeColor="{Binding NotifyCount, Converter={StaticResource IntToNotColorBiggerZeroConverter}}"
+        plugin:TabBadge.BadgeText="{Binding NotifyCount, Mode=TwoWay}"
+        plugin:TabBadge.BadgeTextColor="{Binding NotifyCount, Converter={StaticResource IntToInfoFailSuccessColorConverter}}"
+        IconImageSource="notification.png">
+        <noti:NotificationView BindingContext="{Binding Notifications}" />
+    </ContentPage>
+    <ContentPage BackgroundImageSource="WhiteSmoke" IconImageSource="More_32px.png">
+        <st:SettingView BindingContext="{Binding Setting}" />
+    </ContentPage>
+</TabbedPage>

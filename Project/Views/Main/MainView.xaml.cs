@@ -110,8 +110,9 @@ namespace S3WAN.Views.Main
                             Info = _info,
                             OrderNumber = 0,
                             Sizes = FormBase.Sizes,
-                            SelectItem = new MenuItemModel(),
                             IsDetail = true,
+                            SizeItem = new DetailSizeModel(),
+                            Order = new OrderItemModel()
                         };
                         _vm.Detail.DisplBack = new Action(() =>
                         {
@@ -125,16 +126,49 @@ namespace S3WAN.Views.Main
             {
                 _vm.Detail.DisplOrder = new Action<OrderItemModel>((_order) =>
                 {
+                    #region Register action
+                    _order.DisplAdd = new Action(() =>
+                    {
+                        _order.OrderNumber += 1;
+                        if (_vm.Cart.TotalPriceCommand != null && _vm.Cart.TotalPriceCommand.CanExecute(null))
+                        {
+                            _vm.Cart.TotalPriceCommand.Execute(null);
+                        }
+                    });
+                    _order.DisplSubtract = new Action(() =>
+                    {
+                        _order.OrderNumber -= 1;
+                        if (_order.OrderNumber <= 0)
+                        {
+                            _vm.Cart.Items.Remove(_order);
+                        }
+                        if (_vm.Cart.TotalPriceCommand != null && _vm.Cart.TotalPriceCommand.CanExecute(null))
+                        {
+                            _vm.Cart.TotalPriceCommand.Execute(null);
+                        }
+                    });
+                    _order.DisplDelete = new Action(() =>
+                    {
+                        _vm.Cart.Items.Remove(_order);
+                        if (_vm.Cart.TotalPriceCommand != null && _vm.Cart.TotalPriceCommand.CanExecute(null))
+                        {
+                            _vm.Cart.TotalPriceCommand.Execute(null);
+                        }
+                    });
                     _vm.Cart.Items.Add(_order);
+
+                    if (_vm.Cart.Items.Count > 0)
+                    {
+                        if (_vm.Cart.TotalPriceCommand != null && _vm.Cart.TotalPriceCommand.CanExecute(null))
+                        {
+                            _vm.Cart.TotalPriceCommand.Execute(null);
+                        }
+                    }
+                    #endregion                    
                 });
             }
             else if (_v.CurrentPage == tpCart)
             {
-                //if (_vm.Cart.LoadCartCommand != null &&
-                //    _vm.Cart.LoadCartCommand.CanExecute(null))
-                //{
-                //    _vm.Cart.LoadCartCommand.Execute(null);
-                //}
                 _vm.Cart.DisplBack = new Action(() =>
                 {
                     _v.CurrentPage = tpHome;

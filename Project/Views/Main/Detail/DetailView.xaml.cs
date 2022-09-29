@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using Common;
+using Project.ViewModels.Common;
 using Project.ViewModels.Main.Detail;
-using Project.ViewModels.Main.Home;
-using Xamarin.CommunityToolkit.Converters;
-using Xamarin.CommunityToolkit.Extensions;
-using Xamarin.CommunityToolkit.UI.Views.Options;
 using Xamarin.Forms;
 
 namespace Project.Views.Main.Detail
@@ -50,6 +45,40 @@ namespace Project.Views.Main.Detail
             {
                 _vm.OrderNumber = 0;
                 return;
+            }
+        }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            if (BindingContext == null && e == null)
+            {
+                return;
+            }
+            if (BindingContext.GetType() != typeof(DetailViewModel))
+            {
+                return;
+            }
+            DetailViewModel _vm = (BindingContext as DetailViewModel);
+            TappedEventArgs _event = e as TappedEventArgs;
+
+            if (_event.Parameter.GetType() != typeof(DetailSizeModel))
+            {
+                return;
+            }
+
+            DetailSizeModel _detailSize = _event.Parameter as DetailSizeModel;
+
+            _vm.SizeItem = _detailSize;
+            foreach (DetailSizeModel item in _vm.Sizes)
+            {
+                if (item == _detailSize)
+                {
+                    item.IsSelected = true;
+                }
+                else
+                {
+                    item.IsSelected = false;
+                }
             }
         }
     }

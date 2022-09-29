@@ -20,19 +20,19 @@ namespace Common
         public static bool IsLogin = false;
 
 
-        public static ObservableCollection<DetailSize> Sizes = new ObservableCollection<DetailSize>()
+        public static ObservableCollection<DetailSizeModel> Sizes = new ObservableCollection<DetailSizeModel>()
         {
-            new DetailSize()
+            new DetailSizeModel()
             {
                 Image = "Small.png",
                 Size = SizeEnum.Small
             },
-            new DetailSize()
+            new DetailSizeModel()
             {
                 Image = "Medium.png",
                 Size = SizeEnum.Medium
             },
-            new DetailSize()
+            new DetailSizeModel()
             {
                 Image = "Large.png",
                 Size = SizeEnum.Large

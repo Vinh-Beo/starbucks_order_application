@@ -165,27 +165,31 @@
                             Text="{Binding Info.Description}"
                             TextColor="#6D6D6D" />
                     </StackLayout>
-                    <Grid ColumnDefinitions="*,Auto,Auto">
+                    <StackLayout
+                        HorizontalOptions="FillAndExpand"
+                        Orientation="Horizontal"
+                        VerticalOptions="FillAndExpand">
                         <StackLayout
-                            x:Name="SizeRadioGroup"
                             Grid.Column="0"
+                            Margin="0,5"
                             BindableLayout.ItemsSource="{Binding Sizes}"
+                            HorizontalOptions="StartAndExpand"
                             Orientation="Horizontal"
-                            RadioButtonGroup.GroupName="Size"
-                            RadioButtonGroup.SelectedValue="{Binding SelectedProduct.ProductSizeType}"
                             Spacing="10">
                             <BindableLayout.ItemTemplate>
                                 <DataTemplate>
-                                    <StackLayout>
+                                    <StackLayout Margin="5">
                                         <Frame
-                                            BackgroundColor="{StaticResource Primary}"
+                                            BackgroundColor="{Binding IsSelected, Converter={StaticResource BoolToChangeBackgroundConverter}}"
                                             CornerRadius="5"
-                                            HeightRequest="32"
-                                            WidthRequest="32">
-                                            <Image Source="{Binding Image}" />
+                                            HeightRequest="{StaticResource ImageSize}"
+                                            WidthRequest="100">
+                                            <Image
+                                                HorizontalOptions="CenterAndExpand"
+                                                Source="{Binding Image}"
+                                                VerticalOptions="Center" />
                                         </Frame>
                                         <Label
-                                            Grid.Column="2"
                                             FontFamily="RalewayRegular"
                                             FontSize="Small"
                                             HeightRequest="{StaticResource LabelSize32}"
@@ -195,29 +199,37 @@
                                             Text="{Binding Size, Converter={StaticResource SizeEnumStringConverter}}"
                                             TextColor="#6D6D6D"
                                             VerticalOptions="Center" />
+                                        <StackLayout.GestureRecognizers>
+                                            <TapGestureRecognizer
+                                                CommandParameter="{Binding .}"
+                                                NumberOfTapsRequired="1"
+                                                Tapped="TapGestureRecognizer_Tapped" />
+                                        </StackLayout.GestureRecognizers>
                                     </StackLayout>
                                 </DataTemplate>
                             </BindableLayout.ItemTemplate>
                         </StackLayout>
-                        <StackLayout
-                            Grid.Column="1"
-                            BackgroundColor="Gray"
-                            Opacity="0.2"
-                            Orientation="Vertical"
-                            WidthRequest="1" />
-                        <Label
-                            Grid.Column="2"
-                            FontFamily="RalewayRegular"
-                            FontSize="Title"
-                            HeightRequest="{StaticResource LabelSize32}"
-                            HorizontalOptions="StartAndExpand"
-                            LineBreakMode="WordWrap"
-                            Opacity="{StaticResource LabelOpacity}"
-                            Text="{Binding Info.Price, StringFormat='${0}.00'}"
-                            TextColor="{StaticResource Primary}"
-                            VerticalOptions="Center" />
-                        <Frame />
-                    </Grid>
+                        <Grid ColumnDefinitions="*,Auto">
+                            <BoxView
+                                Margin="4,10"
+                                HeightRequest="1"
+                                HorizontalOptions="FillAndExpand"
+                                Opacity="0.2"
+                                Color="Gray" />
+                            <Label
+                                Grid.Column="1"
+                                FontFamily="RalewayRegular"
+                                FontSize="Title"
+                                HeightRequest="{StaticResource LabelSize32}"
+                                HorizontalOptions="FillAndExpand"
+                                LineBreakMode="WordWrap"
+                                Opacity="{StaticResource LabelOpacity}"
+                                Text="{Binding Info.Price, StringFormat='${0}.00'}"
+                                TextColor="{StaticResource Primary}"
+                                VerticalOptions="Center" />
+                            <Frame />
+                        </Grid>
+                    </StackLayout>
                     <Frame
                         Margin="0,15"
                         Padding="0"

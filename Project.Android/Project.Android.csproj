@@ -1428,48 +1428,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\Gateway_Marker_Err.png" />
-    <AndroidAsset Include="Assets\Gateway_Marker_Offline_Err.png" />
-    <AndroidAsset Include="Assets\Gateway_Marker_Offline.png" />
-    <AndroidAsset Include="Assets\Gateway_Marker.png" />
-    <AndroidAsset Include="Assets\SLD_00_Err.png" />
-    <AndroidAsset Include="Assets\SLD_00.png" />
-    <AndroidAsset Include="Assets\SLD_10_Err.png" />
-    <AndroidAsset Include="Assets\SLD_10.png" />
-    <AndroidAsset Include="Assets\SLD_20_Err.png" />
-    <AndroidAsset Include="Assets\SLD_20.png" />
-    <AndroidAsset Include="Assets\SLD_30_Err.png" />
-    <AndroidAsset Include="Assets\SLD_30.png" />
-    <AndroidAsset Include="Assets\SLD_40_Err.png" />
-    <AndroidAsset Include="Assets\SLD_40.png" />
-    <AndroidAsset Include="Assets\SLD_50_Err.png" />
-    <AndroidAsset Include="Assets\SLD_50.png" />
-    <AndroidAsset Include="Assets\SLD_60_Err.png" />
-    <AndroidAsset Include="Assets\SLD_60.png" />
-    <AndroidAsset Include="Assets\SLD_70_Err.png" />
-    <AndroidAsset Include="Assets\SLD_70.png" />
-    <AndroidAsset Include="Assets\SLD_80_Err.png" />
-    <AndroidAsset Include="Assets\SLD_80.png" />
-    <AndroidAsset Include="Assets\SLD_90_Err.png" />
-    <AndroidAsset Include="Assets\SLD_90.png" />
-    <AndroidAsset Include="Assets\SLD_100_Err.png" />
-    <AndroidAsset Include="Assets\SLD_100.png" />
-    <AndroidAsset Include="Assets\SLD_NA_Err.png" />
-    <AndroidAsset Include="Assets\SLD_NA.png" />
-    <AndroidAsset Include="Assets\SLT_00_Err.png" />
-    <AndroidAsset Include="Assets\SLT_00.png" />
-    <AndroidAsset Include="Assets\SLT_25_Err.png" />
-    <AndroidAsset Include="Assets\SLT_25.png" />
-    <AndroidAsset Include="Assets\SLT_50_Err.png" />
-    <AndroidAsset Include="Assets\SLT_50.png" />
-    <AndroidAsset Include="Assets\SLT_75_Err.png" />
-    <AndroidAsset Include="Assets\SLT_75.png" />
-    <AndroidAsset Include="Assets\SLT_100_Err.png" />
-    <AndroidAsset Include="Assets\SLT_100.png" />
-    <AndroidAsset Include="Assets\SLT_NA_Err.png" />
-    <AndroidAsset Include="Assets\SLT_NA.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\ResetPassword_32px.png" />
   </ItemGroup>
   <ItemGroup>
@@ -1669,15 +1627,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\Back_32px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Wallet%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Wallet.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\Wallet%402x.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\Wallet.png" />

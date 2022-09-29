@@ -16,15 +16,14 @@ namespace Project.ViewModels.Main.Detail
         private int _OrderNumber;
         public int OrderNumber { get => _OrderNumber; set { _OrderNumber = value; OnPropertyChanged("OrderNumber"); } }
 
-        private ObservableCollection<DetailSize> _Sizes;
-        public ObservableCollection<DetailSize> Sizes { get => _Sizes; set { _Sizes = value; OnPropertyChanged("Sizes"); } }
+        private ObservableCollection<DetailSizeModel> _Sizes;
+        public ObservableCollection<DetailSizeModel> Sizes { get => _Sizes; set { _Sizes = value; OnPropertyChanged("Sizes"); } }
 
-        private MenuItemModel _SelectItem;
-        public MenuItemModel SelectItem { get => _SelectItem; set { _SelectItem = value; OnPropertyChanged("SelectItem"); } }
+        private DetailSizeModel _SizeItem;
+        public DetailSizeModel SizeItem { get => _SizeItem; set { _SizeItem = value; OnPropertyChanged("SizeItem"); } }
 
         private OrderItemModel _Order;
         public OrderItemModel Order { get => _Order; set { _Order = value; OnPropertyChanged("Order"); } }
-
 
         private bool _IsDetail;
         public bool IsDetail { get => _IsDetail; set { _IsDetail = value; OnPropertyChanged("IsDetail"); } }
@@ -67,7 +66,7 @@ namespace Project.ViewModels.Main.Detail
                     {
                         Cnt = 1,
                         Info = Info,
-                        Size = SizeEnum.Large,
+                        Size = SizeItem.Size,
                         OrderNumber = OrderNumber,
                         IsLoadImage = true,
                     };

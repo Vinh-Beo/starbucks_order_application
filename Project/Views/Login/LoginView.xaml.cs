@@ -109,9 +109,9 @@ namespace S3WAN.Views.Login
                         {
                             Info = new MenuItemModel(),
                             OrderNumber = 0,
-                            Sizes = new ObservableCollection<DetailSize>(),
-                            SelectItem = new MenuItemModel(),
+                            Sizes = new ObservableCollection<DetailSizeModel>(),
                             IsDetail = false,
+                            Order = new OrderItemModel()
                         },
                         Cart = new Project.ViewModels.Main.Cart.CartViewModel()
                         {

@@ -16,7 +16,7 @@
             VerticalOptions="FillAndExpand">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
-                <RowDefinition />
+                <RowDefinition Height="Auto" />
                 <RowDefinition />
             </Grid.RowDefinitions>
             <Grid
@@ -69,8 +69,12 @@
             </Grid>
             <ScrollView
                 Grid.Row="1"
-                HeightRequest="1000"
-                VerticalOptions="FillAndExpand">
+                Margin="5"
+                HeightRequest="{OnIdiom Phone={StaticResource PhonePopupLargeSize},
+                                        Tablet={StaticResource TabletPopupLargeSize},
+                                        Default={StaticResource DefaultPopupLargeSize}}"
+                VerticalOptions="FillAndExpand"
+                VerticalScrollBarVisibility="Never">
                 <ListView
                     HasUnevenRows="True"
                     HeightRequest="{OnIdiom Phone={StaticResource PhonePopupSuperSize},
@@ -90,16 +94,6 @@
                                     Orientation="Horizontal"
                                     Spacing="0"
                                     VerticalOptions="FillAndExpand">
-                                    <Label
-                                        Margin="0,0,10,0"
-                                        FontFamily="RalewayRegular"
-                                        FontSize="Small"
-                                        HorizontalOptions="Start"
-                                        HorizontalTextAlignment="Start"
-                                        LineBreakMode="TailTruncation"
-                                        Text="{Binding Cnt, StringFormat='{0}.'}"
-                                        TextColor="{StaticResource LabelTextColor}"
-                                        VerticalTextAlignment="Center" />
                                     <ActivityIndicator
                                         Margin="0,0,10,0"
                                         FlowDirection="MatchParent"

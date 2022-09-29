@@ -1,4 +1,6 @@
 ﻿using Project.ViewModels.Common;
+using System;
+using System.Windows.Input;
 
 namespace Common
 {
@@ -76,12 +78,6 @@ namespace Common
         public const string VN = "vi-VN";
         public const string EN = "en";
         public const string EN_US = "en-US";
-    }
-
-    public class DetailSize
-    {
-        public string Image { get; set; }
-        public SizeEnum Size { get; set; }
     }
 
     public enum TypeEnum

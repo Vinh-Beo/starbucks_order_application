@@ -4,46 +4,53 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:cus="clr-namespace:CustomControl"
-    xmlns:lang="clr-namespace:Language"
-    ControlTemplate="{StaticResource PageWithGradient}">
-    <Grid>
-        <Image
-            Aspect="AspectFit"
-            IsOpaque="True"
-            Opacity="0.1"
-            Rotation="45"
-            Source="WaterBg.png" />
+    xmlns:lang="clr-namespace:Language">
+    <StackLayout>
+        <Grid Margin="5" ColumnDefinitions="*,*,*">
+            <Frame
+                Grid.Column="0"
+                Padding="2"
+                BackgroundColor="{StaticResource Gray100Brush}"
+                CornerRadius="64"
+                HeightRequest="{StaticResource ImageSize24}"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                WidthRequest="{StaticResource ImageSize24}">
+                <cus:IconSvg
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="Center"
+                    ResourceId="Back.svg"
+                    TintColor="Black"
+                    VerticalOptions="Center" />
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding BackCmd}" NumberOfTapsRequired="1" />
+                </Frame.GestureRecognizers>
+            </Frame>
+            <Image
+                Grid.Column="1"
+                Aspect="AspectFit"
+                HeightRequest="32"
+                HorizontalOptions="Center"
+                Source="logo.png"
+                VerticalOptions="Center"
+                WidthRequest="32" />
+        </Grid>
         <StackLayout>
-            <StackLayout
-                Margin="0"
-                Padding="0"
-                BackgroundColor="{x:StaticResource FrameBackgroundColor}">
-                <StackLayout HeightRequest="{StaticResource HeaderBackHeight}" Orientation="Horizontal">
-                    <ImageButton
-                        Grid.Column="0"
-                        Margin="5"
-                        BackgroundColor="Transparent"
-                        Command="{Binding BackCmd}"
-                        HeightRequest="{StaticResource ButtonHeightS}"
-                        HorizontalOptions="Start"
-                        Source="Back.png"
-                        VerticalOptions="CenterAndExpand" />
-                </StackLayout>
-            </StackLayout>
             <ScrollView>
                 <StackLayout>
                     <StackLayout Margin="10,5" Orientation="Horizontal">
-                        <Label FontFamily="RalewayRegular"
+                        <Label
                             FontAttributes="Bold"
+                            FontFamily="RalewayRegular"
                             FontSize="Medium"
                             Text="{lang:Translate UpdateInfo}"
-                            TextColor="{StaticResource LabelTextColor}"
+                            TextColor="{StaticResource Black}"
                             VerticalOptions="CenterAndExpand" />
                     </StackLayout>
                     <Frame
                         Margin="10,5"
                         Padding="10"
-                        BackgroundColor="{x:StaticResource FrameBackgroundColor}"
+                        BackgroundColor="{x:StaticResource Primary}"
                         CornerRadius="20"
                         HasShadow="True"
                         IsVisible="True">
@@ -129,9 +136,10 @@
                                     </Entry.Keyboard>
                                 </cus:CustomImageEntry>
                             </StackLayout>
-                            <Label FontFamily="RalewayRegular"
+                            <Label
                                 Margin="10,5"
                                 FontAttributes="Italic"
+                                FontFamily="RalewayRegular"
                                 FontSize="Micro"
                                 Text="{lang:Translate UpdateUserInfoWarning}"
                                 TextColor="{StaticResource LabelTextColorGray}" />
@@ -147,7 +155,7 @@
                         IsVisible="True">
                         <Button
                             Margin="0"
-                            BackgroundColor="WhiteSmoke"
+                            BackgroundColor="{StaticResource Primary}"
                             BorderColor="Transparent"
                             BorderWidth="{StaticResource ButtonBorderWidth}"
                             Command="{Binding OKCmd}"
@@ -159,10 +167,10 @@
                             IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
                             Opacity="0.9"
                             Text="{lang:Translate Update}"
-                            TextColor="#3ba1c5" />
+                            TextColor="{StaticResource White}" />
                     </Frame>
                 </StackLayout>
             </ScrollView>
         </StackLayout>
-    </Grid>
+    </StackLayout>
 </ContentPage>

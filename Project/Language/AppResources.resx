@@ -30,9 +30,6 @@
   <data name="PleaseLogin" xml:space="preserve">
 		<value>Please Login</value>
 	</data>
-  <data name="S3WANTitle" xml:space="preserve">
-		<value>S3WAN smart city solution</value>
-	</data>
   <data name="Username" xml:space="preserve">
 		<value>User name</value>
 	</data>
@@ -607,9 +604,6 @@
   <data name="SorryThisScriptIsDeactivateCanNotControl" xml:space="preserve">
 		<value>Sorry! This script is deactivated, can not control now. Please actiavte it again</value>
 	</data>
-  <data name="ControlHistory_Duplicate[1]" xml:space="preserve">
-		<value>Control history</value>
-	</data>
   <data name="TotalEvent" xml:space="preserve">
 		<value>Total event</value>
 	</data>
@@ -724,7 +718,7 @@
 		<value>Restore config is fail. Please recheck...</value>
 	</data>
   <data name="CopyRightS3" xml:space="preserve">
-		<value>Copyright 2021 s3wan.com</value>
+		<value>Copyright 2022 vjnhbeo@gmail.com</value>
 	</data>
   <data name="Website" xml:space="preserve">
 		<value>Website</value>
@@ -1002,5 +996,8 @@ Please set permission for camera...</value>
   </data>
   <data name="PromosHearder" xml:space="preserve">
     <value>Promos you can't resist</value>
+  </data>
+  <data name="AppTitle" xml:space="preserve">
+    <value>Vinh Beo Solution</value>
   </data>
 </root>

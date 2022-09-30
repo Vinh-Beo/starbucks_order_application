@@ -160,6 +160,15 @@ namespace Project.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Vinh Beo Solution.
+        /// </summary>
+        internal static string AppTitle {
+            get {
+                return ResourceManager.GetString("AppTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Area.
         /// </summary>
         internal static string Area {
@@ -450,15 +459,6 @@ namespace Project.Language {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Control history.
-        /// </summary>
-        internal static string ControlHistory_Duplicate_1_ {
-            get {
-                return ResourceManager.GetString("ControlHistory_Duplicate[1]", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to 1. System can support control virtual device but when control only one device on line, all device in this line will be received this control action
         ///2. Virtual line can not control dim.
         /// </summary>
@@ -469,7 +469,7 @@ namespace Project.Language {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copyright 2021 s3wan.com.
+        ///   Looks up a localized string similar to Copyright 2022 vjnhbeo@gmail.com.
         /// </summary>
         internal static string CopyRightS3 {
             get {
@@ -2040,15 +2040,6 @@ namespace Project.Language {
         internal static string RestoreConfigOK {
             get {
                 return ResourceManager.GetString("RestoreConfigOK", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to S3WAN smart city solution.
-        /// </summary>
-        internal static string S3WANTitle {
-            get {
-                return ResourceManager.GetString("S3WANTitle", resourceCulture);
             }
         }
         

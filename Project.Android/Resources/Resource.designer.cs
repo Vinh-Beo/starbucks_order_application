@@ -25270,170 +25270,176 @@ namespace Project.Android
 			// aapt resource value: 0x7F0700F9
 			public const int On = 2131165433;
 			
+			// aapt resource value: 0x7F0700FB
+			public const int PasswordBlack_32px = 2131165435;
+			
 			// aapt resource value: 0x7F0700FA
 			public const int Password_32px = 2131165434;
 			
-			// aapt resource value: 0x7F0700FB
-			public const int Pause_32px = 2131165435;
-			
 			// aapt resource value: 0x7F0700FC
-			public const int phone = 2131165436;
+			public const int Pause_32px = 2131165436;
 			
 			// aapt resource value: 0x7F0700FD
-			public const int Phone_32px = 2131165437;
+			public const int phone = 2131165437;
 			
 			// aapt resource value: 0x7F0700FE
-			public const int PlaceMarker_32px = 2131165438;
+			public const int Phone_32px = 2131165438;
 			
 			// aapt resource value: 0x7F0700FF
-			public const int Play_32px = 2131165439;
+			public const int PlaceMarker_32px = 2131165439;
 			
 			// aapt resource value: 0x7F070100
-			public const int Plus_32px = 2131165440;
+			public const int Play_32px = 2131165440;
 			
 			// aapt resource value: 0x7F070101
-			public const int preference_list_divider_material = 2131165441;
+			public const int Plus_32px = 2131165441;
 			
 			// aapt resource value: 0x7F070102
-			public const int Question_32px = 2131165442;
+			public const int preference_list_divider_material = 2131165442;
 			
 			// aapt resource value: 0x7F070103
-			public const int Refresh_32px = 2131165443;
+			public const int Question_32px = 2131165443;
 			
 			// aapt resource value: 0x7F070104
-			public const int ResetPassword_32px = 2131165444;
-			
-			// aapt resource value: 0x7F070106
-			public const int RightArrow_32px = 2131165446;
+			public const int Refresh_32px = 2131165444;
 			
 			// aapt resource value: 0x7F070105
-			public const int Right_32px = 2131165445;
+			public const int ResetPassword_32px = 2131165445;
 			
 			// aapt resource value: 0x7F070107
-			public const int roundedbg = 2131165447;
+			public const int RightArrow_32px = 2131165447;
+			
+			// aapt resource value: 0x7F070106
+			public const int Right_32px = 2131165446;
 			
 			// aapt resource value: 0x7F070108
-			public const int roundedbgdark = 2131165448;
+			public const int roundedbg = 2131165448;
 			
 			// aapt resource value: 0x7F070109
-			public const int S3Logo = 2131165449;
+			public const int roundedbgdark = 2131165449;
 			
 			// aapt resource value: 0x7F07010A
-			public const int S3LogoSmall = 2131165450;
+			public const int S3Logo = 2131165450;
 			
 			// aapt resource value: 0x7F07010B
-			public const int Save_32px = 2131165451;
+			public const int S3LogoSmall = 2131165451;
 			
 			// aapt resource value: 0x7F07010C
-			public const int ScanBg = 2131165452;
+			public const int Save_32px = 2131165452;
 			
 			// aapt resource value: 0x7F07010D
-			public const int ScanQR_32px = 2131165453;
+			public const int ScanBg = 2131165453;
 			
 			// aapt resource value: 0x7F07010E
-			public const int ScanTint = 2131165454;
+			public const int ScanQR_32px = 2131165454;
 			
 			// aapt resource value: 0x7F07010F
-			public const int Script_32px = 2131165455;
+			public const int ScanTint = 2131165455;
 			
 			// aapt resource value: 0x7F070110
-			public const int search = 2131165456;
+			public const int Script_32px = 2131165456;
 			
 			// aapt resource value: 0x7F070111
-			public const int Search_32px = 2131165457;
+			public const int search = 2131165457;
 			
 			// aapt resource value: 0x7F070112
-			public const int Server_32px = 2131165458;
+			public const int Search_32px = 2131165458;
 			
 			// aapt resource value: 0x7F070113
-			public const int Setting = 2131165459;
+			public const int Server_32px = 2131165459;
 			
 			// aapt resource value: 0x7F070114
-			public const int Settings_32px = 2131165460;
+			public const int Setting = 2131165460;
 			
 			// aapt resource value: 0x7F070115
-			public const int shadow_1 = 2131165461;
+			public const int Settings_32px = 2131165461;
 			
 			// aapt resource value: 0x7F070116
-			public const int shop_bag = 2131165462;
+			public const int shadow_1 = 2131165462;
 			
 			// aapt resource value: 0x7F070117
-			public const int Small = 2131165463;
+			public const int shop_bag = 2131165463;
 			
 			// aapt resource value: 0x7F070118
-			public const int stackbuckslogo = 2131165464;
+			public const int Small = 2131165464;
 			
 			// aapt resource value: 0x7F070119
-			public const int star = 2131165465;
+			public const int stackbuckslogo = 2131165465;
 			
 			// aapt resource value: 0x7F07011A
-			public const int Start_32px = 2131165466;
-			
-			// aapt resource value: 0x7F07011C
-			public const int StopWatch_32px = 2131165468;
+			public const int star = 2131165466;
 			
 			// aapt resource value: 0x7F07011B
-			public const int Stop_32px = 2131165467;
+			public const int Start_32px = 2131165467;
 			
 			// aapt resource value: 0x7F07011D
-			public const int substract = 2131165469;
+			public const int StopWatch_32px = 2131165469;
+			
+			// aapt resource value: 0x7F07011C
+			public const int Stop_32px = 2131165468;
 			
 			// aapt resource value: 0x7F07011E
-			public const int Sync_32px = 2131165470;
+			public const int substract = 2131165470;
 			
 			// aapt resource value: 0x7F07011F
-			public const int TDS_32px = 2131165471;
+			public const int Sync_32px = 2131165471;
 			
 			// aapt resource value: 0x7F070120
-			public const int tea_frappuccino = 2131165472;
+			public const int TDS_32px = 2131165472;
 			
 			// aapt resource value: 0x7F070121
-			public const int Temperature_32px = 2131165473;
+			public const int tea_frappuccino = 2131165473;
 			
 			// aapt resource value: 0x7F070122
-			public const int test_custom_background = 2131165474;
+			public const int Temperature_32px = 2131165474;
 			
 			// aapt resource value: 0x7F070123
-			public const int ThirdParty_32px = 2131165475;
+			public const int test_custom_background = 2131165475;
 			
 			// aapt resource value: 0x7F070124
-			public const int tooltip_frame_dark = 2131165476;
+			public const int ThirdParty_32px = 2131165476;
 			
 			// aapt resource value: 0x7F070125
-			public const int tooltip_frame_light = 2131165477;
+			public const int tooltip_frame_dark = 2131165477;
 			
 			// aapt resource value: 0x7F070126
-			public const int Unknown = 2131165478;
+			public const int tooltip_frame_light = 2131165478;
 			
 			// aapt resource value: 0x7F070127
-			public const int Unlock = 2131165479;
+			public const int Unknown = 2131165479;
 			
 			// aapt resource value: 0x7F070128
-			public const int User_32px = 2131165480;
-			
-			// aapt resource value: 0x7F070129
-			public const int User_Marker = 2131165481;
-			
-			// aapt resource value: 0x7F07012A
-			public const int Version = 2131165482;
+			public const int Unlock = 2131165480;
 			
 			// aapt resource value: 0x7F07012B
-			public const int Version_32px = 2131165483;
+			public const int UserBlack_32px = 2131165483;
+			
+			// aapt resource value: 0x7F070129
+			public const int User_32px = 2131165481;
+			
+			// aapt resource value: 0x7F07012A
+			public const int User_Marker = 2131165482;
 			
 			// aapt resource value: 0x7F07012C
-			public const int Visible_32px = 2131165484;
+			public const int Version = 2131165484;
 			
 			// aapt resource value: 0x7F07012D
-			public const int wallet = 2131165485;
+			public const int Version_32px = 2131165485;
 			
 			// aapt resource value: 0x7F07012E
-			public const int Water_32px = 2131165486;
+			public const int Visible_32px = 2131165486;
 			
 			// aapt resource value: 0x7F07012F
-			public const int Website_32px = 2131165487;
+			public const int wallet = 2131165487;
 			
 			// aapt resource value: 0x7F070130
-			public const int Wireless_32px = 2131165488;
+			public const int Water_32px = 2131165488;
+			
+			// aapt resource value: 0x7F070131
+			public const int Website_32px = 2131165489;
+			
+			// aapt resource value: 0x7F070132
+			public const int Wireless_32px = 2131165490;
 			
 			static Drawable()
 			{

@@ -26,11 +26,12 @@
                 <ScrollView>
                     <StackLayout Margin="0,0,0,10">
                         <StackLayout Margin="10,5" Orientation="Horizontal">
-                            <Label FontFamily="RalewayRegular"
+                            <Label
                                 FontAttributes="Bold"
+                                FontFamily="RalewayRegular"
                                 FontSize="Body"
                                 Text="{lang:Translate User}"
-                                TextColor="{StaticResource LabelTextColor}"
+                                TextColor="{StaticResource Black}"
                                 VerticalOptions="CenterAndExpand" />
                         </StackLayout>
                         <Frame
@@ -80,72 +81,27 @@
                             </StackLayout>
                         </Frame>
                         <StackLayout Margin="10,5" Orientation="Horizontal">
-                            <Label FontFamily="RalewayRegular"
+                            <Label
                                 FontAttributes="Bold"
+                                FontFamily="RalewayRegular"
                                 FontSize="Body"
                                 Text="{lang:Translate HelpAndGuideline}"
                                 TextColor="{StaticResource LabelTextColor}"
                                 VerticalOptions="CenterAndExpand" />
                         </StackLayout>
                         <Frame
-                            Margin="10,2"
-                            Padding="10"
-                            BackgroundColor="{x:StaticResource PrimaryColor}"
-                            CornerRadius="20"
-                            HasShadow="True"
-                            IsVisible="True">
-                            <StackLayout>
-                                <StackLayout Orientation="Horizontal">
-                                    <Image
-                                        Margin="15,2"
-                                        HeightRequest="24"
-                                        Source="App_32px.png"
-                                        WidthRequest="24" />
-                                    <Button
-                                        Margin="0,2"
-                                        BackgroundColor="Transparent"
-                                        Command="{Binding AppGuideCmd}"
-                                        FontAttributes="Bold"
-                                        FontSize="Default"
-                                        HeightRequest="{StaticResource ButtonHeightS}"
-                                        HorizontalOptions="Start"
-                                        IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
-                                        Text="{lang:Translate ApplicationGuideline}"
-                                        TextColor="WhiteSmoke" />
-                                </StackLayout>
-                                <StackLayout Orientation="Horizontal">
-                                    <imgcolor:ImageColor
-                                        Margin="15,2"
-                                        Foreground="WhiteSmoke"
-                                        HeightRequest="24"
-                                        Source="HW.png"
-                                        WidthRequest="24" />
-                                    <Button
-                                        Margin="0,2"
-                                        BackgroundColor="Transparent"
-                                        Command="{Binding GwGuideCmd}"
-                                        FontAttributes="Bold"
-                                        FontSize="Default"
-                                        HeightRequest="{StaticResource ButtonHeightS}"
-                                        HorizontalOptions="Start"
-                                        IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
-                                        Text="{lang:Translate GatewayGuideline}"
-                                        TextColor="WhiteSmoke" />
-                                </StackLayout>
-                            </StackLayout>
-                        </Frame>
-                        <Frame
-                            Margin="10,2"
+                            Margin="10,0"
                             Padding="0"
-                            BackgroundColor="{x:StaticResource FrameBackgroundColor}"
+                            BackgroundColor="#B4DCCC"
                             CornerRadius="22"
                             HasShadow="True"
                             IsClippedToBounds="True"
                             IsVisible="True">
                             <Button
-                                Margin="0"
+                                x:Name="btnLogin"
+                                Margin="0,0"
                                 BackgroundColor="{StaticResource PrimaryColor}"
-                                BorderColor="Transparent"
+                                BorderColor="{StaticResource ButtonBorderColor}"
                                 BorderWidth="{StaticResource ButtonBorderWidth}"
                                 Command="{Binding SignOutCmd}"
                                 CornerRadius="{StaticResource ButtonCorner}"
@@ -153,11 +109,11 @@
                                 FontSize="Large"
                                 HeightRequest="{StaticResource ButtonHeight}"
                                 HorizontalOptions="FillAndExpand"
+                                ImageSource="{OnPlatform iOS=Login_32px.png}"
                                 IsEnabled="{Binding IsBusy, Converter={StaticResource ToggleBoolConverter}}"
                                 Opacity="0.9"
-                                Style="{StaticResource btnEnDis}"
                                 Text="{lang:Translate Signout}"
-                                TextColor="WhiteSmoke" />
+                                TextColor="{StaticResource ButtonTextColor}" />
                         </Frame>
                     </StackLayout>
                 </ScrollView>

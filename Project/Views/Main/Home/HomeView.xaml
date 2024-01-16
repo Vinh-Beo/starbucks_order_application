@@ -38,7 +38,9 @@
                         TintColor="Black"
                         VerticalOptions="Center" />
                     <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding DetailCommand}" NumberOfTapsRequired="1" />
+                        <TapGestureRecognizer
+                            Command="{Binding DetailCommand}"
+                            NumberOfTapsRequired="1" />
                     </Frame.GestureRecognizers>
                 </Frame>
                 <Image
@@ -64,7 +66,9 @@
                         TintColor="Black"
                         VerticalOptions="Center" />
                     <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding CartCommand}" NumberOfTapsRequired="1" />
+                        <TapGestureRecognizer
+                            Command="{Binding CartCommand}"
+                            NumberOfTapsRequired="1" />
                     </Frame.GestureRecognizers>
                 </Frame>
             </Grid>
@@ -132,7 +136,9 @@
                         </Grid>
                     </StackLayout>
                     <!--  -Products Section  -->
-                    <StackLayout Grid.Row="1" Margin="0,20,0,0">
+                    <StackLayout
+                        Grid.Row="1"
+                        Margin="0,20,0,0">
                         <!--  -Category Chips  -->
                         <ScrollView
                             BackgroundColor="Transparent"
@@ -148,7 +154,9 @@
                                 ItemsSource="{Binding Types}"
                                 VerticalOptions="StartAndExpand">
                                 <CollectionView.ItemsLayout>
-                                    <GridItemsLayout HorizontalItemSpacing="10" Orientation="Horizontal" />
+                                    <GridItemsLayout
+                                        HorizontalItemSpacing="10"
+                                        Orientation="Horizontal" />
                                 </CollectionView.ItemsLayout>
                                 <CollectionView.ItemTemplate>
                                     <DataTemplate>
@@ -166,7 +174,9 @@
                                                 TextColor="{Binding IsSelected, Converter={StaticResource BoolToChangeTextColorConverter}}"
                                                 VerticalTextAlignment="Center" />
                                             <Frame.GestureRecognizers>
-                                                <TapGestureRecognizer Command="{Binding SelectedCmd}" NumberOfTapsRequired="1" />
+                                                <TapGestureRecognizer
+                                                    Command="{Binding SelectedCmd}"
+                                                    NumberOfTapsRequired="1" />
                                             </Frame.GestureRecognizers>
                                         </Frame>
                                     </DataTemplate>
@@ -202,7 +212,9 @@
                             SelectionMode="None"
                             VerticalOptions="StartAndExpand">
                             <CollectionView.ItemsLayout>
-                                <GridItemsLayout HorizontalItemSpacing="10" Orientation="Horizontal" />
+                                <GridItemsLayout
+                                    HorizontalItemSpacing="10"
+                                    Orientation="Horizontal" />
                             </CollectionView.ItemsLayout>
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
